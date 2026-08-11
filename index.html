@@ -24,7 +24,6 @@ p{margin:0 0 1em} strong{font-weight:600}
 .eyebrow{font-family:"Archivo",Arial,sans-serif;font-variation-settings:"wdth" 78,"wght" 700;
   text-transform:uppercase;letter-spacing:.16em;font-size:11.5px;color:var(--t45);margin:0}
 
-/* portada */
 .hero{background:var(--tinta);color:var(--papel);margin:0 -22px;padding:56px 22px 32px}
 .hero-in{max-width:896px;margin:0 auto}
 .hero .eyebrow{color:rgba(230,234,231,.5)}
@@ -62,7 +61,15 @@ h4{font-family:"Archivo",Arial,sans-serif;font-variation-settings:"wdth" 92,"wgh
   font-size:14px;letter-spacing:.03em;margin:28px 0 8px;text-transform:uppercase}
 .sub{font-size:16px;color:var(--t70);margin:12px 0 0;max-width:62ch}
 
-/* ═══ FICHA DE EJERCICIO ═══ */
+/* glosario */
+.glo{background:var(--blanco);border:1px solid var(--t12);margin:16px 0;padding:4px 20px}
+.glo dl{margin:0}
+.glo dt{font-family:"Archivo",Arial,sans-serif;font-variation-settings:"wdth" 92,"wght" 750;
+  font-size:14.5px;margin:16px 0 3px;text-transform:uppercase;letter-spacing:.02em}
+.glo dd{margin:0 0 14px;font-size:15.5px;padding-bottom:14px;border-bottom:1px dotted var(--t12)}
+.glo dd:last-child{border-bottom:0}
+
+/* ficha */
 .fx{background:var(--blanco);border:1px solid var(--t12);border-left:5px solid var(--off);
   margin:14px 0;padding:0;break-inside:avoid;overflow:hidden}
 .fx.c-verde{border-left-color:var(--verde)}
@@ -83,12 +90,22 @@ h4{font-family:"Archivo",Arial,sans-serif;font-variation-settings:"wdth" 92,"wgh
   text-transform:uppercase;letter-spacing:.12em;font-size:9.5px;color:var(--t45);margin:14px 0 5px}
 .fx lab:first-child{margin-top:0}
 .fx lab.ok{color:var(--verde)} .fx lab.err{color:var(--pisada)}
-.fx ol{margin:0;padding-left:20px}
-.fx ol li{margin-bottom:5px;font-size:15.5px}
+.fx ol,.fx ul{margin:0;padding-left:20px}
+.fx ol li,.fx ul li{margin-bottom:5px;font-size:15.5px}
 .fx p{margin:0 0 6px;font-size:15.5px}
 .fx p:last-child{margin-bottom:0}
 
-/* figura svg */
+/* tarjeta de bloque activo dentro de una sesión */
+.bloq{border:1px solid var(--t12);border-radius:3px;padding:12px 15px;margin:10px 0;background:var(--papel)}
+.bloq.ahora{border:2px solid var(--agua);background:rgba(20,139,158,.07)}
+.bloq h6{font-family:"Archivo",Arial,sans-serif;font-variation-settings:"wdth" 80,"wght" 750;
+  text-transform:uppercase;letter-spacing:.1em;font-size:10px;margin:0 0 6px;color:var(--t45)}
+.bloq.ahora h6{color:var(--agua)}
+.bloq p{margin:0;font-size:15.5px}
+.bloq .tag{font-family:"JetBrains Mono",monospace;font-size:9.5px;background:var(--agua);color:#fff;
+  padding:2px 7px;border-radius:2px;margin-left:8px;letter-spacing:.03em}
+
+/* figura */
 .fig{display:block;margin:0 auto 4px;max-width:330px;width:100%}
 .fig .body{fill:none;stroke:var(--tinta);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
 .fig .obj{fill:none;stroke:var(--tinta);stroke-width:2;opacity:.4}
@@ -98,7 +115,6 @@ h4{font-family:"Archivo",Arial,sans-serif;font-variation-settings:"wdth" 92,"wgh
 .fig text{font-family:"Archivo",Arial,sans-serif;font-size:11px;font-weight:600;fill:var(--t45)}
 .figcap{text-align:center;font-size:13px;color:var(--t45);font-style:italic;margin:0 0 12px}
 
-/* tablas */
 .tbl{width:100%;border-collapse:collapse;margin:16px 0 6px;font-size:15.5px}
 .tbl th{font-family:"Archivo",Arial,sans-serif;font-variation-settings:"wdth" 80,"wght" 700;
   text-transform:uppercase;letter-spacing:.11em;font-size:10px;color:var(--t45);
@@ -111,7 +127,6 @@ h4{font-family:"Archivo",Arial,sans-serif;font-variation-settings:"wdth" 92,"wgh
 .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 .scroll .tbl{min-width:540px}
 
-/* día */
 .dia{background:var(--blanco);margin:18px 0 0;border-left:6px solid var(--off);padding:18px 22px;break-inside:avoid}
 .d-agua{border-left-color:var(--agua)} .d-rueda{border-left-color:var(--rueda)}
 .d-pisada{border-left-color:var(--pisada)} .d-balon{border-left-color:var(--balon)}
@@ -126,7 +141,6 @@ h4{font-family:"Archivo",Arial,sans-serif;font-variation-settings:"wdth" 92,"wgh
 .dia ol li .q{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--t45);margin-left:6px}
 .dia ol li em{display:block;font-style:normal;font-size:14.5px;color:var(--t70);margin-top:2px}
 
-/* avisos */
 .warn{background:var(--tinta);color:var(--papel);padding:19px 22px;margin:22px 0;break-inside:avoid}
 .warn h4{color:var(--blanco);margin:0 0 8px}
 .warn p{margin:0 0 .7em;color:rgba(230,234,231,.86);font-size:16px}
@@ -147,13 +161,13 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
 @media(max-width:620px){
   body{font-size:16px}
   .dia{padding:15px 16px} .fx-b{padding:14px 16px}
-  .fx-h{padding:12px 16px} .dia-h b{font-size:21px}
+  .fx-h{padding:12px 16px} .dia-h b{font-size:21px} .glo{padding:4px 16px}
 }
 @media print{
   body{background:#fff;font-size:10.5pt}
   .tools{display:none}
   .hero,.warn{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-  .dia,.warn,.flag,.fx{break-inside:avoid}
+  .dia,.warn,.flag,.fx,.glo{break-inside:avoid}
   .parte{break-before:page}
 }
 </style>
@@ -176,18 +190,173 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
 </div>
 
 <div class="tools">
-  <a href="#hoy">Qué toca hoy</a>
+  <a href="#p0">0 · Glosario</a>
   <a href="#p1">1 · Ejercicios</a>
-  <a href="#p2">2 · La semana</a>
-  <a href="#p3">3 · 28 semanas</a>
-  <a href="#p4">4 · Referencias</a>
+  <a href="#p2">2 · Sesiones</a>
+  <a href="#p3">3 · La semana</a>
+  <a href="#p4">4 · Las 28 semanas</a>
+  <a href="#p5">5 · Referencias</a>
   <button onclick="window.print()">PDF</button>
+</div>
+
+<!-- ═══════════ PARTE 0 ═══════════ -->
+<div class="parte" id="p0">
+  <p class="parte-n">Parte 0</p>
+  <h2>Cómo usar este manual</h2>
+  <p class="lead">Antes de entrenar, lee esto una vez. Todo el vocabulario del manual está aquí definido, y si algo más adelante no se entiende, la respuesta está en esta sección.</p>
+
+  <h3>La estructura</h3>
+  <p style="margin-top:14px">El manual tiene cinco partes y cada una responde una pregunta distinta:</p>
+  <div class="scroll"><table class="tbl">
+    <thead><tr><th>Parte</th><th>Responde</th><th>Cuándo la lees</th></tr></thead>
+    <tbody>
+      <tr><td>0 · Glosario</td><td>¿Qué significa esta palabra?</td><td>Una vez al principio, y cuando dudes</td></tr>
+      <tr><td>1 · Ejercicios</td><td>¿Cómo se hace este movimiento?</td><td>Las primeras semanas, hasta memorizarlo</td></tr>
+      <tr><td>2 · Sesiones</td><td>¿Qué hago exactamente en esta sesión?</td><td>Antes de cada entrenamiento</td></tr>
+      <tr><td>3 · La semana</td><td>¿Qué toca hoy y en qué orden?</td><td>Cada mañana</td></tr>
+      <tr><td>4 · Las 28 semanas</td><td>¿Cuántos minutos o kilómetros esta semana?</td><td>Cada domingo, planeando</td></tr>
+      <tr><td>5 · Referencias</td><td>Reglas, ritmos, nutrición, ajustes</td><td>Cuando surja la duda</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Los bloques · en cuál estás</h3>
+  <p style="margin-top:14px">El plan se divide en cinco <strong>bloques</strong>, que son periodos con un objetivo distinto. Muchas sesiones cambian según el bloque, así que <strong>lo primero es saber en cuál vas.</strong></p>
+  <div class="scroll"><table class="tbl">
+    <thead><tr><th>Bloque</th><th>Semanas</th><th>Fechas</th><th>Objetivo</th></tr></thead>
+    <tbody>
+      <tr class="hi"><td>1 · Base</td><td class="num">S1 – S7</td><td class="num">10 ago – 27 sep</td><td>Acumular horas y volver a correr sin romperte</td></tr>
+      <tr><td>2 · Volumen</td><td class="num">S8 – S15</td><td class="num">28 sep – 22 nov</td><td>Subir el rango largo. Entra el agua abierta</td></tr>
+      <tr><td>3 · Umbral</td><td class="num">S16 – S21</td><td class="num">23 nov – 3 ene</td><td>Meter intensidad de verdad</td></tr>
+      <tr><td>4 · Específico</td><td class="num">S22 – S25</td><td class="num">4 – 31 ene</td><td>Simulaciones y transiciones</td></tr>
+      <tr><td>5 · Afinar</td><td class="num">S26 – S28</td><td class="num">1 – 21 feb</td><td>Bajar volumen y llegar fresco</td></tr>
+    </tbody>
+  </table></div>
+  <p class="why">A lo largo del manual, cuando una sesión cambie según el bloque, vas a ver las opciones separadas en recuadros. Solo tienes que leer el que corresponde a tu bloque actual.</p>
+
+  <h3>Cómo se lee una serie</h3>
+  <p style="margin-top:14px">Esta es la notación que se usa en todos los deportes de resistencia. Una vez que la entiendes, todo el manual se vuelve obvio.</p>
+
+  <div class="fx c-rueda"><div class="fx-h"><b>Ejemplo en bici</b><span class="fx-d">5 × 3 min fuerte con 3 min suaves</span></div><div class="fx-b">
+    <lab>Se lee así</lab>
+    <p><strong>Cinco veces</strong> el siguiente par: tres minutos fuerte, y después tres minutos suave para recuperar.</p>
+    <lab>En la práctica</lab>
+    <ol>
+      <li>3 min fuerte → 3 min suave</li>
+      <li>3 min fuerte → 3 min suave</li>
+      <li>3 min fuerte → 3 min suave</li>
+      <li>3 min fuerte → 3 min suave</li>
+      <li>3 min fuerte → 3 min suave</li>
+    </ol>
+    <lab>Cuánto dura</lab>
+    <p>5 × 6 min = <strong>30 minutos de serie</strong>, más el calentamiento y la vuelta a la calma que van aparte.</p>
+  </div></div>
+
+  <div class="fx c-agua"><div class="fx-h"><b>Ejemplo en natación</b><span class="fx-d">8 × 50 m fuerte con 30 s</span></div><div class="fx-b">
+    <lab>Se lee así</lab>
+    <p><strong>Ocho veces:</strong> nadas 50 metros fuerte, descansas 30 segundos en la orilla, y arrancas la siguiente.</p>
+    <lab>Cuánto es</lab>
+    <p>8 × 50 = <strong>400 metros</strong> de esa serie.</p>
+  </div></div>
+
+  <div class="fx c-verde"><div class="fx-h"><b>Ejemplo en fuerza</b><span class="fx-d">3 × 8 por lado</span></div><div class="fx-b">
+    <lab>Se lee así</lab>
+    <p><strong>Tres series de ocho repeticiones</strong>, y "por lado" significa que haces las ocho con una pierna, descansas, y después ocho con la otra.</p>
+    <lab>En la práctica</lab>
+    <ol>
+      <li>8 repeticiones pierna derecha → descanso 45–60 s</li>
+      <li>8 repeticiones pierna izquierda → descanso 45–60 s</li>
+      <li>Repites ese par dos veces más</li>
+    </ol>
+    <p>Total: <strong>48 repeticiones</strong>, 24 por pierna.</p>
+  </div></div>
+
+  <h3>Glosario</h3>
+
+  <h4>Bicicleta</h4>
+  <div class="glo"><dl>
+    <dt>Plato</dt>
+    <dd>Los discos dentados <strong>de adelante</strong>, pegados a las bielas. Tú tienes dos: uno grande de 52 dientes y uno chico de 42. Cuando el manual dice <strong>"plato ligero" o "plato chico"</strong>, se refiere al de 42 — el que te deja pedalear suave.</dd>
+    <dt>Piñón</dt>
+    <dd>El conjunto de discos dentados <strong>de atrás</strong>, en el centro de la rueda trasera. Tú tienes siete. <strong>Más dientes = más suave.</strong> El más grande es de 26 y es tu marcha de subir.</dd>
+    <dt>Desarrollo</dt>
+    <dd>La combinación de un plato con un piñón. Tu combinación más suave es <strong>42 × 26</strong>: plato chico con piñón grande.</dd>
+    <dt>Cadencia</dt>
+    <dd>Cuántas vueltas completas da tu pie por minuto. <strong>El objetivo de este plan es 85 a 95 en todo</strong>, incluidos los intervalos fuertes. Tu ciclocomputador te la muestra en el campo <span class="mono">CAD</span>.</dd>
+    <dt>Biela</dt>
+    <dd>Los dos brazos de metal que conectan los pedales con el centro de la bici. Las tuyas miden 170 mm. El sensor de cadencia va sujeto a la <strong>biela izquierda</strong>, en la cara que mira hacia la rueda.</dd>
+    <dt>Culotte y badana</dt>
+    <dd>El short de ciclismo. La <strong>badana</strong> es la almohadilla cosida en la entrepierna. Se usa <strong>sin ropa interior debajo</strong>: la badana está hecha para ir directo sobre la piel, y un calzón debajo añade costuras que rozan.</dd>
+    <dt>Maillot</dt>
+    <dd>La playera de ciclismo. Su función principal son los <strong>tres bolsillos traseros</strong>, donde llevas comida, celular y glucosa de rescate.</dd>
+  </dl></div>
+
+  <h4>Entrenamiento</h4>
+  <div class="glo"><dl>
+    <dt>Serie e intervalo</dt>
+    <dd>Un <strong>intervalo</strong> es un tramo de esfuerzo. Una <strong>serie</strong> es el conjunto de intervalos repetidos con su descanso. Ver la sección de arriba para la notación.</dd>
+    <dt>Aerobio · suave</dt>
+    <dd>Esfuerzo que puedes sostener horas. <strong>La prueba es hablar:</strong> si puedes decir frases completas sin quedarte sin aire, estás en aerobio. Es el 85 % de este plan.</dd>
+    <dt>Umbral</dt>
+    <dd>Esfuerzo incómodo pero sostenible entre 20 y 40 minutos. <strong>La prueba:</strong> solo alcanzas a decir frases de tres o cuatro palabras. Aparece a partir del bloque 3.</dd>
+    <dt>Fuerte</dt>
+    <dd>Más duro que umbral, en tramos de 1 a 3 minutos. <strong>La prueba:</strong> frases de una o dos palabras. Al final del intervalo quieres que se acabe.</dd>
+    <dt>Bloque</dt>
+    <dd>Un periodo de varias semanas con un objetivo. Este plan tiene cinco. Ver la tabla de arriba.</dd>
+    <dt>Semana de descarga</dt>
+    <dd>Una semana con menos carga, cada tercera o cuarta. <strong>No es una pausa del plan, es parte del plan:</strong> es cuando el cuerpo asimila lo anterior. En las tablas van marcadas en gris y cursiva.</dd>
+    <dt>Trote de transición</dt>
+    <dd>El trote corto que haces <strong>inmediatamente después de bajarte de la bici</strong>, los sábados. Se entrena porque correr con las piernas ya cansadas es una habilidad aparte, y es lo que decide un triatlón.</dd>
+    <dt>Piernas de madera</dt>
+    <dd>La sensación de rigidez y torpeza en los primeros minutos de ese trote. <strong>Es normal, le pasa a todos, y se va con repetición.</strong></dd>
+    <dt>Afinar</dt>
+    <dd>Las últimas semanas, donde bajas el volumen para llegar descansado. Se siente mal —piernas raras, ganas de hacer más— y esa sensación es señal de que va bien.</dd>
+  </dl></div>
+
+  <h4>Natación</h4>
+  <div class="glo"><dl>
+    <dt>Largo</dt>
+    <dd>Una pasada completa de la alberca, de pared a pared. Si tu carril es de 25 m, un largo son 25 m.</dd>
+    <dt>Pull buoy</dt>
+    <dd>Un flotador de espuma que te pones <strong>entre los muslos</strong>. Te sostiene las piernas arriba para que nades solo con brazos. Es la pieza clave del miércoles: te deja nadar sin cansar las piernas antes del partido.</dd>
+    <dt>Tabla</dt>
+    <dd>El flotador rectangular que sujetas con las manos para nadar solo de patada. <strong>El miércoles no se usa.</strong></dd>
+    <dt>Técnica</dt>
+    <dd>Ejercicios que aíslan una parte de la brazada — nadar con un brazo, con el puño cerrado, exagerando el agarre. Sirven para corregir el gesto, no para acumular metros.</dd>
+    <dt>Orientarse</dt>
+    <dd>Levantar la vista cada varias brazadas para ver hacia dónde vas, sin cortar el ritmo. En alberca no hace falta; en agua abierta es lo que evita que nades 1.700 m en un curso de 1.500.</dd>
+    <dt>SWOLF</dt>
+    <dd>Un número que da tu reloj, sumando el tiempo de un largo más las brazadas que te tomó. <strong>Más bajo es mejor.</strong> Sirve para ver si estás mejorando la eficiencia, no solo la velocidad.</dd>
+  </dl></div>
+
+  <h4>Fuerza</h4>
+  <div class="glo"><dl>
+    <dt>Repetición</dt>
+    <dd>Una ejecución completa del movimiento: bajar y subir.</dd>
+    <dt>Tempo</dt>
+    <dd>La velocidad de cada repetición. En este plan es siempre <strong>bajar en dos segundos, subir en uno</strong>. Controlado, sin rebotar.</dd>
+    <dt>Isométrico</dt>
+    <dd>Sostener una posición sin moverte, como la plancha. Se mide en segundos, no en repeticiones.</dd>
+    <dt>Progresión</dt>
+    <dd>Cómo se sube la dificultad con el tiempo. En este plan es <strong>añadiendo peso a la mochila</strong>, no subiendo repeticiones.</dd>
+  </dl></div>
+
+  <h3>Las tres pruebas de esfuerzo</h3>
+  <p style="margin-top:14px">Este plan casi no usa pulso ni potencia. Usa <strong>tu respiración</strong>, que es más fiable, gratis, y se autoajusta al calor, al cansancio y a la altitud.</p>
+  <div class="scroll"><table class="tbl">
+    <thead><tr><th>Si puedes decir…</th><th>Estás en…</th><th>Se usa en</th></tr></thead>
+    <tbody>
+      <tr><td>Frases completas</td><td><strong>Suave / aerobio</strong></td><td>Bici larga, carrera del domingo, calentamientos</td></tr>
+      <tr><td>Frases de 3 o 4 palabras</td><td><strong>Umbral</strong></td><td>Intervalos largos, desde el bloque 3</td></tr>
+      <tr><td>Una o dos palabras</td><td><strong>Fuerte</strong></td><td>Intervalos cortos del martes</td></tr>
+    </tbody>
+  </table></div>
+  <div class="flag azul"><b>Si dudas, ve más lento</b>El error casi universal al empezar es entrenar demasiado fuerte los días suaves. Eso deja cansancio que se acumula sin que lo notes, y llega al sábado — que es la sesión que sí importa. <strong>Lento de verdad es más lento de lo que crees.</strong></div>
 </div>
 
 <!-- ═══════════ PARTE 1 ═══════════ -->
 <div class="parte" id="p1">
   <p class="parte-n">Parte 1</p>
-  <h2>Ejercicios</h2>
+  <h2>Los ejercicios</h2>
   <p class="lead">Cada ficha trae la posición completa, qué debes sentir y el error que la anula. Antes de entrenar todo es movimiento; después, todo es sostenido y sin rebotes.</p>
 
   <h3 id="hoy">Qué toca cada día</h3>
@@ -195,7 +364,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     <thead><tr><th>Día</th><th>Calentamiento</th><th>Sesión</th><th>Estiramiento</th><th>Extra</th></tr></thead>
     <tbody>
       <tr><td>Lunes</td><td class="num">Seco · 4 min</td><td>Natación</td><td class="num">Nado 3 + Fuerza 5</td><td class="num">Fuerza 20 min</td></tr>
-      <tr><td>Martes</td><td class="num">Rodando · 12 min</td><td>Bici de calidad</td><td class="num">Bici · 5 min</td><td class="num">Rodillo 5 min</td></tr>
+      <tr><td>Martes</td><td class="num">Rodando · 15 min</td><td>Bici de calidad</td><td class="num">Bici · 5 min</td><td class="num">Rodillo 5 min</td></tr>
       <tr><td>Miércoles</td><td class="num">Seco 4 + Fútbol 4</td><td>Natación + partido</td><td class="num">Carrera · 8 min</td><td class="num">—</td></tr>
       <tr><td>Jueves</td><td class="num">Fútbol · 4 min</td><td>Partido</td><td class="num">Carrera · 8 min</td><td class="num">—</td></tr>
       <tr><td>Viernes</td><td class="num">Seco · 4 min</td><td>Natación fuerte</td><td class="num">Nado 3 + Fuerza 5</td><td class="num">Fuerza 20 min</td></tr>
@@ -203,10 +372,10 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <tr><td>Domingo</td><td class="num">Carrera · 8 min</td><td>Carrera larga</td><td class="num">Carrera · 8 min</td><td class="num">Movilidad 15 min</td></tr>
     </tbody>
   </table></div>
-  <p class="why">Desde la semana 9 el lunes lleva además una corrida corta, con su calentamiento de carrera de 8 min y su estiramiento de 8 min. El martes, si descansas de bici, aprovecha para la segunda sesión de movilidad de la semana.</p>
+  <p class="why">Desde la semana 8 el lunes lleva además una corrida corta, con su calentamiento de carrera de 8 min y su estiramiento de 8 min. El martes, si descansas de bici, aprovecha para la segunda sesión de movilidad de la semana.</p>
 
-  <!-- ══ NATACIÓN ══ -->
-  <h3 style="border-bottom-color:var(--agua)">Natación · antes <span class="sm">4 min, en seco</span></h3>
+  <!-- NATACIÓN ANTES -->
+  <h3 style="border-bottom-color:var(--agua)">Natación · antes <span class="sm">4 min, en seco, junto a la alberca</span></h3>
 
   <div class="fx c-agua"><div class="fx-h"><span class="fx-n">01</span><b>Círculos de brazos</b><span class="fx-d">30 s por dirección</span></div><div class="fx-b">
     <lab>Cómo</lab>
@@ -221,36 +390,39 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     <ol><li>Arrodíllate en el piso y siéntate sobre los talones.</li>
     <li>Pon una mano en la nuca, con el codo apuntando hacia el piso.</li>
     <li>Abre ese codo hacia el techo girando el pecho, siguiéndolo con la mirada.</li>
-    <li>Regresa despacio y repite.</li></ol>
-    <lab class="ok">Debes sentir</lab><p>Movimiento en la parte alta de la espalda.</p>
+    <li>Regresa despacio y repite. A las diez, cambia de mano.</li></ol>
+    <lab class="ok">Debes sentir</lab><p>Movimiento en la parte alta de la espalda, entre los omóplatos.</p>
     <lab class="err">Error común</lab><p>Girar desde la cadera. <strong>La cadera se queda quieta</strong> — el movimiento nace en las costillas.</p>
   </div></div>
 
-  <div class="fx c-agua"><div class="fx-h"><span class="fx-n">03</span><b>Separaciones con banda</b><span class="fx-d">2 × 15</span></div><div class="fx-b">
+  <div class="fx c-agua"><div class="fx-h"><span class="fx-n">03</span><b>Separaciones con banda</b><span class="fx-d">2 series de 15</span></div><div class="fx-b">
     <lab>Cómo</lab>
-    <ol><li>Sujeta la banda con las dos manos al frente, brazos extendidos a la altura del pecho.</li>
-    <li>Sepárala llevando los brazos hacia los costados, hasta que la banda toque tu pecho.</li>
-    <li>Regresa despacio, controlando la vuelta.</li></ol>
+    <ol><li>Sujeta la banda elástica con las dos manos al frente, brazos extendidos a la altura del pecho, separados al ancho de los hombros.</li>
+    <li>Sepáralos llevando los brazos hacia los costados, hasta que la banda toque tu pecho.</li>
+    <li>Regresa despacio, controlando la vuelta.</li>
+    <li>Quince veces, descansa, y otras quince.</li></ol>
     <lab class="ok">Debes sentir</lab><p>Los omóplatos juntándose en la espalda alta.</p>
     <lab class="err">Error común</lab><p>Tirar con los brazos y encoger los hombros hacia las orejas. El movimiento nace <strong>entre los omóplatos</strong>, y los hombros se quedan abajo.</p>
   </div></div>
 
   <div class="fx c-agua"><div class="fx-h"><span class="fx-n">04</span><b>Movilidad de cuello</b><span class="fx-d">30 s</span></div><div class="fx-b">
     <lab>Cómo</lab>
-    <ol><li>Gira la cabeza despacio de lado a lado, como diciendo que no.</li>
-    <li>Después inclina la oreja hacia cada hombro, sin subir el hombro.</li></ol>
-    <lab class="err">Error común</lab><p>Hacer círculos completos con la cabeza. Solo giros y flexión lateral, sin fuerza.</p>
+    <ol><li>Gira la cabeza despacio de lado a lado, como diciendo que no. Diez veces.</li>
+    <li>Después inclina la oreja hacia cada hombro, sin subir el hombro. Cinco por lado.</li></ol>
+    <lab class="err">Error común</lab><p>Hacer círculos completos con la cabeza. <strong>Solo giros y flexión lateral</strong>, sin fuerza.</p>
     <p class="why">Vas a girar la cabeza cientos de veces para respirar. Vale medio minuto.</p>
   </div></div>
 
-  <h3 style="border-bottom-color:var(--agua)">Natación · después <span class="sm">3 min</span></h3>
+  <!-- NATACIÓN DESPUÉS -->
+  <h3 style="border-bottom-color:var(--pisada)">Natación · después <span class="sm">3 min</span></h3>
 
   <div class="fx c-pisada"><div class="fx-h"><span class="fx-n">01</span><b>Pectoral en marco de puerta</b><span class="fx-d">45 s por lado</span></div><div class="fx-b">
     <lab>Cómo</lab>
     <ol><li>Párate junto a una puerta abierta, de costado al marco.</li>
     <li>Apoya el antebrazo completo contra el marco, con el codo doblado a 90° y a la altura del hombro.</li>
     <li>Da un paso adelante con el pie del mismo lado.</li>
-    <li>Gira el pecho hacia el lado contrario hasta sentir tensión.</li></ol>
+    <li>Gira el pecho hacia el lado contrario hasta sentir tensión. Sostén 45 segundos.</li>
+    <li>Cambia de lado.</li></ol>
     <lab class="ok">Debes sentir</lab><p>Al frente del hombro y en el pecho.</p>
     <lab class="err">Error común</lab><p>Encoger el hombro hacia la oreja. Déjalo caer.</p>
   </div></div>
@@ -260,7 +432,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     <ol><li>Agárrate del borde de la alberca, un poste o el marco de una puerta con una mano.</li>
     <li>Extiende ese brazo completamente, a la altura del pecho.</li>
     <li>Con los pies fijos, deja caer la cadera hacia atrás y hacia el lado opuesto al brazo que sujeta, como colgándote en diagonal.</li></ol>
-    <lab class="ok">Debes sentir</lab><p>Todo el costado, de la axila a la cintura.</p>
+    <lab class="ok">Debes sentir</lab><p>Todo el costado estirándose, de la axila a la cintura.</p>
   </div></div>
 
   <div class="fx c-pisada"><div class="fx-h"><span class="fx-n">03</span><b>Tríceps sobre la cabeza</b><span class="fx-d">20 s por lado</span></div><div class="fx-b">
@@ -271,19 +443,28 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     <lab class="ok">Debes sentir</lab><p>La parte de atrás del brazo.</p>
   </div></div>
 
-  <!-- ══ BICI ══ -->
-  <h3 style="border-bottom-color:var(--rueda)">Bicicleta · antes <span class="sm">12 min, sobre la bici</span></h3>
-  <div class="fx c-rueda"><div class="fx-h"><span class="fx-n">01</span><b>Revisión previa</b><span class="fx-d">30 s</span></div><div class="fx-b">
-    <ol><li>Presión: <strong>78 psi atrás, 90 adelante.</strong></li>
-    <li>Aprieta las dos manetas: los frenos deben morder con firmeza.</li>
-    <li>Bidones llenos. Glucosa de rescate en el bolsillo.</li></ol>
-  </div></div>
-  <div class="fx c-rueda"><div class="fx-h"><span class="fx-n">02</span><b>Rodar suave</b><span class="fx-d">12 min</span></div><div class="fx-b">
-    <p>Los primeros doce minutos de la salida <strong>son</strong> el calentamiento: plato ligero, cadencia 90, sin forzar.</p>
-    <lab class="err">Error común</lab><p>Arrancar fuerte desde la puerta de casa. Si hay subida en los primeros dos kilómetros, súbela sentado y despacio.</p>
+  <!-- BICI ANTES -->
+  <h3 style="border-bottom-color:var(--rueda)">Bicicleta · antes <span class="sm">12 a 15 min, sobre la bici</span></h3>
+
+  <div class="fx c-rueda"><div class="fx-h"><span class="fx-n">01</span><b>Revisión previa</b><span class="fx-d">30 s, antes de subirte</span></div><div class="fx-b">
+    <lab>Cómo</lab>
+    <ol><li><strong>Presión de llantas:</strong> 78 psi atrás, 90 adelante. Con la bomba de piso, no la portátil.</li>
+    <li><strong>Frenos:</strong> aprieta las dos manetas. Deben morder con firmeza antes de tocar el manubrio.</li>
+    <li><strong>Ruedas:</strong> gíralas con la mano. Deben girar libres, sin bailar de lado ni raspar las zapatas.</li>
+    <li><strong>Bidones llenos</strong> y glucosa de rescate en el bolsillo del maillot.</li></ol>
   </div></div>
 
-  <h3 style="border-bottom-color:var(--rueda)">Bicicleta · después <span class="sm">5 min</span></h3>
+  <div class="fx c-rueda"><div class="fx-h"><span class="fx-n">02</span><b>Rodar suave</b><span class="fx-d">12 min sábado · 15 min martes</span></div><div class="fx-b">
+    <lab>Cómo</lab>
+    <ol><li>Arranca en <strong>plato chico</strong> — el de 42 dientes.</li>
+    <li>Elige el piñón que te deje pedalear a unas <strong>90 pedaladas por minuto sin esfuerzo.</strong></li>
+    <li>Mantén eso los primeros 12 a 15 minutos sin forzar nada.</li></ol>
+    <lab class="ok">Debes sentir</lab><p>Que las piernas giran fácil y podrías platicar sin problema. Al final del calentamiento, el cuerpo ya entró en calor y la respiración se estabilizó.</p>
+    <lab class="err">Error común</lab><p>Arrancar fuerte desde la puerta de casa. Si hay subida en los primeros dos kilómetros, <strong>súbela sentado y despacio</strong>, aunque te rebasen.</p>
+  </div></div>
+
+  <!-- BICI DESPUÉS -->
+  <h3 style="border-bottom-color:var(--pisada)">Bicicleta · después <span class="sm">5 min</span></h3>
 
   <div class="fx c-pisada"><div class="fx-h"><span class="fx-n">01</span><b>Flexor de cadera en zancada</b><span class="fx-d">60 s por lado</span></div><div class="fx-b">
     <svg class="fig" viewBox="0 0 300 160" role="img" aria-label="Zancada con rodilla de atrás en el piso y pelvis metida">
@@ -295,18 +476,18 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <line class="body" x1="150" y1="88" x2="112" y2="126"/>
       <line class="acc" x1="112" y1="126" x2="78" y2="140"/>
       <circle class="jt" cx="150" cy="88" r="4"/><circle class="jt" cx="196" cy="112" r="4"/><circle class="jt" cx="112" cy="126" r="4"/>
-      <text x="206" y="106">90°</text><text x="60" y="132">rodilla</text>
+      <text x="206" y="106">90°</text><text x="54" y="132">rodilla en el piso</text>
     </svg>
-    <p class="figcap">La rodilla de atrás en el piso; la de adelante forma 90°.</p>
+    <p class="figcap">La rodilla de atrás en el piso; la de adelante forma 90°. Torso vertical.</p>
     <lab>Cómo</lab>
     <ol><li>Arrodíllate sobre una rodilla, con la otra pierna al frente formando 90° y el pie bien plantado.</li>
     <li>La rodilla de atrás apoyada en el piso, sobre algo blando si molesta.</li>
     <li>Torso vertical y espalda recta.</li>
-    <li><strong>Mete la pelvis</strong> hacia adelante, como escondiendo el coxis.</li>
+    <li><strong>Mete la pelvis</strong> hacia adelante, como escondiendo el coxis debajo de ti.</li>
     <li><strong>Aprieta el glúteo</strong> de la pierna de atrás.</li>
-    <li><strong>Ahora sí</strong>, empuja la cadera unos centímetros hacia adelante.</li></ol>
-    <lab class="ok">Debes sentir</lab><p>Al frente de la cadera y arriba del muslo de la pierna de atrás.</p>
-    <lab class="err">Error común</lab><p>Arquear la espalda baja y sacar la cola. Si no haces los pasos 4 y 5 primero, no estás estirando nada.</p>
+    <li><strong>Ahora sí</strong>, empuja la cadera unos centímetros hacia adelante. Sostén 60 segundos.</li></ol>
+    <lab class="ok">Debes sentir</lab><p>Al frente de la cadera y arriba del muslo de <strong>la pierna de atrás</strong>.</p>
+    <lab class="err">Error común</lab><p>Arquear la espalda baja y sacar la cola. Si no haces los pasos 4 y 5 primero, <strong>no estás estirando nada</strong> — solo comprimiendo la espalda.</p>
   </div></div>
 
   <div class="fx c-pisada"><div class="fx-h"><span class="fx-n">02</span><b>Cuádriceps de pie</b><span class="fx-d">30 s por lado</span></div><div class="fx-b">
@@ -314,30 +495,30 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     <ol><li>Párate derecho junto a una pared y apóyate con una mano.</li>
     <li>Dobla una rodilla llevando el pie hacia atrás, hacia el glúteo.</li>
     <li>Toma el tobillo o el empeine con la mano libre <strong>del mismo lado</strong> que ese pie.</li>
-    <li>Jala suave hasta sentir tensión al frente del muslo.</li></ol>
+    <li>Jala suave hasta sentir tensión al frente del muslo. Sostén 30 segundos.</li></ol>
     <lab class="ok">Debes sentir</lab><p>Al frente del muslo, de la rodilla hacia arriba.</p>
     <lab class="err">Tres correcciones</lab>
-    <p><strong>Rodillas juntas:</strong> la rodilla doblada queda al lado de la otra, no separada.<br>
-    <strong>Pelvis metida:</strong> si sacas la cola hacia atrás, el estiramiento se pierde.<br>
-    <strong>Rodilla al piso:</strong> al jalar, la rodilla tiende a abrirse al costado. No la dejes.</p>
+    <p><strong>Rodillas juntas:</strong> la rodilla doblada queda al lado de la otra, no separada hacia afuera.<br>
+    <strong>Pelvis metida:</strong> si sacas la cola hacia atrás, el estiramiento se pierde por completo.<br>
+    <strong>Rodilla apuntando al piso:</strong> al jalar, la rodilla tiende a abrirse al costado. No la dejes.</p>
   </div></div>
 
   <div class="fx c-pisada"><div class="fx-h"><span class="fx-n">03</span><b>Rodillas al pecho</b><span class="fx-d">45 s</span></div><div class="fx-b">
     <lab>Cómo</lab>
     <ol><li>Acuéstate boca arriba en el piso.</li>
-    <li>Dobla las dos rodillas y abrázalas contra el pecho.</li>
+    <li>Dobla las dos rodillas y abrázalas contra el pecho con los brazos.</li>
     <li>Respira profundo; con cada exhalación deja que la espalda baja se aplane contra el piso.</li></ol>
     <lab class="ok">Debes sentir</lab><p>Alivio en la zona lumbar, no tensión.</p>
   </div></div>
 
   <div class="fx c-pisada"><div class="fx-h"><span class="fx-n">04</span><b>Pectoral en marco de puerta</b><span class="fx-d">45 s por lado</span></div><div class="fx-b">
-    <p>Misma ejecución que después de nadar: antebrazo en el marco, codo a 90° a la altura del hombro, paso adelante, gira el pecho al lado contrario.</p>
-    <p class="why">La bici te cierra el pecho. Si no lo compensas, pierdes brazada en el agua y cargas el cuello.</p>
+    <p>Misma ejecución que después de nadar: antebrazo en el marco, codo a 90° a la altura del hombro, paso adelante con el pie del mismo lado, y giras el pecho al lado contrario.</p>
+    <lab class="ok">Por qué después de la bici</lab><p>Dos horas encorvado sobre el manubrio te cierran el pecho. Si no lo compensas, pierdes brazada en el agua y cargas el cuello.</p>
   </div></div>
 
-  <!-- ══ CARRERA ══ -->
-  <h3 style="border-bottom-color:var(--pisada)">Carrera · antes <span class="sm">8 min</span></h3>
-  <p class="sub">El calentamiento que más se salta, y donde se acumulan las molestias de isquios y aductores.</p>
+  <!-- CARRERA ANTES -->
+  <h3 style="border-bottom-color:var(--verde)">Carrera · antes <span class="sm">8 min</span></h3>
+  <p class="sub">El calentamiento que más se salta, y donde se acumulan las molestias de isquios y aductores. Los seis en orden, sin parar entre uno y otro.</p>
 
   <div class="fx c-verde"><div class="fx-h"><span class="fx-n">01</span><b>Caminata rápida</b><span class="fx-d">3 min</span></div><div class="fx-b">
     <p>Camina a paso vivo, sin correr. Sube pulso y temperatura antes de pedirle algo al músculo.</p>
@@ -347,7 +528,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     <lab>Cómo</lab>
     <ol><li>Camina hacia adelante.</li>
     <li>Sube una rodilla y abrázala contra el pecho con las dos manos, un segundo.</li>
-    <li>Suéltala, da un paso, y repite con la otra.</li></ol>
+    <li>Suéltala, da un paso, y repite con la otra pierna. Alternando.</li></ol>
     <lab class="ok">Debes sentir</lab><p>El glúteo de la pierna apoyada activándose para sostenerte.</p>
     <lab class="err">Error común</lab><p>Encorvarte sobre la rodilla. <strong>Estírate hacia arriba</strong>, pecho alto.</p>
   </div></div>
@@ -357,32 +538,33 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     <ol><li>Caminando, dobla una rodilla llevando el talón al glúteo y tómalo con la mano del mismo lado.</li>
     <li>Mantén las rodillas juntas y la cadera adelante.</li>
     <li>Suelta, da un paso y alterna.</li></ol>
-    <lab class="err">Error común</lab><p>Sacar la rodilla hacia el frente o dejar que la cadera se vaya atrás. Ahí se pierde el sentido.</p>
+    <lab class="err">Error común</lab><p>Sacar la rodilla hacia el frente o dejar que la cadera se vaya atrás. Ahí se pierde el sentido del ejercicio.</p>
   </div></div>
 
   <div class="fx c-verde"><div class="fx-h"><span class="fx-n">04</span><b>Zancadas caminando</b><span class="fx-d">8 por lado</span></div><div class="fx-b">
     <lab>Cómo</lab>
     <ol><li>Da un paso largo hacia adelante.</li>
     <li>Baja hasta que la rodilla de atrás casi toque el piso, sin tocarlo.</li>
-    <li>Torso vertical.</li>
-    <li>Sube empujando con el glúteo del pie de adelante y da el siguiente paso.</li></ol>
+    <li>Torso vertical, no inclinado.</li>
+    <li>Sube empujando con el glúteo del pie de adelante y da el siguiente paso con la otra pierna.</li></ol>
   </div></div>
 
   <div class="fx c-verde"><div class="fx-h"><span class="fx-n">05</span><b>Balanceo de pierna</b><span class="fx-d">10 adelante + 10 lateral, por lado</span></div><div class="fx-b">
     <lab>Cómo</lab>
     <ol><li>Sujétate de una pared o poste con una mano.</li>
-    <li><strong>Adelante y atrás:</strong> balancea una pierna como péndulo, relajada, sin forzar el rango.</li>
-    <li><strong>Lateral:</strong> ponte de frente a la pared y balancea la misma pierna cruzándola por delante del cuerpo, de lado a lado.</li>
-    <li>Cambia de pierna.</li></ol>
-    <lab class="ok">Por qué importa</lab><p><strong>El balanceo lateral es el que prepara el aductor</strong> — es lo que más se parece a un arranque de fútbol.</p>
+    <li><strong>Adelante y atrás:</strong> balancea una pierna como péndulo, relajada, sin forzar el rango. Diez veces.</li>
+    <li><strong>Lateral:</strong> ponte de frente a la pared y balancea la misma pierna cruzándola por delante del cuerpo, de lado a lado. Diez veces.</li>
+    <li>Cambia de pierna y repite las dos direcciones.</li></ol>
+    <lab class="ok">Por qué importa</lab><p><strong>El balanceo lateral es el que prepara el aductor</strong> — es el movimiento que más se parece a un arranque de fútbol, y el aductor es tu zona de riesgo.</p>
   </div></div>
 
   <div class="fx c-verde"><div class="fx-h"><span class="fx-n">06</span><b>Trote muy suave</b><span class="fx-d">3 min</span></div><div class="fx-b">
-    <p>Antes de tomar tu ritmo del día. Los primeros minutos no cuentan como sesión, son transición.</p>
+    <p>Antes de tomar tu ritmo del día. <strong>Estos tres minutos no cuentan como parte de la sesión</strong> — son transición. Los kilómetros de la tabla empiezan después.</p>
   </div></div>
 
+  <!-- CARRERA DESPUÉS -->
   <h3 style="border-bottom-color:var(--pisada)">Carrera y fútbol · después <span class="sm">8 min</span></h3>
-  <p class="sub">Los mismos ocho después de correr y después de un partido. Prioridad: aductores y glúteo, que es lo que más castigan los arranques.</p>
+  <p class="sub">Los mismos ocho después de correr y después de un partido. Prioridad: aductores y glúteo, que es lo que más castigan los arranques y cambios de dirección.</p>
 
   <div class="fx c-pisada"><div class="fx-h"><span class="fx-n">01</span><b>Aductores en mariposa</b><span class="fx-d">60 s</span></div><div class="fx-b">
     <lab>Cómo</lab>
@@ -409,13 +591,13 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     <ol><li>Párate frente a un escalón, banco bajo o silla.</li>
     <li>Apoya el talón encima con la pierna completamente recta y los dedos hacia arriba.</li>
     <li>La pierna de apoyo, derecha.</li>
-    <li>Con la <strong>espalda plana</strong>, empuja la cadera hacia atrás y baja el pecho hacia el pie — inclinándote desde la cadera, no desde la cintura.</li></ol>
+    <li>Con la <strong>espalda plana</strong>, empuja la cadera hacia atrás y baja el pecho hacia el pie — inclinándote desde la cadera, no doblándote desde la cintura.</li></ol>
     <lab class="ok">Debes sentir</lab><p>La parte de atrás del muslo.</p>
-    <lab class="err">Error común</lab><p>Doblar la rodilla o encorvarse. <strong>Mejor rango corto con espalda recta que rango grande encorvado.</strong></p>
+    <lab class="err">Error común</lab><p>Doblar la rodilla o encorvarse para llegar más lejos. <strong>Mejor rango corto con espalda recta que rango grande encorvado.</strong></p>
   </div></div>
 
   <div class="fx c-pisada"><div class="fx-h"><span class="fx-n">04</span><b>Flexor de cadera en zancada</b><span class="fx-d">45 s por lado</span></div><div class="fx-b">
-    <p>Misma ejecución que después de la bici: rodilla de atrás en el piso, la de adelante a 90°, y en este orden — <strong>pelvis metida, glúteo apretado, cadera adelante.</strong></p>
+    <p>Misma ejecución que después de la bici: rodilla de atrás en el piso, la de adelante a 90°, y en este orden — <strong>1) pelvis metida, 2) glúteo apretado, 3) cadera adelante.</strong></p>
   </div></div>
 
   <div class="fx c-pisada"><div class="fx-h"><span class="fx-n">05</span><b>Cuádriceps de pie</b><span class="fx-d">30 s por lado</span></div><div class="fx-b">
@@ -432,9 +614,9 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <line class="acc" x1="150" y1="88" x2="228" y2="70"/>
       <line class="acc" x1="228" y1="70" x2="238" y2="112"/>
       <circle class="jt" cx="150" cy="114" r="4"/><circle class="jt" cx="186" cy="62" r="4"/><circle class="jt" cx="228" cy="70" r="4"/>
-      <text x="196" y="46">jala</text><text x="240" y="58">pierna</text><text x="240" y="70">cruzada</text>
+      <text x="192" y="44">jalas</text><text x="242" y="58">pierna</text><text x="242" y="70">cruzada</text>
     </svg>
-    <p class="figcap">El tobillo cruza sobre la rodilla y jalas la pierna de abajo hacia el pecho.</p>
+    <p class="figcap">El tobillo cruza sobre la rodilla; jalas la pierna de abajo hacia el pecho.</p>
     <lab>Cómo</lab>
     <ol><li>Acuéstate boca arriba con las dos rodillas dobladas y los pies en el piso.</li>
     <li>Cruza el tobillo de una pierna sobre la rodilla de la otra, formando un número 4.</li>
@@ -445,7 +627,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
   </div></div>
 
   <div class="fx c-pisada"><div class="fx-h"><span class="fx-n">07 · 08</span><b>Gemelo y sóleo</b><span class="fx-d">30 s cada uno, por lado</span></div><div class="fx-b">
-    <svg class="fig" style="max-width:400px" viewBox="0 0 420 160" role="img" aria-label="Dos posiciones contra la pared: pierna de atrás recta para gemelo, doblada para sóleo">
+    <svg class="fig" style="max-width:400px" viewBox="0 0 420 165" role="img" aria-label="Dos posiciones contra la pared: pierna de atrás recta para gemelo, doblada para sóleo">
       <line class="obj" x1="16" y1="16" x2="16" y2="140"/><line class="obj" x1="16" y1="140" x2="190" y2="140"/>
       <circle class="hd" cx="62" cy="40" r="11"/>
       <line class="body" x1="62" y1="51" x2="74" y2="92"/>
@@ -453,8 +635,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <line class="body" x1="74" y1="92" x2="60" y2="118"/><line class="body" x1="60" y1="118" x2="56" y2="140"/>
       <line class="acc" x1="74" y1="92" x2="150" y2="140"/>
       <circle class="jt" cx="74" cy="92" r="4"/>
-      <text x="66" y="158">Gemelo · rodilla recta</text>
-
+      <text x="60" y="158">Gemelo · rodilla recta</text>
       <line class="obj" x1="236" y1="16" x2="236" y2="140"/><line class="obj" x1="236" y1="140" x2="404" y2="140"/>
       <circle class="hd" cx="282" cy="46" r="11"/>
       <line class="body" x1="282" y1="57" x2="292" y2="98"/>
@@ -462,46 +643,48 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <line class="body" x1="292" y1="98" x2="278" y2="122"/><line class="body" x1="278" y1="122" x2="274" y2="140"/>
       <line class="acc" x1="292" y1="98" x2="336" y2="114"/><line class="acc" x1="336" y1="114" x2="352" y2="140"/>
       <circle class="jt" cx="292" cy="98" r="4"/><circle class="jt" cx="336" cy="114" r="4"/>
-      <text x="278" y="158">Sóleo · rodilla doblada</text>
+      <text x="272" y="158">Sóleo · rodilla doblada</text>
     </svg>
-    <p class="figcap">Misma posición, única diferencia: la rodilla de atrás. El talón nunca se despega.</p>
+    <p class="figcap">Misma posición; la única diferencia es la rodilla de atrás. El talón nunca se despega.</p>
     <lab>Cómo · gemelo</lab>
     <ol><li>Párate frente a una pared, las dos manos apoyadas a la altura del pecho.</li>
     <li>Da un paso largo hacia atrás con una pierna, dejándola <strong>completamente recta</strong>.</li>
     <li>Talón de atrás pegado al piso, pierna de adelante doblada.</li>
-    <li>Empuja la cadera hacia la pared sin despegar ese talón.</li></ol>
+    <li>Empuja la cadera hacia la pared sin despegar ese talón. Sostén 30 s.</li></ol>
     <lab>Cómo · sóleo</lab>
     <ol><li>Exactamente la misma posición.</li>
     <li>Ahora <strong>dobla la rodilla de atrás</strong>, manteniendo el talón pegado al piso.</li>
-    <li>Baja el cuerpo un poco, como sentándote.</li></ol>
+    <li>Baja el cuerpo un poco, como sentándote. Sostén 30 s.</li></ol>
     <lab class="ok">Debes sentir</lab><p><strong>Gemelo:</strong> la parte alta y gruesa de la pantorrilla. <strong>Sóleo:</strong> más abajo y más profundo, cerca del tobillo.</p>
     <lab class="err">Por qué los dos</lab><p>Son músculos distintos. El gemelo solo se estira con la rodilla recta; el sóleo solo con la rodilla doblada. Hacer uno deja la mitad del trabajo.</p>
   </div></div>
 
-  <!-- ══ FÚTBOL ══ -->
-  <h3 style="border-bottom-color:var(--balon)">Fútbol · antes <span class="sm">4 min tuyos</span></h3>
-  <p class="sub">Lo que hace el equipo casi nunca alcanza. Añade esto aunque te vean raro.</p>
+  <!-- FÚTBOL -->
+  <h3 style="border-bottom-color:var(--balon)">Fútbol · antes <span class="sm">4 min tuyos, además de lo del equipo</span></h3>
 
   <div class="fx c-balon"><div class="fx-h"><span class="fx-n">01</span><b>Balanceos laterales de pierna</b><span class="fx-d">12 por lado</span></div><div class="fx-b">
     <ol><li>De frente a una pared, sujétate con las dos manos.</li>
     <li>Balancea una pierna cruzándola por delante del cuerpo, de lado a lado.</li>
-    <li>Relajado, sin forzar el rango.</li></ol>
+    <li>Relajado, sin forzar el rango. Doce veces, y cambia.</li></ol>
     <p class="why">Lo mínimo indispensable para el aductor.</p>
   </div></div>
   <div class="fx c-balon"><div class="fx-h"><span class="fx-n">02</span><b>Zancadas caminando</b><span class="fx-d">8 por lado</span></div><div class="fx-b">
     <p>Paso largo, rodilla de atrás bajando sin tocar el piso, torso vertical.</p>
   </div></div>
   <div class="fx c-balon"><div class="fx-h"><span class="fx-n">03</span><b>Arranques progresivos</b><span class="fx-d">4 × 20 m</span></div><div class="fx-b">
-    <p>Cuatro aceleraciones cortas, cada una un poco más rápida. La última casi al máximo. <strong>Nunca entres al partido sin haber acelerado antes.</strong></p>
+    <ol><li>Corre 20 metros acelerando, y regresa caminando.</li>
+    <li>Cada arranque un poco más rápido que el anterior.</li>
+    <li>El cuarto, casi al máximo.</li></ol>
+    <p><strong>Nunca entres al partido sin haber acelerado antes.</strong></p>
   </div></div>
   <div class="flag rojo"><b>El escenario de riesgo</b>El primer arranque a fondo de un partido, en frío, con dos días de carga previa. Ahí es donde se rompen los aductores. Estos cuatro minutos son la mejor inversión de tu semana.</div>
 
-  <!-- ══ FUERZA ══ -->
+  <!-- FUERZA -->
   <h3 style="border-bottom-color:var(--verde)">Fuerza en casa <span class="sm">lunes y viernes · 20 min</span></h3>
   <p class="sub">Después de nadar, con la banda elástica y una mochila cargada de libros o garrafones. No es para ponerte grande: es lo que evita que el fútbol y la carrera te lesionen mientras subes volumen.</p>
-  <p><strong>Cómo se organiza:</strong> los siete ejercicios en orden. Descansa <strong>45 a 60 segundos</strong> entre series. Cada repetición baja en dos segundos y sube en uno — controlado, sin rebotar.</p>
+  <p><strong>Cómo se organiza:</strong> los siete ejercicios en orden, uno tras otro. Descansa <strong>45 a 60 segundos</strong> entre series. Cada repetición <strong>baja en dos segundos y sube en uno</strong> — controlado, sin rebotar.</p>
 
-  <div class="fx c-verde"><div class="fx-h"><span class="fx-n">01</span><b>Sentadilla búlgara</b><span class="fx-d">3 × 8 por lado</span></div><div class="fx-b">
+  <div class="fx c-verde"><div class="fx-h"><span class="fx-n">01</span><b>Sentadilla búlgara</b><span class="fx-d">3 series × 8 por lado</span></div><div class="fx-b">
     <svg class="fig" viewBox="0 0 300 165" role="img" aria-label="Pie de atrás sobre una silla, pierna de adelante doblada, torso vertical">
       <line class="obj" x1="16" y1="146" x2="284" y2="146"/>
       <rect class="obj" x="34" y="100" width="62" height="46"/>
@@ -512,20 +695,21 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <line class="acc" x1="176" y1="92" x2="126" y2="124"/>
       <line class="acc" x1="126" y1="124" x2="90" y2="104"/>
       <circle class="jt" cx="176" cy="92" r="4"/><circle class="jt" cx="212" cy="120" r="4"/><circle class="jt" cx="126" cy="124" r="4"/>
-      <text x="40" y="92">silla</text><text x="216" y="112">90°</text>
+      <text x="42" y="92">silla</text><text x="216" y="112">90°</text>
     </svg>
     <p class="figcap">Torso vertical. El pie de atrás solo apoya; el trabajo lo hace la pierna de adelante.</p>
     <lab>Cómo</lab>
     <ol><li>Párate de espaldas a una silla, a un paso largo de distancia.</li>
     <li>Apoya el empeine del pie de atrás sobre el asiento.</li>
     <li>Baja vertical, doblando la pierna de adelante, hasta que la rodilla de atrás casi toque el piso.</li>
-    <li>Sube empujando con el <strong>talón</strong> del pie de adelante.</li></ol>
+    <li>Sube empujando con el <strong>talón</strong> del pie de adelante.</li>
+    <li>Ocho repeticiones, cambia de pierna, y repite el par tres veces en total.</li></ol>
     <lab class="ok">Debes sentir</lab><p>Glúteo y cuádriceps de la pierna de adelante, más exigencia de equilibrio.</p>
     <lab class="err">Error común</lab><p>Inclinarse al frente y convertirlo en una sentadilla normal. <strong>El torso va vertical.</strong></p>
-    <lab>Progresión</lab><p>Peso corporal las primeras dos semanas. Cuando 3×8 se sienta fácil, ponte la mochila cargada. No subas repeticiones.</p>
+    <lab>Progresión</lab><p>Peso corporal las primeras dos semanas. Cuando 3×8 se sienta fácil, ponte la mochila cargada. <strong>No subas repeticiones</strong> — sube peso.</p>
   </div></div>
 
-  <div class="fx c-verde"><div class="fx-h"><span class="fx-n">02</span><b>Plancha Copenhagen</b><span class="fx-d">3 × 15 s por lado</span></div><div class="fx-b">
+  <div class="fx c-verde"><div class="fx-h"><span class="fx-n">02</span><b>Plancha Copenhagen</b><span class="fx-d">3 series × 15 s por lado</span></div><div class="fx-b">
     <svg class="fig" viewBox="0 0 320 150" role="img" aria-label="De costado sobre el codo, con la pierna de arriba apoyada en una silla y la de abajo en el aire">
       <line class="obj" x1="16" y1="132" x2="304" y2="132"/>
       <rect class="obj" x="228" y="92" width="62" height="40"/>
@@ -536,101 +720,103 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <line class="acc" x1="164" y1="86" x2="252" y2="96"/>
       <line class="body" x1="164" y1="86" x2="236" y2="118"/>
       <circle class="jt" cx="164" cy="86" r="4"/><circle class="jt" cx="52" cy="106" r="4"/>
-      <text x="18" y="118">codo</text><text x="232" y="86">silla</text><text x="176" y="132">en el aire</text>
+      <text x="18" y="122">codo</text><text x="234" y="86">silla</text><text x="172" y="134">en el aire</text>
     </svg>
     <p class="figcap">Solo dos apoyos: el codo y la pierna de arriba. La de abajo flota.</p>
     <lab>Cómo</lab>
     <ol><li>Acuéstate de costado en el piso, junto a una silla.</li>
     <li>Apóyate en el codo de abajo, con el hombro justo encima de él.</li>
     <li>Sube la pierna de arriba y apóyala sobre el asiento de la silla.</li>
-    <li>Levanta la cadera y despega del piso la pierna de abajo, hasta quedar en línea recta de la cabeza a los pies.</li></ol>
+    <li>Levanta la cadera y despega del piso la pierna de abajo, hasta quedar en línea recta de la cabeza a los pies.</li>
+    <li>Sostén 15 segundos, baja, y cambia de lado. Tres veces por lado.</li></ol>
     <lab class="ok">Debes sentir</lab><p>El aductor de la pierna de arriba trabajando fuerte para sostenerte.</p>
     <lab>Progresión obligada</lab><p><strong>Empieza apoyando la rodilla en la silla, no el pie, y con 10 segundos.</strong> Es lo mejor que existe para blindar aductores en fútbol, pero es exigente y no perdona apurarla. Pasa al pie solo cuando aguantes 3 × 20 s con la rodilla.</p>
     <lab class="err">Alto inmediato</lab><p>Si sientes cualquier molestia en la ingle o el aductor, para. Quédate en isométricos suaves: aprieta un balón entre las rodillas, 5 × 10 s, y progresa desde ahí durante semanas.</p>
   </div></div>
 
-  <div class="fx c-verde"><div class="fx-h"><span class="fx-n">03</span><b>Puente de isquios a una pierna</b><span class="fx-d">3 × 10 por lado</span></div><div class="fx-b">
+  <div class="fx c-verde"><div class="fx-h"><span class="fx-n">03</span><b>Puente de isquios a una pierna</b><span class="fx-d">3 series × 10 por lado</span></div><div class="fx-b">
     <lab>Cómo</lab>
     <ol><li>Acuéstate boca arriba con los brazos a los costados.</li>
     <li>Dobla una rodilla y apoya ese talón en el piso, cerca del glúteo.</li>
-    <li>La otra pierna la levantas y la mantienes extendida en el aire.</li>
+    <li>La otra pierna la levantas y la mantienes extendida en el aire durante todo el ejercicio.</li>
     <li>Sube la cadera empujando con el <strong>talón</strong> apoyado, hasta alinear rodilla, cadera y hombro.</li>
-    <li>Baja controlado, sin dejar que el glúteo toque el piso.</li></ol>
+    <li>Baja controlado, <strong>sin dejar que el glúteo toque el piso</strong>, y repite.</li></ol>
     <lab class="ok">Debes sentir</lab><p>Isquios y glúteo de la pierna apoyada.</p>
     <lab class="err">Error común</lab><p>Si lo sientes en la espalda baja, estás arqueando en lugar de empujando. <strong>Aprieta el glúteo antes de subir.</strong></p>
   </div></div>
 
-  <div class="fx c-verde"><div class="fx-h"><span class="fx-n">04</span><b>Elevación de talones a una pierna</b><span class="fx-d">3 × 15 por lado</span></div><div class="fx-b">
+  <div class="fx c-verde"><div class="fx-h"><span class="fx-n">04</span><b>Elevación de talones a una pierna</b><span class="fx-d">3 series × 15 por lado</span></div><div class="fx-b">
     <lab>Cómo</lab>
     <ol><li>Párate sobre un pie, sujetándote ligeramente de una pared para el equilibrio.</li>
     <li>Sube el talón lo más alto que puedas, quedándote de puntas.</li>
     <li>Baja despacio, contando dos segundos.</li>
-    <li>Para más rango: párate con el metatarso en el borde de un escalón, dejando el talón colgar.</li></ol>
+    <li>Quince repeticiones, cambia de pie, tres veces en total.</li></ol>
+    <lab>Para más rango</lab><p>Párate con el metatarso en el borde de un escalón, dejando el talón colgar por debajo.</p>
     <lab class="ok">Por qué importa</lab><p>El gemelo y el tendón de Aquiles absorben el impacto de cada zancada. Es el trabajo más aburrido del plan y el que menos se hace.</p>
-    <lab>Progresión</lab><p>Cuando 3×15 se sienta fácil, hazlo con la mochila cargada.</p>
   </div></div>
 
-  <div class="fx c-verde"><div class="fx-h"><span class="fx-n">05</span><b>Paso lateral con banda</b><span class="fx-d">2 × 15 por lado</span></div><div class="fx-b">
+  <div class="fx c-verde"><div class="fx-h"><span class="fx-n">05</span><b>Paso lateral con banda</b><span class="fx-d">2 series × 15 por lado</span></div><div class="fx-b">
     <lab>Cómo</lab>
     <ol><li>Pon la banda alrededor de los tobillos o justo arriba de las rodillas.</li>
     <li>Pies al ancho de hombros, rodillas semiflexionadas y cadera un poco atrás.</li>
     <li>Da quince pasos laterales hacia un lado, manteniendo <strong>tensión constante</strong> en la banda.</li>
-    <li>Quince de regreso al otro lado.</li></ol>
+    <li>Quince de regreso hacia el otro lado. Eso es una serie. Haz dos.</li></ol>
     <lab class="ok">Debes sentir</lab><p>Ardor en la parte lateral de la cadera — ese es el glúteo medio.</p>
     <lab class="err">Error común</lab><p>Dejar que las rodillas se metan hacia dentro, o juntar los pies entre pasos. <strong>La tensión no se suelta nunca.</strong></p>
     <lab>Por qué importa</lab><p>El glúteo medio estabiliza la cadera al correr. Si está flojo, la rodilla se mete hacia dentro — y ahí aparecen los dolores de rodilla al mes tres.</p>
   </div></div>
 
-  <div class="fx c-verde"><div class="fx-h"><span class="fx-n">06</span><b>Rotación externa con banda</b><span class="fx-d">3 × 15 por lado</span></div><div class="fx-b">
+  <div class="fx c-verde"><div class="fx-h"><span class="fx-n">06</span><b>Rotación externa con banda</b><span class="fx-d">3 series × 15 por lado</span></div><div class="fx-b">
     <lab>Cómo</lab>
     <ol><li>Ancla la banda a la altura del codo — en una manija, o pisándola con el pie contrario.</li>
-    <li>Párate de costado, con el brazo más lejano al anclaje.</li>
+    <li>Párate de costado al anclaje, sujetando la banda con el brazo <strong>más lejano</strong> a él.</li>
     <li>Pega el codo a tu costado y dóblalo a 90°, con el antebrazo cruzado frente al abdomen.</li>
     <li><strong>Sin despegar el codo del costado</strong>, gira el antebrazo hacia afuera, abriéndolo como una puerta.</li>
-    <li>Regresa despacio.</li></ol>
-    <lab class="ok">Debes sentir</lab><p>La parte de atrás del hombro trabajando. Es poco peso y mucho control.</p>
-    <lab class="err">Error común</lab><p>Despegar el codo del costado y usar todo el brazo. Si te cuesta, pon una toalla enrollada entre el codo y las costillas.</p>
-    <lab>Por qué</lab><p>Nadar desarrolla mucho pecho y dorsal, y poco los rotadores. Ese desequilibrio es la causa clásica del hombro de nadador.</p>
+    <li>Regresa despacio. Quince veces, cambia de lado, tres series.</li></ol>
+    <lab class="ok">Debes sentir</lab><p>La parte de atrás del hombro trabajando. Es poco esfuerzo y mucho control.</p>
+    <lab class="err">Error común</lab><p>Despegar el codo del costado y usar todo el brazo. Si te cuesta, <strong>pon una toalla enrollada entre el codo y las costillas</strong> y no la dejes caer.</p>
+    <lab>Por qué</lab><p>Nadar desarrolla mucho pecho y dorsal, y poco los rotadores del hombro. Ese desequilibrio es la causa clásica del hombro de nadador.</p>
   </div></div>
 
-  <div class="fx c-verde"><div class="fx-h"><span class="fx-n">07</span><b>Face pull con banda</b><span class="fx-d">3 × 15</span></div><div class="fx-b">
+  <div class="fx c-verde"><div class="fx-h"><span class="fx-n">07</span><b>Face pull con banda</b><span class="fx-d">3 series × 15</span></div><div class="fx-b">
     <lab>Cómo</lab>
     <ol><li>Ancla la banda a la altura de tu cara — una manija alta, un poste, o pásala por encima de una puerta.</li>
     <li>Sujeta un extremo con cada mano, brazos extendidos al frente.</li>
     <li>Jala hacia tu frente <strong>separando las manos</strong>, llevando los codos hacia atrás y ligeramente arriba.</li>
     <li>Termina con las manos a los lados de la cara y los omóplatos juntos.</li>
-    <li>Regresa controlado.</li></ol>
+    <li>Regresa controlado. Quince veces, tres series.</li></ol>
     <lab class="ok">Debes sentir</lab><p>Espalda alta y parte posterior del hombro.</p>
-    <lab class="err">Error común</lab><p>Jalar con los brazos hacia el pecho en lugar de hacia la cara, y encoger los hombros. Los hombros van abajo.</p>
+    <lab class="err">Error común</lab><p>Jalar hacia el pecho en lugar de hacia la cara, y encoger los hombros. <strong>Los hombros van abajo.</strong></p>
   </div></div>
 
   <h4>Core · al final, 5 min</h4>
   <p>Sigue con la rutina que ya haces. Si quieres una referencia concreta, este bloque cubre lo que necesita un triatleta.</p>
   <div class="fx c-verde"><div class="fx-b" style="padding-top:17px">
     <ol style="padding-left:20px">
-      <li style="margin-bottom:9px"><strong>Plancha frontal — 3 × 30–45 s.</strong> Codos bajo los hombros, cuerpo en línea recta de la cabeza a los talones. Aprieta glúteos y mete un poco la pelvis. Si la espalda baja se hunde, para: mejor 20 segundos bien que 60 mal.</li>
-      <li style="margin-bottom:9px"><strong>Plancha lateral — 3 × 30 s por lado.</strong> De costado, apoyado en el codo con el hombro encima de él. Sube la cadera hasta formar una línea recta y no dejes que se caiga.</li>
-      <li style="margin-bottom:9px"><strong>Dead bug — 3 × 10 por lado.</strong> Boca arriba, brazos apuntando al techo y rodillas a 90°. Baja un brazo hacia atrás y la pierna contraria hacia el piso, <strong>sin que la espalda baja se despegue</strong>. Regresa y alterna.</li>
+      <li style="margin-bottom:10px"><strong>Plancha frontal — 3 series de 30 a 45 s.</strong> Codos bajo los hombros, cuerpo en línea recta de la cabeza a los talones. Aprieta glúteos y mete un poco la pelvis. Si la espalda baja se hunde, para: mejor 20 segundos bien que 60 mal.</li>
+      <li style="margin-bottom:10px"><strong>Plancha lateral — 3 × 30 s por lado.</strong> De costado, apoyado en el codo con el hombro justo encima. Sube la cadera hasta formar una línea recta y no dejes que se caiga hacia el piso.</li>
+      <li style="margin-bottom:10px"><strong>Dead bug — 3 × 10 por lado.</strong> Boca arriba, brazos apuntando al techo y rodillas dobladas a 90°. Baja un brazo hacia atrás y la pierna contraria hacia el piso, <strong>sin que la espalda baja se despegue</strong>. Regresa y alterna.</li>
       <li><strong>Bird dog — 3 × 10 por lado.</strong> En cuatro apoyos, extiende un brazo al frente y la pierna contraria hacia atrás a la vez, manteniendo la cadera nivelada. Sostén dos segundos arriba.</li>
     </ol>
   </div></div>
 
+  <!-- ESTIRAMIENTO POST FUERZA -->
   <h3 style="border-bottom-color:var(--pisada)">Fuerza · después <span class="sm">5 min</span></h3>
   <p class="sub"><strong>Espera cinco minutos</strong> tras la última serie antes de empezar. Va dirigido a lo que acabas de cargar: cadera, isquios y gemelo.</p>
   <div class="fx c-pisada"><div class="fx-b" style="padding-top:17px">
     <ol style="padding-left:20px">
-      <li style="margin-bottom:9px"><strong>Cuádriceps de pie — 30 s por lado.</strong> Va primero porque la búlgara castiga directo esa zona. Rodillas juntas, pelvis metida, rodilla al piso.</li>
-      <li style="margin-bottom:9px"><strong>Flexor de cadera en zancada — 45 s por lado.</strong> Pelvis metida, glúteo apretado, cadera adelante. En ese orden.</li>
-      <li style="margin-bottom:9px"><strong>Isquios tumbado con banda — 45 s por lado.</strong> Boca arriba, banda en la planta del pie, pierna arriba lo más recta que puedas. <strong>La otra pierna se queda extendida y pegada al piso.</strong> Tumbado porque acabas de trabajar isquios y así no compensas con la espalda.</li>
-      <li style="margin-bottom:9px"><strong>Glúteo en figura 4 — 45 s por lado.</strong> Después de la búlgara y el puente, esa zona lo agradece.</li>
-      <li style="margin-bottom:9px"><strong>Aductores en mariposa — 45 s.</strong> <strong>Suave.</strong> Acabas de hacer Copenhagen y esa zona ya trabajó al límite. Aquí buscas soltar, no ganar rango.</li>
-      <li style="margin-bottom:9px"><strong>Gemelo — 30 s por lado.</strong> Rodilla de atrás recta, talón pegado.</li>
-      <li><strong>Sóleo — 30 s por lado.</strong> Rodilla de atrás doblada, talón pegado.</li>
+      <li style="margin-bottom:10px"><strong>Cuádriceps de pie — 30 s por lado.</strong> Va primero porque la búlgara castiga directo esa zona. Rodillas juntas, pelvis metida, rodilla apuntando al piso.</li>
+      <li style="margin-bottom:10px"><strong>Flexor de cadera en zancada — 45 s por lado.</strong> Pelvis metida, glúteo apretado, cadera adelante. En ese orden.</li>
+      <li style="margin-bottom:10px"><strong>Isquios tumbado con banda — 45 s por lado.</strong> Boca arriba, banda en la planta del pie, pierna arriba lo más recta que puedas. <strong>La otra pierna se queda extendida y pegada al piso.</strong> Tumbado porque acabas de trabajar isquios y así no compensas con la espalda.</li>
+      <li style="margin-bottom:10px"><strong>Glúteo en figura 4 — 45 s por lado.</strong> Después de la búlgara y el puente, esa zona lo agradece.</li>
+      <li style="margin-bottom:10px"><strong>Aductores en mariposa — 45 s. Suave.</strong> Acabas de hacer Copenhagen y esa zona ya trabajó al límite. Aquí buscas soltar, no ganar rango.</li>
+      <li style="margin-bottom:10px"><strong>Gemelo — 30 s por lado.</strong> Rodilla de atrás recta, talón pegado al piso.</li>
+      <li><strong>Sóleo — 30 s por lado.</strong> Rodilla de atrás doblada, talón pegado al piso.</li>
     </ol>
     <p class="why">Como vienes de nadar, si ese día no lo hiciste añade al final el pectoral en marco de puerta, 45 s por lado.</p>
   </div></div>
 
-  <!-- ══ MOVILIDAD ══ -->
+  <!-- MOVILIDAD -->
   <h3 style="border-bottom-color:var(--verde)">Movilidad <span class="sm">domingo · 15 min · obligatoria</span></h3>
   <p class="sub">Tu flexibilidad es el punto débil declarado, así que esto tiene su propio espacio. Va el domingo al terminar de correr, y una segunda opcional el martes si no hiciste bici. Tensión, nunca dolor punzante.</p>
 
@@ -639,7 +825,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     <ol><li>Pies al ancho de hombros, puntas ligeramente hacia fuera.</li>
     <li>Baja como si te fueras a sentar en el piso, lo más profundo que puedas, <strong>con los talones pegados al suelo</strong>.</li>
     <li>Abajo, mete los brazos por dentro de las rodillas y apoya los codos contra la cara interna de estas, empujándolas hacia fuera.</li>
-    <li>Pecho arriba, espalda lo más recta posible.</li></ol>
+    <li>Pecho arriba, espalda lo más recta posible. Sostén 60 segundos, levántate, y repite.</li></ol>
     <lab>Si no llegas</lab><p>Sujétate del marco de una puerta con las manos para bajar controlado, o pon un libro delgado bajo los talones.</p>
     <lab class="ok">Por qué importa</lab><p><strong>Es el ejercicio que más rinde por minuto para ti:</strong> abre cadera, tobillo y espalda baja al mismo tiempo.</p>
   </div></div>
@@ -654,9 +840,9 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <circle class="jt" cx="112" cy="48" r="4"/><circle class="jt" cx="192" cy="112" r="4"/>
       <path class="obj" d="M112 68 L132 68 L132 48" stroke-width="1.5"/>
       <path class="obj" d="M172 112 L172 132 L192 132" stroke-width="1.5"/>
-      <text x="120" y="36">pierna de adelante</text>
-      <text x="200" y="150">pierna</text><text x="200" y="163">de atrás</text>
-      <text x="52" y="116">cadera</text>
+      <text x="118" y="36">pierna de adelante</text>
+      <text x="202" y="150">pierna</text><text x="202" y="163">de atrás</text>
+      <text x="48" y="116">cadera</text>
     </svg>
     <p class="figcap">Visto desde arriba. Cada pierna forma un ángulo recto.</p>
     <lab>Cómo</lab>
@@ -664,7 +850,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     <li><strong>Pierna de adelante:</strong> muslo apuntando al frente, rodilla doblada a 90°, espinilla cruzando delante de ti.</li>
     <li><strong>Pierna de atrás:</strong> muslo apuntando al costado, rodilla doblada a 90°, espinilla hacia atrás.</li>
     <li>Siéntate derecho sobre los dos glúteos, espalda recta.</li>
-    <li>Lleva el pecho hacia la pierna de adelante.</li>
+    <li>Lleva el pecho hacia la pierna de adelante. Sostén 60 s.</li>
     <li>Para cambiar de lado, levanta las rodillas y gíralas al otro lado sin apoyar las manos, si puedes.</li></ol>
     <lab class="ok">Debes sentir</lab><p>El glúteo de la pierna de adelante y la cara interna de la de atrás.</p>
     <lab class="ok">Por qué importa</lab><p>Trabaja la rotación de cadera, que es lo primero que se pierde con bici y fútbol.</p>
@@ -675,16 +861,17 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     <ol><li>Da un paso largo al frente y baja en zancada profunda, rodilla de atrás casi tocando el piso.</li>
     <li>Apoya en el suelo la mano <strong>del mismo lado que la pierna de adelante</strong>, por dentro de ese pie.</li>
     <li>Gira el torso abriendo el otro brazo hacia el techo, siguiendo la mano con la mirada.</li>
-    <li>Regresa y repite. Ocho repeticiones lentas por lado.</li></ol>
+    <li>Regresa la mano al piso y repite. Ocho repeticiones lentas, después cambia de pierna.</li></ol>
+    <lab>Ojo</lab><p><strong>Este es movimiento, no sostenido.</strong> No te quedas quieto abajo.</p>
     <lab class="ok">Por qué importa</lab><p>Combina flexor de cadera y giro torácico — las dos cosas que la bici te cierra.</p>
   </div></div>
 
   <div class="fx c-verde"><div class="fx-h"><span class="fx-n">04</span><b>Paloma</b><span class="fx-d">60 s por lado</span></div><div class="fx-b">
     <lab>Cómo</lab>
-    <ol><li>Empieza en cuatro apoyos.</li>
+    <ol><li>Empieza en cuatro apoyos: manos y rodillas en el piso.</li>
     <li>Lleva una rodilla hacia adelante, hacia la mano del mismo lado, y deja la espinilla cruzada frente a ti.</li>
-    <li>La otra pierna se extiende hacia atrás, empeine en el piso y cadera mirando al frente.</li>
-    <li>Baja el torso sobre la pierna de adelante, apoyándote en los antebrazos.</li></ol>
+    <li>La otra pierna se extiende hacia atrás, con el empeine en el piso y la cadera mirando al frente.</li>
+    <li>Baja el torso sobre la pierna de adelante, apoyándote en los antebrazos. Sostén 60 s.</li></ol>
     <lab>Ajuste</lab><p>Entre más paralela quede la espinilla al frente, más intenso. Si la cadera se ladea mucho, pon un cojín bajo el glúteo del lado doblado.</p>
     <lab class="ok">Debes sentir</lab><p>Profundo en el glúteo de la pierna de adelante.</p>
   </div></div>
@@ -693,7 +880,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     <lab>Cómo</lab>
     <ol><li>Ponte en cuatro apoyos y baja a los antebrazos.</li>
     <li>Abre las rodillas hacia los lados poco a poco.</li>
-    <li>Mantén los tobillos alineados con las rodillas y las espinillas paralelas entre sí, plantas de los pies mirando hacia fuera.</li>
+    <li>Mantén los tobillos alineados con las rodillas y las espinillas paralelas entre sí, con las plantas de los pies mirando hacia fuera.</li>
     <li>Deja caer el peso hacia atrás <strong>muy despacio</strong>.</li></ol>
     <lab class="err">Cuidado</lab><p><strong>Este llega directo al aductor.</strong> Entra despacio, no busques rango, y sal al primer signo de molestia. Es de los que se pasan de fuerza con facilidad.</p>
   </div></div>
@@ -701,7 +888,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
   <div class="fx c-verde"><div class="fx-h"><span class="fx-n">06</span><b>Isquios tumbado con banda</b><span class="fx-d">60 s por lado</span></div><div class="fx-b">
     <lab>Cómo</lab>
     <ol><li>Boca arriba con las dos piernas extendidas.</li>
-    <li>Pasa una banda, cinturón o toalla por la planta de un pie y sujeta los dos extremos.</li>
+    <li>Pasa una banda, cinturón o toalla por la planta de un pie y sujeta los dos extremos con las manos.</li>
     <li>Levanta esa pierna hacia el techo lo más recta que puedas, jalando suave con la banda.</li>
     <li><strong>La otra pierna se queda extendida y pegada al piso.</strong> Si se dobla o se levanta, pierdes el estiramiento.</li></ol>
     <lab class="ok">Por qué tumbado</lab><p>No puedes redondear la espalda para compensar, que es el error que anula el estiramiento de pie.</p>
@@ -712,22 +899,22 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     <ol><li>En cuatro apoyos, manos bajo los hombros y rodillas bajo la cadera.</li>
     <li><strong>Gato:</strong> exhala y redondea la espalda hacia el techo, barbilla al pecho y coxis hacia dentro.</li>
     <li><strong>Camello:</strong> inhala y arquea la espalda hacia el piso, subiendo el pecho y la mirada.</li>
-    <li>Alterna despacio, moviéndote vértebra por vértebra.</li></ol>
+    <li>Alterna despacio, moviéndote vértebra por vértebra. Diez ciclos completos.</li></ol>
   </div></div>
 
   <div class="fx c-verde"><div class="fx-h"><span class="fx-n">08</span><b>Pectoral en marco de puerta</b><span class="fx-d">45 s por lado</span></div><div class="fx-b">
     <p>Antebrazo apoyado en el marco, codo a 90° a la altura del hombro. Paso adelante con el pie del mismo lado y gira el pecho hacia el lado contrario. No encojas el hombro.</p>
   </div></div>
 
-  <!-- ══ RODILLO ══ -->
+  <!-- RODILLO -->
   <h3 style="border-bottom-color:var(--off)">Rodillo de espuma <span class="sm">martes y sábado · 5 min</span></h3>
   <p class="sub">Te acuestas encima apoyando un músculo y ruedas tu propio cuerpo; tu peso hace la presión. Sirve para dos cosas: te deja moverte con más rango durante diez o quince minutos, y baja la sensación de tirantez. No rompe adherencias ni saca ácido láctico — el mecanismo es nervioso.</p>
   <div class="fx"><div class="fx-b" style="padding-top:17px">
-    <lab>Dónde sí</lab>
+    <lab>Dónde sí · un minuto en cada zona</lab>
     <ol style="padding-left:20px">
       <li><strong>Cuádriceps</strong> — boca abajo, rodillo bajo el muslo, apoyado en los antebrazos.</li>
       <li><strong>Glúteo</strong> — sentado encima, una pierna cruzada sobre la rodilla contraria.</li>
-      <li><strong>Banda lateral del muslo</strong> — de costado, rodillo en la parte externa.</li>
+      <li><strong>Banda lateral del muslo</strong> — de costado, rodillo en la parte externa del muslo.</li>
       <li><strong>Gemelo</strong> — sentado, pierna estirada, rodillo bajo la pantorrilla.</li>
     </ol>
     <lab>Cómo</lab>
@@ -735,42 +922,271 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <li><strong>Lento:</strong> dos o tres centímetros por segundo, no de arriba abajo rápido.</li>
       <li>Donde encuentres un punto sensible, <strong>quédate ahí 20 o 30 segundos respirando.</strong> Ahí está el trabajo.</li>
       <li>Si aguantas la respiración, te estás pasando. Apóyate más con las manos para quitarle peso.</li>
-      <li><strong>Progresión de textura:</strong> las primeras dos o tres semanas solo la franja lisa del centro. Cuando ya no duela, gira el rodillo y usa las crestas, y después los bloques.</li>
+      <li><strong>Progresión de textura:</strong> las primeras dos o tres semanas usa solo la franja lisa del centro. Cuando ya no duela, gira el rodillo y usa las crestas, y después los bloques.</li>
     </ol>
   </div></div>
-  <div class="flag rojo"><b>Dónde nunca</b><strong>El aductor con presión fuerte.</strong> Ahí solo masaje manual suave y estiramiento: la zona alta del muslo interno tiene estructuras que no quieres comprimir, y en esa postura no puedes graduar el peso. Tampoco sobre espalda baja, articulaciones ni huesos. Solo músculo.</div>
+  <div class="flag rojo"><b>Dónde nunca</b><strong>El aductor con presión fuerte.</strong> Ahí solo masaje manual suave y estiramiento: la zona alta del muslo interno tiene estructuras que no quieres comprimir, y en esa postura no puedes graduar el peso. Tampoco sobre espalda baja, articulaciones ni huesos. <strong>Solo músculo.</strong></div>
 </div>
 
 <!-- ═══════════ PARTE 2 ═══════════ -->
 <div class="parte" id="p2">
   <p class="parte-n">Parte 2</p>
+  <h2>Las sesiones</h2>
+  <p class="lead">Cada sesión, escrita completa. Donde la sesión cambia según el bloque, verás recuadros separados — <strong>lee solo el de tu bloque actual</strong>, que hoy es el bloque 1.</p>
+
+  <!-- NATACIÓN -->
+  <h3 style="border-bottom-color:var(--agua)">Natación</h3>
+  <p class="sub">Tres sesiones fijas, lunes, miércoles y viernes de 7:15 a 8:00 pm. <strong>Sigue lo que indique tu maestra</strong> — ella te ve nadar y eso vale más que cualquier serie escrita. Lo de abajo es tu respaldo si algún día nadas solo, y las dos cosas que sí conviene pedirle.</p>
+
+  <div class="fx c-agua"><div class="fx-h"><span class="fx-n">LUN</span><b>Aerobio y técnica</b><span class="fx-d">45 min · ≈ 1.400 m</span></div><div class="fx-b">
+    <lab>Si nadas solo</lab>
+    <ol>
+      <li><strong>200 m suaves</strong> para entrar en calor. Sin cronómetro.</li>
+      <li><strong>4 × 50 m de técnica.</strong> Descanso libre entre cada uno. Los ejercicios: nadar con un solo brazo, con el puño cerrado, o exagerando el agarre del agua.</li>
+      <li><strong>8 × 100 m cómodos</strong>, con 20 segundos de descanso entre cada uno.</li>
+      <li><strong>200 m sueltos</strong> para bajar.</li>
+    </ol>
+    <lab class="ok">Desde el bloque 2, añade esto</lab>
+    <p>En dos de los ocho 100, practica <strong>orientarte</strong>: levanta la vista cada 6 brazadas sin cortar el ritmo, como si buscaras una boya. Es el gesto que vas a necesitar en agua abierta desde octubre, y practicarlo en alberca es gratis.</p>
+  </div></div>
+
+  <div class="fx c-agua"><div class="fx-h"><span class="fx-n">MIÉ</span><b>Brazos · día de partido</b><span class="fx-d">45 min · ≈ 1.300 m</span></div><div class="fx-b">
+    <lab class="err">Lo único que sí debes pedirle a tu maestra</lab>
+    <p><strong>Hoy, cero patada y cero aletas.</strong> Explícale que juegas fútbol una hora después. Cualquier maestra lo entiende, y es la única modificación de tu natación que de verdad importa.</p>
+    <lab>Si nadas solo</lab>
+    <ol>
+      <li><strong>300 m suaves.</strong></li>
+      <li><strong>6 × 100 m con pull buoy</strong> entre los muslos, 20 segundos de descanso.</li>
+      <li><strong>4 × 50 m suaves</strong>, brazada larga.</li>
+      <li><strong>200 m relajados.</strong></li>
+    </ol>
+    <lab class="ok">Por qué</lab>
+    <p>Llegar al partido con cuádriceps e isquios cansados es exactamente como se producen los tirones de aductor. El pull buoy te sostiene las piernas para que no trabajen.</p>
+  </div></div>
+
+  <div class="fx c-agua"><div class="fx-h"><span class="fx-n">VIE</span><b>Tu día fuerte de agua</b><span class="fx-d">45 min · ≈ 1.800 m</span></div><div class="fx-b">
+    <lab>Si nadas solo</lab>
+    <ol>
+      <li><strong>400 m progresivos</strong> — empiezas suave y terminas ya activado.</li>
+      <li><strong>8 × 50 m fuertes</strong>, con 30 segundos de descanso.</li>
+      <li><strong>4 × 200 m a ritmo sostenido</strong>, con 30 segundos de descanso. <strong>Que el cuarto no sea más lento que el primero</strong> — si lo es, empezaste demasiado rápido.</li>
+      <li><strong>200 m suaves.</strong></li>
+    </ol>
+    <lab class="ok">Aquí sí</lab><p>Patada y aletas sin problema. Tienes el fin de semana para recuperar antes del siguiente partido.</p>
+  </div></div>
+
+  <div class="fx c-agua"><div class="fx-h"><span class="fx-n">MENSUAL</span><b>Test de 1.500 continuos</b><span class="fx-d">último viernes del mes</span></div><div class="fx-b">
+    <lab>Cómo</lab>
+    <ol>
+      <li>Sustituye la sesión normal del viernes por esta.</li>
+      <li>Calienta 200 m suaves.</li>
+      <li>Nada <strong>1.500 metros sin parar</strong>, tomando el tiempo.</li>
+      <li><strong>Toca la pared y gira sin empujarte</strong> con los pies.</li>
+      <li>Apunta el tiempo. Enfría 200 m.</li>
+    </ol>
+    <lab class="ok">Por qué sin empujarte</lab>
+    <p>En agua abierta no hay paredes. Esos 60 microdescansos que te regala la alberca cada 25 m son medio segundo de reinicio cada uno — quitarlos convierte el test en algo parecido al esfuerzo real de la carrera.</p>
+    <lab class="ok">Para qué sirve</lab>
+    <p><strong>Es tu única referencia objetiva de progreso en natación.</strong> Nadar por series no te dice cómo vas a estar en el minuto 28 de un nado continuo. Compara el tiempo mes con mes.</p>
+  </div></div>
+
+  <div class="fx c-agua"><div class="fx-h"><span class="fx-n">AA</span><b>Agua abierta</b><span class="fx-d">desde la semana 12 · mínimo 4 sesiones</span></div><div class="fx-b">
+    <lab>Reglas que no se negocian</lab>
+    <ul>
+      <li><strong>Nunca solo.</strong> Sin excepción, ni en Chapala.</li>
+      <li><strong>Avisa al grupo que eres diabético tipo 1</strong> antes de entrar. Cada vez.</li>
+      <li><strong>Boya de arrastre naranja</strong> atada a la cintura, gorra de color chillón, goggles oscuros.</li>
+      <li><strong>Nunca en lagunas, esteros ni bocas de río</strong> del Pacífico.</li>
+    </ul>
+    <lab>Progresión</lab>
+    <ol>
+      <li><strong>Primera sesión — 400 a 600 m.</strong> Objetivo único: perder el miedo. No mides nada.</li>
+      <li><strong>Segunda — 800 m.</strong> Practicando orientación: vista arriba cada 6 brazadas.</li>
+      <li><strong>Tercera — 1.200 m.</strong></li>
+      <li><strong>Cuarta — 1.500 m continuos</strong>, la distancia de carrera.</li>
+    </ol>
+    <lab>Si te agitas</lab>
+    <p>Métete al agua antes de arrancar, sumerge la cara y exhala despacio unas veces. Arranca suave. Si el pulso se dispara, <strong>cámbiate a pecho unas brazadas</strong> hasta calmarte. Se ve menos elegante y funciona.</p>
+    <lab class="err">En presa o lago</lab>
+    <p>No nades con heridas abiertas, no tragues agua, báñate al salir, y evita los días posteriores a una tormenta.</p>
+  </div></div>
+
+  <!-- BICI -->
+  <h3 style="border-bottom-color:var(--rueda)">Bicicleta</h3>
+
+  <div class="fx c-rueda"><div class="fx-h"><span class="fx-n">MAR</span><b>Bici de calidad</b><span class="fx-d">50 a 75 min</span></div><div class="fx-b">
+    <p><strong>Es el único día negociable de la semana.</strong> Si llegas cansado del fin de semana o de los partidos, no se hace y no pasa nada. Este día existe para sumar cuando sobra energía, no para cumplir.</p>
+    <lab>Estructura, siempre igual</lab>
+    <ol>
+      <li><strong>15 min de calentamiento</strong> — plato chico, cadencia 90, sin forzar.</li>
+      <li><strong>La serie</strong> — cambia según el bloque, ver abajo.</li>
+      <li><strong>10 min suaves</strong> para bajar.</li>
+    </ol>
+
+    <div class="bloq ahora">
+      <h6>Bloques 1 y 2 · agosto a noviembre <span class="tag">ESTÁS AQUÍ</span></h6>
+      <p><strong>5 × 3 min fuerte, con 3 min suaves entre cada uno.</strong></p>
+      <p style="margin-top:6px;font-size:14.5px;color:var(--t70)">Fuerte = frases de una o dos palabras. Suave = recuperas y puedes platicar. Son 30 min de serie; con el calentamiento y la bajada, 55 min en total. Si tu sesión de esa semana es de 50 min, haz <strong>4 series en lugar de 5</strong>.</p>
+    </div>
+
+    <div class="bloq">
+      <h6>Bloques 3 y 4 · diciembre y enero</h6>
+      <p><strong>4 o 5 × 5 min a umbral, con 3 min suaves entre cada uno.</strong></p>
+      <p style="margin-top:6px;font-size:14.5px;color:var(--t70)">Umbral = frases de tres o cuatro palabras. Es menos intenso que "fuerte" pero dura más. Empieza con 4 y sube a 5 cuando lo domines.</p>
+    </div>
+
+    <div class="bloq">
+      <h6>Bloque 5 · febrero</h6>
+      <p><strong>4 × 2 a 3 min fuerte, con 3 min suaves.</strong></p>
+      <p style="margin-top:6px;font-size:14.5px;color:var(--t70)">Volumen bajo, intensidad corta. Es para mantener la chispa sin acumular fatiga antes de la carrera.</p>
+    </div>
+
+    <lab class="err">La regla que se ignora</lab>
+    <p><strong>Cadencia 85–95 también en los intervalos.</strong> Cuando vayas fuerte, no metas un plato duro para pedalear despacio y pesado. Sube el esfuerzo <strong>girando más rápido</strong>, no empujando más. Eso es lo que protege tus cuádriceps para el trote del sábado.</p>
+  </div></div>
+
+  <div class="fx c-rueda"><div class="fx-h"><span class="fx-n">SÁB</span><b>Bici larga</b><span class="fx-d">75 min → 2:30</span></div><div class="fx-b">
+    <p><strong>La sesión más importante de todo el plan.</strong> No se cancela: si el sábado se complica, se mueve al domingo y se intercambia con la carrera.</p>
+    <lab>Antes de salir</lab>
+    <ol>
+      <li>Presiones: 78 psi atrás, 90 adelante.</li>
+      <li>Un bidón con Gatorade, otro con agua simple.</li>
+      <li>Bloqueador 20 minutos antes: nuca, dorso de las manos, parte posterior de los brazos.</li>
+      <li>Glucosa de rescate en el bolsillo del maillot, alcanzable sin bajarte.</li>
+      <li>Tenis y calcetines secos en el coche, para el trote.</li>
+      <li>Avisa a alguien tu ruta y hora estimada de regreso.</li>
+    </ol>
+    <lab>Durante</lab>
+    <ul>
+      <li><strong>Ritmo de conversación todo el rato.</strong> Frases completas. Si no puedes, vas rápido.</li>
+      <li><strong>Cadencia 85–95.</strong></li>
+      <li><strong>Terreno plano.</strong> Con 42×26 como marcha más suave, cualquier subida te obliga a moler — y eso es lo que estamos evitando.</li>
+      <li><strong>Bebe cada 15 minutos</strong> aunque no tengas sed. En calor la sed llega tarde.</li>
+      <li>Arriba de 75 min: <strong>30 a 60 g de carbohidrato por hora.</strong></li>
+    </ul>
+
+    <div class="bloq">
+      <h6>Desde el bloque 3 · a partir del 23 de noviembre</h6>
+      <p>La bici larga deja de ser solo cómoda y lleva <strong>tramos fuertes dentro</strong>: por ejemplo <span class="mono">2:30 con 3×12' fuerte</span> significa dos horas y media de salida, con tres tramos de doce minutos a esfuerzo fuerte repartidos en medio, y el resto suave.</p>
+    </div>
+  </div></div>
+
+  <div class="fx c-rueda"><div class="fx-h"><span class="fx-n">SÁB</span><b>Trote de transición</b><span class="fx-d">10 → 30 min, justo al bajar</span></div><div class="fx-b">
+    <lab>Cómo</lab>
+    <ol>
+      <li>Al terminar la bici, <strong>cámbiate tenis y calcetines secos</strong> lo más rápido que puedas.</li>
+      <li>Sal a trotar de inmediato, sin sentarte ni descansar.</li>
+      <li>Ritmo <strong>7:45 a 8:30 min/km</strong> — más lento que tu carrera del domingo.</li>
+      <li>Los minutos de la tabla de la semana, y ya.</li>
+    </ol>
+    <lab class="ok">Qué vas a sentir</lab>
+    <p><strong>Piernas de madera:</strong> rigidez, torpeza, sensación de no avanzar. <strong>Es normal, le pasa a todos, y se va con repetición.</strong> Esa sensación es exactamente lo que estás entrenando a tolerar — es lo que decide un triatlón olímpico.</p>
+    <lab class="err">No lo saltes</lab>
+    <p>Aunque sea incómodo y aunque solo sean diez minutos. Es la sesión que más te prepara para febrero, y ninguna otra la sustituye.</p>
+  </div></div>
+
+  <!-- CARRERA -->
+  <h3 style="border-bottom-color:var(--pisada)">Carrera</h3>
+
+  <div class="fx c-pisada"><div class="fx-h"><span class="fx-n">DOM</span><b>Carrera larga</b><span class="fx-d">5 → 15 km</span></div><div class="fx-b">
+    <lab>Cómo</lab>
+    <ol>
+      <li><strong>Calentamiento de carrera, 8 min.</strong> Los seis movimientos de la Parte 1. No lo saltes.</li>
+      <li>Corre los kilómetros de la tabla a <strong>7:15 – 8:00 min/km</strong>.</li>
+      <li>Estiramiento de carrera, 8 min.</li>
+      <li>Movilidad completa, 15 min.</li>
+    </ol>
+    <lab class="ok">La única regla</lab>
+    <p><strong>Debes poder hablar en frases completas de principio a fin.</strong> Si te falta el aire para terminar una oración, vas rápido y hay que bajarle.</p>
+    <p>La velocidad ya te la está dando el fútbol de sobra. Lo que no tienes es base aerobia, y eso solo se construye lento.</p>
+    <lab>Detalles prácticos</lab>
+    <ul>
+      <li><strong>Agua contigo desde los 8 km</strong> en adelante.</li>
+      <li>Si corres de noche: chaleco reflectante o ropa clara, y luz encendida.</li>
+      <li>Estás a 1.560 m de altitud: tu ritmo va a ser más lento que a nivel del mar con el mismo esfuerzo. <strong>No te compares con nadie ni con ninguna tabla de internet.</strong></li>
+    </ul>
+  </div></div>
+
+  <div class="fx c-pisada"><div class="fx-h"><span class="fx-n">LUN</span><b>Corrida corta</b><span class="fx-d">desde la semana 8 · 20 a 40 min</span></div><div class="fx-b">
+    <lab>Cómo</lab>
+    <ol>
+      <li>Al salir de nadar, calentamiento de carrera de 8 min.</li>
+      <li>Corre los minutos de la tabla a <strong>7:15 – 7:45 min/km</strong>. Fácil, sin buscar nada.</li>
+      <li>Estiramiento de carrera, 8 min.</li>
+      <li>Después la fuerza, y su estiramiento.</li>
+    </ol>
+    <lab class="ok">Por qué el lunes y no el martes</lab>
+    <p>El lunes vienes de dos días de carga baja. El martes necesitas piernas frescas para la bici de calidad. Si mueves esta corrida al martes, acabas con dos sesiones fuertes seguidas y llegas al miércoles vacío — con partido.</p>
+
+    <div class="bloq">
+      <h6>Desde el bloque 3 · a partir del 23 de noviembre</h6>
+      <p>Una vez por semana, <strong>20 de esos minutos van a ritmo de umbral</strong> — 6:15 a 6:40 min/km, frases de tres o cuatro palabras. El resto de la corrida sigue fácil.</p>
+      <p style="margin-top:6px;font-size:14.5px;color:var(--t70)">Se lee así en la tabla: <span class="mono">40 (20' umbral)</span> = corrida de 40 minutos, de los cuales 20 a umbral.</p>
+    </div>
+  </div></div>
+
+  <!-- SIMULACIONES -->
+  <h3 style="border-bottom-color:var(--agua)">Las simulaciones <span class="sm">enero · las dos más importantes del plan</span></h3>
+
+  <div class="fx c-agua"><div class="fx-h"><span class="fx-n">S22</span><b>Simulación 1 · reconocimiento</b><span class="fx-d">sábado 4 de enero</span></div><div class="fx-b">
+    <lab>Qué haces</lab>
+    <p><strong>1.5 km nadando + 40 km en bici + 5 km corriendo</strong>, encadenados.</p>
+    <lab>Objetivo</lab>
+    <p><strong>Sin ritmo objetivo.</strong> No vas a medir tiempo ni a competir contigo mismo. Solo quieres conocer cómo se siente el encadenado completo y practicar las transiciones.</p>
+    <lab>Practica las transiciones</lab>
+    <ol>
+      <li><strong>Del agua a la bici:</strong> goggles y gorra en la mano, <strong>casco puesto ANTES de tocar la bici</strong> — es regla de competencia y descalifican por eso. Después calzado, y sales caminando hasta la línea de montada.</li>
+      <li><strong>De la bici a la carrera:</strong> te bajas antes de la línea, cuelgas la bici, y <strong>el casco sale DESPUÉS</strong> de colgarla. Cambio de calzado y a correr.</li>
+      <li>Móntalo dos o tres veces hasta que salga fluido.</li>
+    </ol>
+  </div></div>
+
+  <div class="fx c-agua"><div class="fx-h"><span class="fx-n">S24</span><b>Simulación 2 · ensayo general</b><span class="fx-d">sábado 18 de enero, de mañana</span></div><div class="fx-b">
+    <lab>Qué haces</lab>
+    <p><strong>Distancia completa: 1.5 + 40 + 10</strong>, a ritmo objetivo.</p>
+    <lab>Qué ensayas</lab>
+    <ul>
+      <li><strong>De mañana</strong>, a la hora de la carrera. No en la tarde.</li>
+      <li>El desayuno exacto que vas a comer en febrero, tres horas antes.</li>
+      <li>La ropa completa: traje o shorts de tri, calcetines, todo.</li>
+      <li>La nutrición completa de la bici.</li>
+      <li>Ponerte los calcetines con los pies mojados — mójatelos a propósito.</li>
+    </ul>
+    <lab class="ok">Para qué sirve de verdad</lab>
+    <p><strong>Lo que falle aquí es lo que arreglas a tiempo.</strong> Es tu único ensayo real, y para ti además es donde ves cómo responde tu glucosa a la distancia completa en las condiciones de la carrera.</p>
+  </div></div>
+</div>
+
+<!-- ═══════════ PARTE 3 ═══════════ -->
+<div class="parte" id="p3">
+  <p class="parte-n">Parte 3</p>
   <h2>La semana, día por día</h2>
-  <p class="lead">Cada día en orden, de arriba abajo. Las duraciones y distancias salen de la tabla de la Parte 3, según la semana en que vayas.</p>
+  <p class="lead">Cada día en orden, de arriba abajo. Las duraciones y distancias salen de la tabla de la Parte 4, según la semana en que vayas.</p>
 
   <div class="dia d-agua">
     <div class="dia-h"><b>Lunes</b><span>Natación + fuerza</span></div>
     <p class="dia-sub">Día de técnica y aerobio. El más ligero de la semana.</p>
     <ol>
       <li><b>Calentamiento en seco</b><span class="q">4 min</span><em>Círculos de brazos · rotación torácica · separaciones con banda · movilidad de cuello.</em></li>
-      <li><b>Natación</b><span class="q">7:15 – 8:00 pm</span><em>Lo que indique tu maestra. Si nadas solo: 200 suave, 4×50 técnica, 8×100 cómodo con 20 s de descanso, 200 suelto.</em></li>
+      <li><b>Natación</b><span class="q">7:15 – 8:00 pm</span><em>Lo que indique tu maestra.</em></li>
       <li><b>Estiramiento de nado</b><span class="q">3 min</span><em>Pectoral · dorsal · tríceps.</em></li>
-      <li><b>Corrida corta</b><span class="q">desde la semana 9</span><em>20 a 40 min fácil a 7:15–7:45 min/km, con su calentamiento y estiramiento de carrera.</em></li>
-      <li><b>Fuerza</b><span class="q">20 min</span><em>Los siete ejercicios más core.</em></li>
-      <li><b>Estiramiento de fuerza</b><span class="q">5 min</span><em>Espera 5 min tras la última serie.</em></li>
+      <li><b>Corrida corta</b><span class="q">desde la semana 8</span><em>Con su calentamiento de carrera de 8 min y su estiramiento de 8 min.</em></li>
+      <li><b>Fuerza</b><span class="q">20 min</span><em>Los siete ejercicios en orden, más core 5 min.</em></li>
+      <li><b>Estiramiento de fuerza</b><span class="q">5 min</span><em>Espera 5 minutos tras la última serie antes de empezar.</em></li>
     </ol>
   </div>
 
   <div class="dia d-rueda">
     <div class="dia-h"><b>Martes</b><span>Bici de calidad — o descanso</span></div>
-    <p class="dia-sub">El único día negociable de la semana. Si llegas cansado del fin de semana, no se hace y no pasa nada.</p>
+    <p class="dia-sub">El único día negociable. Si llegas cansado del fin de semana, no se hace y no pasa nada.</p>
     <ol>
-      <li><b>Revisión</b><span class="q">30 s</span><em>78 psi atrás, 90 adelante. Que los frenos muerdan.</em></li>
-      <li><b>Calentamiento rodando</b><span class="q">15 min</span><em>Plato ligero, cadencia 90, sin forzar.</em></li>
-      <li><b>Serie</b><em>Bloques 1–2: 5 × 3 min fuerte con 3 min suaves. Bloques 3–4: 4–5 × 5 min a umbral. Bloque 5: 4 × 2–3 min. <strong>Cadencia 85–95 también en los intervalos.</strong></em></li>
-      <li><b>Bajar</b><span class="q">10 min</span></li>
-      <li><b>Estiramiento de bici</b><span class="q">5 min</span></li>
+      <li><b>Revisión de la bici</b><span class="q">30 s</span><em>Presiones, frenos, ruedas, bidones.</em></li>
+      <li><b>Calentamiento rodando</b><span class="q">15 min</span><em>Plato chico, cadencia 90, sin forzar.</em></li>
+      <li><b>La serie</b><em>Bloque 1: <strong>5 × 3 min fuerte con 3 min suaves.</strong> Cadencia 85–95 también en los intervalos.</em></li>
+      <li><b>Bajar</b><span class="q">10 min</span><em>Suave.</em></li>
+      <li><b>Estiramiento de bici</b><span class="q">5 min</span><em>Flexor de cadera 60 s por lado · cuádriceps · rodillas al pecho · pectoral.</em></li>
       <li><b>Rodillo de espuma</b><span class="q">5 min</span></li>
-      <li><b>Movilidad</b><span class="q">15 min, si hoy descansaste</span></li>
+      <li><b>Movilidad</b><span class="q">15 min, solo si hoy descansaste</span><em>Aprovecha el día libre para la segunda sesión de movilidad de la semana.</em></li>
     </ol>
   </div>
 
@@ -779,8 +1195,8 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     <p class="dia-sub">Tu día más cargado: nado y partido casi seguidos.</p>
     <ol>
       <li><b>Calentamiento en seco</b><span class="q">4 min</span></li>
-      <li><b>Natación</b><span class="q">7:15 – 8:00 pm</span><em><strong>Pídele a tu maestra trabajo de brazos hoy: cero patada, cero aletas.</strong> Explícale que juegas una hora después. Si nadas solo: 300 suave, 6×100 con pull buoy, 4×50 suave, 200 relajado.</em></li>
-      <li><b>Calentamiento de fútbol</b><span class="q">4 min</span><em>Balanceos laterales · zancadas · 4 arranques progresivos.</em></li>
+      <li><b>Natación</b><span class="q">7:15 – 8:00 pm</span><em><strong>Pídele a tu maestra trabajo de brazos hoy: cero patada, cero aletas.</strong> Explícale que juegas una hora después.</em></li>
+      <li><b>Calentamiento de fútbol</b><span class="q">4 min</span><em>Balanceos laterales 12 por lado · 8 zancadas por lado · 4 arranques progresivos de 20 m.</em></li>
       <li><b>Partido</b></li>
       <li><b>Estiramiento</b><span class="q">8 min</span><em>Los ocho de carrera. Prioridad aductores y glúteo.</em></li>
     </ol>
@@ -791,7 +1207,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     <div class="dia-h"><b>Jueves</b><span>Fútbol</span></div>
     <p class="dia-sub">Segundo partido en 24 horas. Aquí no se añade nada más, nunca.</p>
     <ol>
-      <li><b>Calentamiento de fútbol</b><span class="q">4 min</span></li>
+      <li><b>Calentamiento de fútbol</b><span class="q">4 min</span><em>Hoy importan más que ayer: vienes de partido y de nadar.</em></li>
       <li><b>Partido</b></li>
       <li><b>Estiramiento</b><span class="q">8 min</span></li>
     </ol>
@@ -802,22 +1218,22 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     <p class="dia-sub">Tu mejor día de agua: tienes el fin de semana para recuperar.</p>
     <ol>
       <li><b>Calentamiento en seco</b><span class="q">4 min</span></li>
-      <li><b>Natación</b><span class="q">7:15 – 8:00 pm</span><em>Aquí sí patada y aletas si tu maestra lo indica. Si nadas solo: 400 progresivo, 8×50 fuerte con 30 s, 4×200 sostenido con 30 s, 200 suave.</em></li>
+      <li><b>Natación</b><span class="q">7:15 – 8:00 pm</span><em>Aquí sí patada y aletas si tu maestra lo indica.</em></li>
       <li><b>Estiramiento de nado</b><span class="q">3 min</span></li>
       <li><b>Fuerza</b><span class="q">20 min</span></li>
       <li><b>Estiramiento de fuerza</b><span class="q">5 min</span></li>
     </ol>
-    <p class="why">Una vez al mes, sustituye la natación de este día por el test: <strong>1.500 m continuos tomando el tiempo, tocando la pared y girando sin empujarte.</strong> Es tu única referencia objetiva de progreso.</p>
+    <p class="why"><strong>El último viernes de cada mes</strong>, sustituye la natación por el test de 1.500 continuos, tocando la pared y girando sin empujarte.</p>
   </div>
 
   <div class="dia d-rueda">
-    <div class="dia-h"><b>Sábado</b><span>Bici larga + trote</span></div>
+    <div class="dia-h"><b>Sábado</b><span>Bici larga + trote de transición</span></div>
     <p class="dia-sub">La sesión más importante de todo el plan. No se cancela, se mueve.</p>
     <ol>
-      <li><b>Antes de salir</b><em>Presiones. Un bidón con Gatorade, otro con agua. Bloqueador 20 min antes. Glucosa de rescate en el bolsillo del maillot. Tenis y calcetines secos en el coche. Avisa tu ruta y hora de regreso.</em></li>
-      <li><b>Calentamiento rodando</b><span class="q">12 min</span></li>
-      <li><b>Bici larga</b><em>A ritmo de conversación todo el rato. <strong>Cadencia 85–95.</strong> Terreno plano. <strong>Bebe cada 15 min aunque no tengas sed.</strong></em></li>
-      <li><b>Trote al bajar</b><em>Cámbiate tenis y calcetines secos y sal, sin importar cómo se sienta. Ritmo 7:45–8:30 min/km. <strong>Las piernas de madera son normales</strong> y se van con repetición.</em></li>
+      <li><b>Antes de salir</b><em>Presiones · dos bidones · bloqueador 20 min antes · glucosa de rescate en el bolsillo · tenis y calcetines secos en el coche · avisa tu ruta.</em></li>
+      <li><b>Calentamiento rodando</b><span class="q">12 min</span><em>Plato chico, cadencia 90.</em></li>
+      <li><b>Bici larga</b><em>Ritmo de conversación. Cadencia 85–95. Terreno plano. <strong>Bebe cada 15 min aunque no tengas sed.</strong></em></li>
+      <li><b>Trote de transición</b><em>Cámbiate tenis y calcetines secos y sal de inmediato. 7:45–8:30 min/km. Las piernas de madera son normales.</em></li>
       <li><b>Estiramiento de bici + de carrera</b><span class="q">8 min</span></li>
       <li><b>Rodillo de espuma</b><span class="q">5 min</span></li>
       <li><b>Mantenimiento si llovió</b><em>Enjuaga, seca y lubrica la cadena. Trapo al aro y saca piedritas de las zapatas.</em></li>
@@ -828,21 +1244,22 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     <div class="dia-h"><b>Domingo</b><span>Carrera larga + movilidad</span></div>
     <p class="dia-sub">Lento de verdad. La velocidad ya te la da el fútbol; lo que te falta es base aerobia.</p>
     <ol>
-      <li><b>Calentamiento de carrera</b><span class="q">8 min</span><em>Los seis movimientos de la Parte 1.</em></li>
-      <li><b>Carrera larga</b><em>Ritmo <strong>7:15–8:00 min/km</strong>. La regla es una: debes poder hablar en frases completas de principio a fin. Agua contigo desde los 8 km en adelante.</em></li>
+      <li><b>Calentamiento de carrera</b><span class="q">8 min</span><em>Los seis movimientos. Es el que más se salta y donde se acumulan las molestias.</em></li>
+      <li><b>Carrera larga</b><em>7:15–8:00 min/km. <strong>Frases completas de principio a fin.</strong> Agua contigo desde los 8 km.</em></li>
       <li><b>Estiramiento de carrera</b><span class="q">8 min</span><em>Los ocho, en orden.</em></li>
       <li><b>Movilidad completa</b><span class="q">15 min</span><em>Los ocho movimientos. <strong>Es la única sesión del plan que no se salta nunca.</strong></em></li>
     </ol>
   </div>
 </div>
 
-<!-- ═══════════ PARTE 3 ═══════════ -->
-<div class="parte" id="p3">
-  <p class="parte-n">Parte 3</p>
+<!-- ═══════════ PARTE 4 ═══════════ -->
+<div class="parte" id="p4">
+  <p class="parte-n">Parte 4</p>
   <h2>Las 28 semanas</h2>
-  <p class="lead">Solo los números que cambian. El orden de cada día es siempre el de la Parte 2. Descarga cada tercera o cuarta semana: no es una pausa del plan, es parte del plan.</p>
+  <p class="lead">Solo los números que cambian. El orden de cada día es siempre el de la Parte 3. Las filas en gris y cursiva son <strong>semanas de descarga</strong>: no son una pausa del plan, son parte del plan.</p>
 
   <h3>Bloque 1 · Base <span class="sm">10 ago – 27 sep · 7 semanas</span></h3>
+  <p class="sub">Acumular horas de bici y volver a correr sin romperte. Todo cómodo, cadencia alta, sin mirar velocidad.</p>
   <div class="scroll"><table class="tbl">
     <thead><tr><th>Semana</th><th>Bici martes</th><th>Bici sábado + trote</th><th>Carrera domingo</th></tr></thead>
     <tbody>
@@ -855,8 +1272,8 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <tr class="dl"><td>S7 · 21 sep</td><td class="num">descanso</td><td class="num">75 min + 10</td><td class="num">6 km</td></tr>
     </tbody>
   </table></div>
-  <div class="flag azul"><b>Por qué el bloque 1 tiene 7 semanas y no 8</b>Al recorrer el arranque una semana, la fecha de la carrera no se mueve — así que el que se ajusta es el plan. Quité la semana que repetía la carga de la S3 sin añadir nada. Las descargas siguen intactas y ninguna progresión se acelera: la carrera del domingo sigue subiendo máximo 1 km sobre el pico anterior, y la bici larga máximo 15 minutos.</div>
-  <div class="flag verde"><b>La semana 1 es diagnóstico</b>Arrancas conservador porque llevas unos dos meses sin correr con regularidad. Lo que hagas después depende de cómo se sienta, no de la tabla:<br><br><strong>Cómodo y sin agujetas el lunes</strong> → sube a 7 km en la semana 2 y sigue adelantado.<br><strong>Bien, con cansancio normal</strong> → 6 km, como dice la tabla.<br><strong>Costó, o dos días adolorido</strong> → repite 5 km hasta que se sienta fácil.<br><strong>Molestia localizada</strong> → alto. Nada y pedalea sin correr, reevalúa en cinco días.</div>
+  <div class="flag verde"><b>La semana 1 es diagnóstico</b>Arrancas conservador porque llevas unos dos meses sin correr con regularidad. Lo que hagas después depende de cómo se sienta, no de la tabla:<br><br><strong>Cómodo y sin agujetas el lunes</strong> → sube a 7 km en la semana 2 y sigue adelantado.<br><strong>Bien, con cansancio normal</strong> → 6 km, como dice la tabla.<br><strong>Costó, o dos días adolorido</strong> → repite 5 km hasta que se sienta fácil. Perder dos semanas aquí no cuesta nada.<br><strong>Molestia localizada</strong> → alto. Nada y pedalea sin correr, y reevalúa en cinco días.</div>
+  <div class="flag azul"><b>Por qué el bloque 1 tiene 7 semanas y no 8</b>Al recorrer el arranque una semana, la fecha de la carrera no se movió — así que el que se ajustó fue el plan. Se quitó la semana que repetía la carga de la S3 sin añadir nada. Las descargas siguen intactas y ninguna progresión se aceleró: la carrera del domingo sigue subiendo <strong>máximo 1 km sobre el pico anterior</strong>, y la bici larga máximo 15 minutos.</div>
 
   <h3>Bloque 2 · Volumen <span class="sm">28 sep – 22 nov · 8 semanas</span></h3>
   <p class="sub">Sube el rango largo, entra la corrida del lunes y empieza el agua abierta.</p>
@@ -887,15 +1304,16 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <tr class="dl"><td>S21 · 28 dic</td><td class="num">—</td><td class="num">lo que se pueda</td><td class="num">2:00 + 15 trote</td><td class="num">11 km</td></tr>
     </tbody>
   </table></div>
-  <p class="why">S18: sale el calendario FMTRI 2027 esta semana. <strong>Inscríbete el día que salga</strong> y declara tu dispositivo médico.</p>
+  <p class="why"><strong>S18, primera semana de diciembre:</strong> sale el calendario FMTRI 2027. Inscríbete el día que salga —las sedes buenas se llenan— y declara tu dispositivo médico al organizador.</p>
 
   <h3>Bloque 4 · Específico <span class="sm">4 – 31 ene · 4 semanas</span></h3>
+  <p class="sub">Deja de ser entrenamiento y empieza a ser ensayo.</p>
   <div class="scroll"><table class="tbl">
     <thead><tr><th>Semana</th><th>Sábado</th><th>Domingo</th><th>Nota</th></tr></thead>
     <tbody>
-      <tr class="hi"><td>S22 · 4 ene</td><td class="num">Simulación 1: 1.5 nado + 40 bici + 5 correr</td><td class="num">descanso o 7 km</td><td>Sin ritmo objetivo. Conocer el encadenado y montar la transición.</td></tr>
+      <tr class="hi"><td>S22 · 4 ene</td><td class="num">Simulación 1: 1.5 + 40 + 5</td><td class="num">descanso o 7 km</td><td>Sin ritmo objetivo. Conocer el encadenado y practicar transiciones.</td></tr>
       <tr><td>S23 · 11 ene</td><td class="num">2:30 + 30 trote</td><td class="num">15 km</td><td>Tu carrera más larga del plan. No hace falta más.</td></tr>
-      <tr class="hi"><td>S24 · 18 ene</td><td class="num">Simulación 2 completa: 1.5 + 40 + 10</td><td class="num">descanso total</td><td>A ritmo objetivo. Ensayo general de ropa, desayuno y nutrición. <strong>De mañana</strong>, como la carrera.</td></tr>
+      <tr class="hi"><td>S24 · 18 ene</td><td class="num">Simulación 2 completa: 1.5 + 40 + 10</td><td class="num">descanso total</td><td>A ritmo objetivo. Ensayo general. <strong>De mañana</strong>, como la carrera.</td></tr>
       <tr class="dl"><td>S25 · 25 ene</td><td class="num">Agua abierta 1.500 m + bici 90 min</td><td class="num">9 km</td><td>Cuarta y última de agua abierta, distancia completa.</td></tr>
     </tbody>
   </table></div>
@@ -907,58 +1325,60 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     <tbody>
       <tr><td>S26 · 1 feb</td><td class="num">45 min con 4 × 3'</td><td class="num">1:45 + 20 trote</td><td class="num">10 km</td><td>Últimos dos partidos</td></tr>
       <tr><td>S27 · 8 feb</td><td class="num">40 min con 4 × 2'</td><td class="num">1:15 + 15 trote</td><td class="num">8 km</td><td><strong>Fuera</strong></td></tr>
-      <tr class="hi"><td>S28 · 15 feb</td><td class="num">40 min con 3 × 1'</td><td class="num">20 trote + 10 nado</td><td class="num">CARRERA</td><td><strong>Fuera</strong></td></tr>
+      <tr class="hi"><td>S28 · 15 feb</td><td class="num">ver día por día</td><td class="num">20 trote + 10 nado</td><td class="num">CARRERA</td><td><strong>Fuera</strong></td></tr>
     </tbody>
   </table></div>
   <div class="warn">
     <h4>Por qué sale el fútbol las últimas dos semanas</h4>
-    <p>No es por la fatiga. Es porque un tirón en un partido de liga a diez días de la carrera te tira siete meses de trabajo, y el fútbol 7 es exactamente el escenario donde eso pasa. Es el único sacrificio real de todo el plan.</p>
+    <p>No es por la fatiga. Es porque un tirón en un partido de liga a diez días de la carrera te tira siete meses de trabajo, y el fútbol 7 —arranques en frío, cambios de dirección, contacto— es exactamente el escenario donde eso pasa. <strong>Es el único sacrificio real de todo el plan.</strong></p>
   </div>
   <h4>La última semana, día por día</h4>
   <div class="scroll"><table class="tbl">
     <tbody>
       <tr><td>Lun 15</td><td>Natación 30 min suave. Nada de series.</td></tr>
-      <tr><td>Mar 16</td><td>Bici 40 min con 3 × 1 min a ritmo de carrera. Revisión mecánica.</td></tr>
+      <tr><td>Mar 16</td><td>Bici 40 min con 3 × 1 min a ritmo de carrera. Revisión mecánica de la bici.</td></tr>
       <tr><td>Mié 17</td><td>Natación 25 min + trote 10 min muy suave.</td></tr>
       <tr><td>Jue 18</td><td>Descanso total. Hidratar bien y cargar carbohidrato.</td></tr>
-      <tr><td>Vie 19</td><td>Bici 30 min suave con 4 arranques. <strong>Empaca todo hoy.</strong></td></tr>
+      <tr><td>Vie 19</td><td>Bici 30 min suave con 4 arranques cortos. <strong>Empaca todo hoy, no mañana.</strong></td></tr>
       <tr><td>Sáb 20</td><td>Trote 15 min + nado 10 min. Registro, junta previa, montar transición, dormir temprano.</td></tr>
       <tr><td>Dom 21</td><td><strong>Triatlón olímpico.</strong></td></tr>
     </tbody>
   </table></div>
 </div>
 
-<!-- ═══════════ PARTE 4 ═══════════ -->
-<div class="parte" id="p4">
-  <p class="parte-n">Parte 4</p>
-  <h2>Referencias rápidas</h2>
+<!-- ═══════════ PARTE 5 ═══════════ -->
+<div class="parte" id="p5">
+  <p class="parte-n">Parte 5</p>
+  <h2>Referencias</h2>
 
   <h3>Las seis reglas</h3>
   <div class="flag azul"><b>1 · El martes es negociable, el sábado no</b>Si algo se cae por cansancio o agenda, siempre es la bici del martes. Si el sábado se complica, se mueve al domingo y se intercambia con la carrera — pero no desaparece.</div>
-  <div class="flag azul"><b>2 · La carrera del domingo nunca sube más de 1 km por semana</b>Aunque te sientas bien. Es la regla que más se rompe y la que más lesiones causa.</div>
-  <div class="flag azul"><b>3 · Una sola sesión de calidad por disciplina por semana</b>Bici fuerte el martes, agua fuerte el viernes, y desde el bloque 3 una corrida con ritmo. El resto suave.</div>
+  <div class="flag azul"><b>2 · La carrera del domingo nunca sube más de 1 km por semana</b>Aunque te sientas bien. Es la regla que más se rompe y la que más lesiones causa, sobre todo viniendo de dos partidos de liga.</div>
+  <div class="flag azul"><b>3 · Una sola sesión de calidad por disciplina por semana</b>Bici fuerte el martes, agua fuerte el viernes, y desde el bloque 3 una corrida con ritmo. Todo lo demás va suave.</div>
   <div class="flag azul"><b>4 · El largo del domingo va más lento de lo que crees</b>Frases completas de principio a fin. Si no puedes, vas rápido.</div>
-  <div class="flag azul"><b>5 · Nada nuevo el día de la carrera</b>Ni gel, ni tenis, ni traje, ni desayuno. Todo se estrena en entrenamiento.</div>
-  <div class="flag rojo"><b>6 · Dolor localizado = alto</b>Cansancio general difuso: entrena suave. Dolor en un punto que puedes señalar con un dedo: alto inmediato. Si a los cinco días sigue, es revisión con alguien que te vea en persona.</div>
+  <div class="flag azul"><b>5 · Nada nuevo el día de la carrera</b>Ni gel, ni tenis, ni traje, ni desayuno. Todo se estrena en entrenamiento, y se confirma en la simulación del 18 de enero.</div>
+  <div class="flag rojo"><b>6 · Dolor localizado = alto</b>Cansancio general y difuso: entrena suave. Dolor en un punto que puedes señalar con un dedo: alto inmediato. Si a los cinco días sigue igual, es revisión con alguien que te vea en persona.</div>
 
   <h3>Ritmos y esfuerzos</h3>
+  <p class="sub">Calculados sobre tu ritmo cómodo de 6:00–6:30 min/km cuando estabas corriendo, con la pausa y la altitud de Guadalajara ya consideradas.</p>
   <div class="scroll"><table class="tbl">
     <thead><tr><th>Sesión</th><th>Ritmo</th><th>Cómo se siente</th></tr></thead>
     <tbody>
-      <tr><td>Largo del domingo</td><td class="num">7:15 – 8:00</td><td>Frases completas sin esfuerzo.</td></tr>
-      <tr><td>Trote tras la bici</td><td class="num">7:45 – 8:30</td><td>Más lento aún. Importa moverse con piernas cansadas, no el ritmo.</td></tr>
-      <tr><td>Corrida corta lunes</td><td class="num">7:15 – 7:45</td><td>Fácil, sin buscar nada.</td></tr>
-      <tr><td>Umbral</td><td class="num">6:15 – 6:40</td><td>Frases de tres o cuatro palabras.</td></tr>
-      <tr><td>Objetivo del 10 km</td><td class="num">6:45 – 7:15</td><td><strong>68 a 72 minutos.</strong></td></tr>
+      <tr><td>Largo del domingo</td><td class="num">7:15 – 8:00</td><td>Frases completas sin esfuerzo. Podrías seguir bastante más.</td></tr>
+      <tr><td>Trote de transición</td><td class="num">7:45 – 8:30</td><td>Más lento aún. Importa moverse con piernas cansadas, no el ritmo.</td></tr>
+      <tr><td>Corrida corta del lunes</td><td class="num">7:15 – 7:45</td><td>Fácil, sin buscar nada.</td></tr>
+      <tr><td>Umbral · desde el bloque 3</td><td class="num">6:15 – 6:40</td><td>Frases de tres o cuatro palabras.</td></tr>
+      <tr><td>Objetivo del 10 km del triatlón</td><td class="num">6:45 – 7:15</td><td><strong>68 a 72 minutos.</strong> Realista para un primer olímpico.</td></tr>
     </tbody>
   </table></div>
-  <p>En bici, sin medidor de potencia: <strong>suave</strong> = frases completas. <strong>Umbral</strong> = tres o cuatro palabras. <strong>Fuerte</strong> = una o dos palabras. Cadencia 85–95 siempre.</p>
+  <p>En bici, sin medidor de potencia: <strong>suave</strong> = frases completas. <strong>Umbral</strong> = tres o cuatro palabras. <strong>Fuerte</strong> = una o dos palabras. <strong>Cadencia 85–95 siempre</strong>, incluidos los intervalos.</p>
 
   <h3>El semáforo · tu Whoop en la mañana</h3>
+  <p class="sub">Diez segundos al despertar. Esto es lo que hace que el plan sobreviva siete meses en lugar de tres.</p>
   <div class="flag verde"><b>Verde · entrena lo planeado</b>Recovery arriba de 66 %, pulso en reposo en tu línea base, dormiste bien, sin dolor localizado.</div>
-  <div class="flag"><b>Ámbar · versión suave</b>Recovery entre 34 y 66 %, pulso en reposo 2–4 latidos arriba, una noche mala. Haz la sesión pero fácil: quita las series y baja el tiempo un 30 %.</div>
-  <div class="flag rojo"><b>Rojo · descanso</b>Recovery bajo 34 %, pulso en reposo 5 latidos o más arriba, dos noches malas seguidas, cuerpo cortado, o dolor localizado. Descansa completo.</div>
-  <p class="why">El dato es confirmación, no la guía. Si el Whoop dice verde y tú te sientes destruido, tienes razón tú.</p>
+  <div class="flag"><b>Ámbar · versión suave</b>Recovery entre 34 y 66 %, pulso en reposo 2–4 latidos arriba de lo normal, una noche mala. Haz la sesión pero fácil: <strong>quita las series y baja el tiempo un 30 %.</strong> Moverse suave recupera mejor que el sofá.</div>
+  <div class="flag rojo"><b>Rojo · descanso</b>Recovery bajo 34 %, pulso en reposo 5 latidos o más arriba, dos noches malas seguidas, cuerpo cortado, o dolor localizado. <strong>Descansa completo.</strong> Un día perdido no es nada; tres semanas lesionado sí.</div>
+  <p class="why">El dato es confirmación, no la guía. Si el Whoop dice verde y tú te sientes destruido, tienes razón tú. Y si el reloj marca ritmo cómodo pero no puedes hablar en frases completas, hazle caso a la respiración.</p>
 
   <h3>Combustible e hidratación</h3>
   <p><strong>Un sobre de Gatorade en polvo por bidón.</strong> Siempre la misma receta: si no varía, cualquier cambio que veas en el Libre viene de la duración o la intensidad, no de la mezcla.</p>
@@ -971,43 +1391,45 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     </tbody>
   </table></div>
   <ul class="simple">
-    <li><strong>Prueba el sobre completo en 750 ml el sábado 15.</strong> Si te sienta bien, esa es tu receta fija: un sobre = un bidón = hora y media de combustible. Si cae pesado, dilúyelo en un litro y usa más bidones.</li>
-    <li><strong>Un bidón de Gatorade por cada hora y media</strong> de bici. El segundo bidón, agua simple.</li>
-    <li><strong>Bebe cada 15 minutos</strong> aunque no tengas sed. En calor la sed llega tarde.</li>
-    <li><strong>Para 2:30:</strong> lleva un sobre suelto en el bolsillo del maillot y rellena a mitad de ruta, o arma la ruta como dos vueltas que regresen al coche.</li>
-    <li><strong>En los partidos:</strong> medio sobre en agua. <strong>De diario:</strong> agua.</li>
-    <li><strong>Creatina:</strong> 5 g de monohidrato al día, todos los días, a cualquier hora, sin fase de carga.</li>
+    <li><strong>Prueba el sobre completo en 750 ml en la primera salida larga.</strong> Si te sienta bien, esa es tu receta fija: un sobre = un bidón = hora y media de combustible. Si cae pesado, dilúyelo en un litro completo y usa más bidones.</li>
+    <li><strong>Un bidón de Gatorade por cada hora y media</strong> de bici. El segundo bidón, agua simple, para beber sin sumar azúcar.</li>
+    <li><strong>Bebe cada 15 minutos</strong> aunque no tengas sed.</li>
+    <li><strong>Para salidas de 2:30:</strong> lleva un sobre suelto en el bolsillo del maillot y rellena a mitad de ruta, o arma la ruta como dos vueltas que regresen al coche.</li>
+    <li><strong>En los partidos:</strong> medio sobre en agua. <strong>De diario:</strong> agua sola. El Gatorade es para durante el ejercicio.</li>
+    <li><strong>Creatina:</strong> 5 g de monohidrato al día, todos los días, incluidos los de descanso. A cualquier hora, sin fase de carga. Un día saltado no pasa nada; no dobles la dosis al siguiente.</li>
     <li><strong>Bloqueador</strong> 20 min antes y reaplicar a la hora y media: nuca, dorso de las manos y parte posterior de los brazos.</li>
   </ul>
-  <div class="flag azul"><b>El escalón a vigilar</b>Tu sistema de manejo está calibrado a sesiones de 45 minutos. <strong>Los 75 minutos del sábado 15 son tu primer dato nuevo</strong>, y de ahí cada semana sube. El plan progresa gradualmente justo para que tengas información en cada escalón. Revisa tu Libre durante la salida y esa noche. <strong>Glucosa de rescate siempre en el bolsillo del maillot</strong>, alcanzable sin bajarte.</div>
+  <div class="flag azul"><b>El escalón a vigilar</b>Tu sistema de manejo de glucosa está calibrado a sesiones de 45 minutos. <strong>La primera bici de 75 minutos es tu primer dato nuevo</strong>, y de ahí cada semana sube. El plan progresa gradualmente justo para que tengas información en cada escalón en lugar de descubrirlo de golpe. Revisa tu Libre durante la salida y esa noche. <strong>Glucosa de rescate siempre en el bolsillo del maillot</strong>, alcanzable sin bajarte de la bici.</div>
 
   <h3>Tu bici · números concretos</h3>
+  <p class="sub">Trek de ruta de principios de los noventa. Grupo Shimano mixto RX100 y Exage, 7 velocidades con mandos en la maneta, freno de aro, platos 52/42, biela de 170 mm.</p>
   <div class="scroll"><table class="tbl">
     <tbody>
-      <tr><td>Altura del sillín</td><td class="num">70.5 cm</td><td>Del centro del eje del pedalier a la parte de arriba del sillín, siguiendo el tubo. Biela de 170 mm, sin corrección.</td></tr>
-      <tr><td>Retroceso del sillín</td><td class="num">plomada</td><td>Biela horizontal adelante, plomada desde debajo de la rótula: cae sobre el eje del pedal o hasta 2 cm detrás.</td></tr>
+      <tr><td>Altura del sillín</td><td class="num">70.5 cm</td><td>Del centro del eje del pedalier a la parte de arriba del sillín, siguiendo la línea del tubo.</td></tr>
+      <tr><td>Retroceso del sillín</td><td class="num">plomada</td><td>Biela horizontal hacia adelante, plomada colgando desde el hueco debajo de la rótula: debe caer sobre el eje del pedal o hasta 2 cm detrás.</td></tr>
       <tr><td>Manubrio</td><td class="num">0 – 3 cm</td><td>Desnivel respecto al sillín. En tu caso <strong>alto</strong>, por flexibilidad. Sube 1–2 cm a la vez y rueda una salida completa antes de volver a mover.</td></tr>
-      <tr><td>Presión trasera</td><td class="num">78 psi</td><td>Llanta de 28 mm. En mojado, 10 menos.</td></tr>
+      <tr><td>Presión trasera</td><td class="num">78 psi</td><td>Llanta de 28 mm. En mojado, 10 psi menos.</td></tr>
       <tr><td>Presión delantera</td><td class="num">90 psi</td><td>Llanta de 23/25 mm.</td></tr>
       <tr><td>Circunferencia</td><td class="num">2136 mm</td><td>Para 700x28c, en la configuración del ciclocomputador.</td></tr>
-      <tr><td>Marcha más suave</td><td class="num">42 × 26</td><td>Trabajable en plano. Por eso el terreno plano en el bloque 1 es requisito, no preferencia.</td></tr>
+      <tr><td>Marcha más suave</td><td class="num">42 × 26</td><td>A 90 pedaladas son unos 18 km/h. Trabajable en plano; en subida te obliga a moler. <strong>Por eso el terreno plano en el bloque 1 es requisito, no preferencia.</strong></td></tr>
     </tbody>
   </table></div>
-  <div class="flag rojo"><b>Mantenimiento con freno de aro</b>Después de cada salida mojada: enjuaga, seca y lubrica la cadena, pasa un trapo al aro y saca piedritas de las zapatas. <strong>Cada mes</strong>, pasa el dedo cruzando la banda de frenado del aro: si sientes un valle hundido con bordes levantados, ese aro se cambia.</div>
+  <div class="flag rojo"><b>Mantenimiento con freno de aro</b>Después de cada salida mojada: enjuaga, seca y lubrica la cadena; pasa un trapo al aro y saca las piedritas incrustadas en las zapatas. <strong>Cada mes</strong>, pasa el dedo cruzando la banda de frenado del aro: si sientes un valle hundido con bordes levantados, ese aro se cambia.</div>
 
   <h3>Sustituciones</h3>
+  <p class="sub">Un plan de siete meses que no se puede modificar es un plan que se abandona en octubre.</p>
   <div class="scroll"><table class="tbl">
     <thead><tr><th>Se cae</th><th>Qué haces</th></tr></thead>
     <tbody>
-      <tr><td>Fútbol miércoles</td><td>Bloques 1–2: carrera 30–40 min fácil. Bloques 3–4: 6 × 2 min a ritmo con 2 min de trote.</td></tr>
-      <tr><td>Fútbol jueves</td><td>Bici 60 min suave, <strong>o descanso total</strong> si el miércoles ya corriste.</td></tr>
-      <tr><td>Los dos partidos</td><td>Miércoles carrera 40 min. Jueves bici o descanso. <strong>Nada más</strong> — la semana se va a sentir fácil y va a dar tentación de llenarla.</td></tr>
-      <tr><td>Natación</td><td>Bici 40 min + core 15 min. No sustituyas nado por carrera: sumas impacto.</td></tr>
-      <tr><td>Bici sábado por tormenta</td><td>Muévela al domingo e intercambia con la carrera. Correr en lluvia es mucho más seguro que rodar en lluvia.</td></tr>
-      <tr><td>Fin de semana completo</td><td>Retoma el sábado siguiente. <strong>Nunca metas una semana doble</strong> para compensar.</td></tr>
-      <tr><td>Carrera con molestia articular</td><td>Bici 60 min + nado 20 min. Cero impacto.</td></tr>
-      <tr><td>Bici martes o fuerza</td><td>Se salta sin costo.</td></tr>
-      <tr><td>Movilidad</td><td><strong>No se salta.</strong> Son 15 minutos en el piso.</td></tr>
+      <tr><td>Fútbol miércoles</td><td>Bloques 1–2: carrera 30–40 min fácil. Bloques 3–4: 6 × 2 min a ritmo de carrera con 2 min de trote.</td></tr>
+      <tr><td>Fútbol jueves</td><td>Bici 60 min suave, <strong>o descanso total</strong> si el miércoles ya corriste. Nunca dos días seguidos de impacto añadido.</td></tr>
+      <tr><td>Los dos partidos</td><td>Miércoles carrera 40 min. Jueves bici o descanso. <strong>Nada más</strong> — la semana se va a sentir fácil y va a dar tentación de llenarla. No la llenes: es cuando el cuerpo asimila.</td></tr>
+      <tr><td>Natación</td><td>Bici 40 min + core 15 min. <strong>No sustituyas nado por carrera:</strong> sumas impacto en una semana que ya tiene dos partidos.</td></tr>
+      <tr><td>Bici del sábado por tormenta</td><td>Muévela al domingo e intercambia con la carrera. Correr en lluvia es mucho más seguro que rodar en lluvia.</td></tr>
+      <tr><td>Fin de semana completo</td><td>Retoma el sábado siguiente donde ibas. <strong>Nunca metas una semana doble</strong> para compensar — así se lesiona la gente.</td></tr>
+      <tr><td>Carrera con molestia articular</td><td>Bici 60 min + nado 20 min. Cero impacto, misma carga aerobia.</td></tr>
+      <tr><td>Bici del martes, o fuerza</td><td>Se salta sin costo. Son las dos primeras que caen si el tiempo aprieta.</td></tr>
+      <tr><td>Movilidad</td><td><strong>No se salta.</strong> Son 15 minutos en el piso frente a la tele.</td></tr>
     </tbody>
   </table></div>
 
@@ -1016,33 +1438,24 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     <thead><tr><th>Zona</th><th>Fuera</th><th>Sigue</th></tr></thead>
     <tbody>
       <tr><td>Aductor / ingle</td><td>Carrera y fútbol, inmediato</td><td>Nado <strong>sin patada</strong> y bici suave en plano. Reevalúa en 5 días.</td></tr>
-      <tr><td>Rodilla</td><td>Carrera</td><td>Nado libre. Bici solo si no duele, cadencia alta.</td></tr>
-      <tr><td>Aquiles / gemelo</td><td>Carrera y fútbol</td><td>Nado. Bici sin subidas de pie.</td></tr>
-      <tr><td>Hombro</td><td>Nado con brazos y pull buoy</td><td>Bici y carrera normales.</td></tr>
+      <tr><td>Rodilla</td><td>Carrera</td><td>Nado libre. Bici solo si no duele: prueba de 5 min en plano, cadencia alta. Si duele, te bajas.</td></tr>
+      <tr><td>Aquiles / gemelo</td><td>Carrera y fútbol</td><td>Nado. Bici con cuidado y sin subir de pie.</td></tr>
+      <tr><td>Hombro</td><td>Nado con brazos y pull buoy</td><td>Bici y carrera normales. Si nadas, con tabla y patada.</td></tr>
       <tr><td>Espalda baja</td><td>Bici larga</td><td>Nado y carrera. Sube el manubrio antes de volver.</td></tr>
     </tbody>
   </table></div>
-
-  <h3>Aguas abiertas · desde octubre</h3>
-  <ul class="simple">
-    <li><strong>Nunca solo.</strong> Sin excepción, ni en Chapala. Avisa al grupo que eres diabético tipo 1 antes de entrar, cada vez.</li>
-    <li><strong>Boya de arrastre naranja</strong> atada a la cintura, gorra chillona, goggles oscuros.</li>
-    <li><strong>Progresión:</strong> 400–600 m para perder el miedo → 800 m practicando orientación cada 6 brazadas → 1.200 m → 1.500 m continuos. Mínimo cuatro sesiones antes de la carrera.</li>
-    <li><strong>Sal por la orilla y atrás</strong> en las salidas en masa, nunca en el bulto. Deja pasar los primeros diez segundos.</li>
-    <li><strong>Nunca en lagunas, esteros ni bocas de río</strong> del Pacífico.</li>
-    <li><strong>En presa o lago:</strong> no nades con heridas abiertas, no tragues, báñate al salir, evita los días posteriores a una tormenta.</li>
-    <li><strong>Practica en la alberca:</strong> levantar la vista cada 6 brazadas sin cortar el ritmo, y los 1.500 continuos sin empujarte de la pared.</li>
-  </ul>
+  <div class="flag rojo"><b>La diferencia que importa</b>Cansancio general y difuso: entrena suave. <strong>Tirantez o dolor localizado en un punto concreto que puedes señalar con un dedo:</strong> eso no se calienta ni se pasa entrenando. Eso es alto, y si sigue igual a los cinco días, es revisión con alguien que te vea en persona.</div>
 
   <h3>Día de carrera</h3>
   <ul class="simple">
-    <li><strong>Transiciones:</strong> del agua a la bici, <strong>casco antes de tocar la bici</strong> — es regla y descalifican. De la bici a la carrera, casco fuera <strong>después</strong> de colgar la bici.</li>
-    <li>Memoriza una referencia visual alta para encontrar tu lugar. Con mil bicis todas las filas se ven iguales.</li>
+    <li><strong>Transiciones:</strong> del agua a la bici, <strong>casco puesto antes de tocar la bici</strong> — es regla y descalifican. De la bici a la carrera, el casco sale <strong>después</strong> de colgar la bici.</li>
+    <li>Memoriza una <strong>referencia visual alta</strong> para encontrar tu lugar. Con mil bicis todas las filas se ven iguales.</li>
     <li><strong>Calcetines sí.</strong> Ahorras quince segundos sin ellos y arriesgas una ampolla en el kilómetro 4. Practica ponértelos con los pies mojados.</li>
-    <li><strong>3 horas antes:</strong> desayuno probado, alto en carbohidrato, bajo en fibra y grasa.</li>
-    <li><strong>Métete al agua antes de la salida</strong> si lo permiten. Cambia por completo los primeros 200 m.</li>
-    <li><strong>Los primeros 10 min de bici, cómodo.</strong> Vas a salir del agua eufórico; si te lanzas ahí, lo pagas en el kilómetro 6 de la carrera.</li>
-    <li><strong>Declara tu dispositivo médico</strong> al inscribirte, en diciembre.</li>
+    <li><strong>3 horas antes:</strong> desayuno probado en entrenamiento, alto en carbohidrato, bajo en fibra y grasa.</li>
+    <li><strong>Métete al agua antes de la salida</strong> si lo permiten. Mojarte la cara y respirar unas brazadas cambia por completo los primeros 200 m.</li>
+    <li><strong>Sal por la orilla y atrás</strong> en la salida en masa, nunca en el bulto. Deja pasar los primeros diez segundos.</li>
+    <li><strong>Los primeros 10 min de bici, cómodo.</strong> Vas a salir del agua eufórico y con el pulso alto; si te lanzas ahí, lo pagas en el kilómetro 6 de la carrera.</li>
+    <li><strong>Declara tu dispositivo médico</strong> al organizador cuando te inscribas, en diciembre.</li>
   </ul>
   <div class="warn">
     <h4>La única meta de tu primer olímpico</h4>
@@ -1052,15 +1465,15 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
   <h3>Hitos con fecha</h3>
   <div class="scroll"><table class="tbl">
     <tbody>
-      <tr><td>Esta semana</td><td>Zapatas de freno nuevas. Definir dos rutas planas. Confirmar que la rodilla no molesta antes de la carrera del domingo.</td></tr>
-      <tr><td>Sáb 15 ago</td><td>Prueba de desarrollos en una subida moderada: si mantienes 80 pedaladas sentado, no toques nada. Y prueba la mezcla de Gatorade concentrada.</td></tr>
+      <tr><td>Agosto</td><td>Zapatas de freno nuevas. Definir dos rutas planas de dos horas. Segundo culotte, de tirantes.</td></tr>
+      <tr><td>Primera bici larga</td><td>Prueba de desarrollos en una subida moderada: si mantienes 80 pedaladas sentado, no toques nada. Y prueba la mezcla de Gatorade concentrada.</td></tr>
       <tr><td>Último viernes de cada mes</td><td>Test de 1.500 m continuos.</td></tr>
-      <tr><td>Antes de octubre</td><td>Multiherramienta. Boya de arrastre y goggles oscuros. Buscar grupo de agua abierta.</td></tr>
-      <tr><td>26 oct</td><td>Primera sesión de agua abierta.</td></tr>
-      <tr><td>22 nov</td><td>Sprint opcional de ensayo: 750 m / 20 km / 5 km.</td></tr>
-      <tr><td>Primera semana de dic</td><td><strong>Sale el calendario FMTRI 2027. Inscríbete ese día</strong> y declara tu dispositivo médico.</td></tr>
+      <tr><td>Antes de octubre</td><td>Multiherramienta. Boya de arrastre naranja y goggles oscuros. Buscar grupo de agua abierta.</td></tr>
+      <tr><td>26 oct · S12</td><td><strong>Primera sesión de agua abierta.</strong></td></tr>
+      <tr><td>22 nov · S15</td><td>Sprint opcional de ensayo: 750 m / 20 km / 5 km.</td></tr>
+      <tr><td>Primera semana de dic · S18</td><td><strong>Sale el calendario FMTRI 2027. Inscríbete ese día</strong> y declara tu dispositivo médico.</td></tr>
       <tr><td>Diciembre</td><td>Traje o shorts de triatlón, cinturón portanúmero, cordones elásticos.</td></tr>
-      <tr><td>4 y 18 ene</td><td>Las dos simulaciones, de mañana.</td></tr>
+      <tr><td>4 y 18 ene</td><td>Las dos simulaciones. La segunda, de mañana.</td></tr>
       <tr><td>~7 feb</td><td><strong>Último partido de fútbol.</strong></td></tr>
       <tr><td>21 feb</td><td><strong>Carrera.</strong></td></tr>
     </tbody>
