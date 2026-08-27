@@ -3559,9 +3559,39 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     var t = semActual || sems[0];
     if (t) t.scrollIntoView({behavior:'smooth', block:'start'});
   });
-  // al abrir, saltar a la semana en curso
+
+  // Al abrir, saltar a la semana en curso.
+  //
+  // Ojo con el salto unico: las fuentes de Google cargan DESPUES de que corre este script,
+  // y al entrar re-maquetan la pagina y tiran la posicion. Abriendo el archivo directo no se
+  // nota —el navegador no baja las fuentes por file://— pero por link fallaba siempre.
+  // Por eso se re-ancla cuando las fuentes estan listas y cuando termina de cargar todo.
   if (semActual && !location.hash) {
-    setTimeout(function(){ semActual.scrollIntoView({block:'start'}); }, 120);
+    var raiz = document.documentElement;
+
+    function irASemana(){
+      if (!semActual) return;
+      var antes = raiz.style.scrollBehavior;
+      raiz.style.scrollBehavior = 'auto';   // sin animacion: un salto interrumpido queda a medias
+      semActual.scrollIntoView({block:'start'});
+      raiz.style.scrollBehavior = antes;
+    }
+
+    // Que el navegador no restaure la posicion anterior al volver a la pestaña.
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+
+    irASemana();
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(irASemana);
+    window.addEventListener('load', irASemana);
+    setTimeout(irASemana, 400);
+
+    // Si el usuario ya empezo a moverse por su cuenta, dejamos de reposicionar.
+    var suyo = false;
+    ['wheel','touchstart','keydown'].forEach(function(ev){
+      window.addEventListener(ev, function(){ suyo = true; }, {once:true, passive:true});
+    });
+    var reancla = setInterval(function(){ if (suyo) clearInterval(reancla); else irASemana(); }, 250);
+    setTimeout(function(){ clearInterval(reancla); }, 2500);
   }
 })();
 </script>
