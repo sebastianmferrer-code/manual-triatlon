@@ -126,6 +126,7 @@ h4{font-family:"Archivo",Arial,sans-serif;font-variation-settings:"wdth" 92,"wgh
 .tbl tr.hi td{background:rgba(20,139,158,.09)}
 .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 .scroll .tbl{min-width:540px}
+.scroll .tbl.t2{min-width:0}
 
 .dia{background:var(--blanco);margin:18px 0 0;border-left:6px solid var(--off);padding:18px 22px;break-inside:avoid}
 .d-agua{border-left-color:var(--agua)} .d-rueda{border-left-color:var(--rueda)}
@@ -387,6 +388,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
   <p class="parte-n">Parte 1</p>
   <h2>El calendario</h2>
   <p class="lead">Las 28 semanas, día por día. Cada renglón dice <strong>calentamiento, sesión y estiramiento</strong>, y <strong>cada uno es un enlace</strong> — tocas y saltas a cómo se hace. El botón azul de abajo a la derecha te regresa aquí desde cualquier punto del manual.</p>
+  <p class="sub"><strong>Reinicio el 26 de octubre:</strong> de la semana 12 a la carrera son diecisiete semanas, en los bloques A a E. La natación sigue con tu maestra lunes, miércoles y viernes; cambian bici, carrera y lo que rodea al fútbol. El martes es bici en la Diamondback por el fraccionamiento: los intervalos van por esfuerzo, no por velocidad, y se recuperan con el mismo tiempo suave. El sábado es bici larga en la Trek, con el trote al bajarte.</p>
 
 <div class="wk-menu" id="semanas"><b>Ir a la semana</b>
   <div class="prog"><button class="hoy-btn" id="irHoy">Ir a hoy</button><span class="prog-t" id="pt">—</span></div><div class="wk-grid">
@@ -986,15 +988,15 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     </div></div>
     <p class="sem-n">Semana de descarga. No la llenes: es cuando el cuerpo asimila.</p>
   </div>
-  <div class="sem s-hito" id="w12" data-ini="2026-10-26" data-n="12">
+
+  <h3 style="border-bottom-color:var(--agua)">Bloque A · Reinicio <span class="sm">26 oct – 22 nov</span></h3>
+
+  <div class="sem" id="w12" data-ini="2026-10-26" data-n="12">
     <div class="sem-h"><b>Semana 12</b><span>26 oct – 1 nov</span><a class="wk-top" href="#semanas">↑ semanas</a></div>
     <div class="d"><div class="d-n">Lunes 26</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-nat">Calentamiento en seco 4'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><b>Nado</b> — lo que indique tu maestra</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-nat">Estiramiento de nado 3'</a></div></div>
-      <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-run">Calentamiento de carrera 8'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cc">Corrida corta</a> — <b>30 min</b> a 7:15–7:45</div></div>
-      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#fuerza">Fuerza 25'</a></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-fuerza">Estiramiento de fuerza 5'</a></div></div>
     </div></div>
@@ -1002,7 +1004,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-ej"><span>Sesión</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#rodillo">Rodillo 5'</a></div></div>
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-bici">Calentamiento rodando</a> 15'</div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bq">Bici de calidad</a> — <b>70'</b> · 5 × 3' fuerte con 3' suaves <i>· opcional</i></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bq">Bici de calidad</a> — <b>45'</b> · 4 × 1' fuerte con 1' suave</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a></div></div>
     </div></div>
     <div class="d"><div class="d-n">Miércoles 28</div><div class="d-l">
@@ -1010,15 +1012,13 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-ej"><span>Sesión</span><div><b>Nado</b> — lo que indique tu maestra — <b>pide sin patada ni aletas</b></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-nat">Estiramiento de nado 3'</a></div></div>
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><b>Fútbol</b>, si hay partido</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><b>Fútbol</b> — <b>semifinal</b></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
-      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> pide el nado <b>con patada y aletas</b>, y carrera fácil de 30 a 40 min</div></div>
+      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> pide el nado <b>con patada y aletas</b>, y añade bici 45' suave</div></div>
     </div></div>
     <div class="d"><div class="d-n">Jueves 29</div><div class="d-l">
-      <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><b>Fútbol</b>, si hay partido</div></div>
-      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
-      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> bici 60' suave o descanso total</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><b>Sin fútbol</b></div></div>
+      <div class="r r-ex"><span>Nota</span><div>Bici 60' suave o descanso total</div></div>
     </div></div>
     <div class="d"><div class="d-n">Viernes 30</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-nat">Calentamiento en seco 4'</a></div></div>
@@ -1029,28 +1029,24 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     </div></div>
     <div class="d d-fin"><div class="d-n">Sábado 31</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-bici">Calentamiento rodando</a> 12'</div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bl">Bici larga</a> — <b>2:15</b></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-tr">Trote de transición</a> — <b>25 min</b></div></div>
-      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a> + <a href="#est-run">Estiramiento de carrera 8'</a></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bl">Bici larga</a> — <b>75 a 90'</b></div></div>
+      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a></div></div>
       <div class="r r-ex"><span>Nota</span><div><a href="#rodillo">Rodillo 5'</a></div></div>
     </div></div>
     <div class="d d-fin"><div class="d-n">Domingo 1</div><div class="d-l">
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-aa">Agua abierta</a> — <b>400 a 600 m</b></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cl">Carrera larga</a> — <b>10 km</b></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cl">Carrera larga</a> — <b>3 a 4 km</b> suaves</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
+      <div class="r r-ex"><span>Nota</span><div>Solo si la pierna estuvo bien toda la semana</div></div>
       <div class="r r-ex"><span>Nota</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
     </div></div>
-    <p class="sem-n">PRIMERA SESIÓN DE AGUA ABIERTA. Objetivo único: perder el miedo, no medir nada. Nunca solo, boya naranja, y avisa al grupo que eres diabético tipo 1 antes de entrar.</p>
+    <p class="sem-n">REINICIO. Semifinal el miércoles y el jueves sin fútbol. La carrera vuelve el domingo, corta y suave; lee <a href="#pierna">Tu pierna y el fútbol</a>.</p>
   </div>
-  <div class="sem" id="w13" data-ini="2026-11-02" data-n="13">
+  <div class="sem s-hito" id="w13" data-ini="2026-11-02" data-n="13">
     <div class="sem-h"><b>Semana 13</b><span>2 nov – 8 nov</span><a class="wk-top" href="#semanas">↑ semanas</a></div>
     <div class="d"><div class="d-n">Lunes 2</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-nat">Calentamiento en seco 4'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><b>Nado</b> — lo que indique tu maestra</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-nat">Estiramiento de nado 3'</a></div></div>
-      <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-run">Calentamiento de carrera 8'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cc">Corrida corta</a> — <b>30 min</b> a 7:15–7:45</div></div>
-      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#fuerza">Fuerza 25'</a></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-fuerza">Estiramiento de fuerza 5'</a></div></div>
     </div></div>
@@ -1058,7 +1054,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-ej"><span>Sesión</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#rodillo">Rodillo 5'</a></div></div>
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-bici">Calentamiento rodando</a> 15'</div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bq">Bici de calidad</a> — <b>75'</b> · 5 × 3' fuerte con 3' suaves <i>· opcional</i></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bq">Bici de calidad</a> — <b>45'</b> suave</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a></div></div>
     </div></div>
     <div class="d"><div class="d-n">Miércoles 4</div><div class="d-l">
@@ -1068,7 +1064,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><b>Fútbol</b>, si hay partido</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
-      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> pide el nado <b>con patada y aletas</b>, y carrera fácil de 30 a 40 min</div></div>
+      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> pide el nado <b>con patada y aletas</b>, y añade bici 45' suave</div></div>
     </div></div>
     <div class="d"><div class="d-n">Jueves 5</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
@@ -1077,35 +1073,28 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> bici 60' suave o descanso total</div></div>
     </div></div>
     <div class="d"><div class="d-n">Viernes 6</div><div class="d-l">
-      <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-nat">Calentamiento en seco 4'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><b>Nado</b> — lo que indique tu maestra — <b>tu día fuerte de agua</b></div></div>
-      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-nat">Estiramiento de nado 3'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#fuerza">Fuerza 25'</a></div></div>
-      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-fuerza">Estiramiento de fuerza 5'</a></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><b>Descanso total</b></div></div>
+      <div class="r r-ex"><span>Nota</span><div>Mañana empieza el torneo</div></div>
     </div></div>
     <div class="d d-fin"><div class="d-n">Sábado 7</div><div class="d-l">
-      <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-bici">Calentamiento rodando</a> 12'</div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bl">Bici larga</a> — <b>2:30</b></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-tr">Trote de transición</a> — <b>20 min</b></div></div>
-      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a> + <a href="#est-run">Estiramiento de carrera 8'</a></div></div>
-      <div class="r r-ex"><span>Nota</span><div><a href="#rodillo">Rodillo 5'</a></div></div>
+      <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><b>Torneo de fútbol</b> — dos partidos</div></div>
+      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
     </div></div>
     <div class="d d-fin"><div class="d-n">Domingo 8</div><div class="d-l">
-      <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-run">Calentamiento de carrera 8'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cl">Carrera larga</a> — <b>11 km</b> a 7:15–8:00</div></div>
+      <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><b>Torneo de fútbol</b> — dos partidos</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ex"><span>Nota</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
     </div></div>
+    <p class="sem-n">TORNEO. Sábado 7 y domingo 8, dos partidos por día. Cuatro partidos valen por una semana completa de entrenamiento: no le sumes nada. El jueves, según el partido: es el primero que se sacrifica.</p>
   </div>
-  <div class="sem s-hito" id="w14" data-ini="2026-11-09" data-n="14">
+  <div class="sem" id="w14" data-ini="2026-11-09" data-n="14">
     <div class="sem-h"><b>Semana 14</b><span>9 nov – 15 nov</span><a class="wk-top" href="#semanas">↑ semanas</a></div>
     <div class="d"><div class="d-n">Lunes 9</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-nat">Calentamiento en seco 4'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><b>Nado</b> — lo que indique tu maestra</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><b>Nado suave</b> — para recuperar del torneo</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-nat">Estiramiento de nado 3'</a></div></div>
-      <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-run">Calentamiento de carrera 8'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cc">Corrida corta</a> — <b>35 min</b> a 7:15–7:45</div></div>
-      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#fuerza">Fuerza 25'</a></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-fuerza">Estiramiento de fuerza 5'</a></div></div>
     </div></div>
@@ -1113,7 +1102,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-ej"><span>Sesión</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#rodillo">Rodillo 5'</a></div></div>
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-bici">Calentamiento rodando</a> 15'</div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bq">Bici de calidad</a> — <b>75'</b> · 5 × 3' fuerte con 3' suaves <i>· opcional</i></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bq">Bici de calidad</a> — <b>50'</b> · 4 × 2' fuerte con 2' suaves</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a></div></div>
     </div></div>
     <div class="d"><div class="d-n">Miércoles 11</div><div class="d-l">
@@ -1123,7 +1112,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><b>Fútbol</b>, si hay partido</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
-      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> pide el nado <b>con patada y aletas</b>, y carrera fácil de 30 a 40 min</div></div>
+      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> pide el nado <b>con patada y aletas</b>, y añade bici 45' suave</div></div>
     </div></div>
     <div class="d"><div class="d-n">Jueves 12</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
@@ -1140,27 +1129,25 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     </div></div>
     <div class="d d-fin"><div class="d-n">Sábado 14</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-bici">Calentamiento rodando</a> 12'</div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bl">Bici larga</a> — <b>2:30</b></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-tr">Trote de transición</a> — <b>25 min</b></div></div>
-      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a> + <a href="#est-run">Estiramiento de carrera 8'</a></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bl">Bici larga</a> — <b>90'</b></div></div>
+      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a></div></div>
       <div class="r r-ex"><span>Nota</span><div><a href="#rodillo">Rodillo 5'</a></div></div>
     </div></div>
     <div class="d d-fin"><div class="d-n">Domingo 15</div><div class="d-l">
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-aa">Agua abierta</a> — <b>800 m</b>, practicando orientación</div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cl">Carrera larga</a> — <b>12 km</b></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cl">Carrera larga</a> — <b>4 a 5 km</b></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ex"><span>Nota</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
     </div></div>
-    <p class="sem-n">Segunda de agua abierta. Practica levantar la vista cada 6 brazadas sin cortar el ritmo.</p>
+    <p class="sem-n">El lunes, nado suave para recuperar del torneo.</p>
   </div>
-  <div class="sem s-descarga" id="w15" data-ini="2026-11-16" data-n="15">
-    <div class="sem-h"><b>Semana 15</b><span>16 nov – 22 nov</span><em class="tag-d">descarga</em><a class="wk-top" href="#semanas">↑ semanas</a></div>
+  <div class="sem" id="w15" data-ini="2026-11-16" data-n="15">
+    <div class="sem-h"><b>Semana 15</b><span>16 nov – 22 nov</span><a class="wk-top" href="#semanas">↑ semanas</a></div>
     <div class="d"><div class="d-n">Lunes 16</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-nat">Calentamiento en seco 4'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><b>Nado</b> — lo que indique tu maestra</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-nat">Estiramiento de nado 3'</a></div></div>
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-run">Calentamiento de carrera 8'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cc">Corrida corta</a> — <b>20 min</b> a 7:15–7:45</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cc">Corrida corta</a> — <b>3 km</b></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#fuerza">Fuerza 25'</a></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-fuerza">Estiramiento de fuerza 5'</a></div></div>
@@ -1168,6 +1155,9 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     <div class="d"><div class="d-n">Martes 17</div><div class="d-l">
       <div class="r r-ej"><span>Sesión</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#rodillo">Rodillo 5'</a></div></div>
+      <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-bici">Calentamiento rodando</a> 15'</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bq">Bici de calidad</a> — <b>55'</b> · 5 × 2' fuerte con 2' suaves</div></div>
+      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a></div></div>
     </div></div>
     <div class="d"><div class="d-n">Miércoles 18</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-nat">Calentamiento en seco 4'</a></div></div>
@@ -1176,7 +1166,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><b>Fútbol</b>, si hay partido</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
-      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> pide el nado <b>con patada y aletas</b>, y carrera fácil de 30 a 40 min</div></div>
+      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> pide el nado <b>con patada y aletas</b>, y añade bici 45' suave</div></div>
     </div></div>
     <div class="d"><div class="d-n">Jueves 19</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
@@ -1186,24 +1176,28 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     </div></div>
     <div class="d"><div class="d-n">Viernes 20</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-nat">Calentamiento en seco 4'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-test">Test 1.500 continuos</a></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><b>Nado</b> — lo que indique tu maestra — <b>tu día fuerte de agua</b></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-nat">Estiramiento de nado 3'</a></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-test">Test 1.500 continuos</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#fuerza">Fuerza 25'</a></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-fuerza">Estiramiento de fuerza 5'</a></div></div>
     </div></div>
     <div class="d d-fin"><div class="d-n">Sábado 21</div><div class="d-l">
-      <div class="r r-ej"><span>Sesión</span><div>Bici <b>60' suave</b></div></div>
-      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a></div></div>
+      <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-bici">Calentamiento rodando</a> 12'</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bl">Bici larga</a> — <b>1:45</b></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-tr">Trote de transición</a> — <b>10 min</b></div></div>
+      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a> + <a href="#est-run">Estiramiento de carrera 8'</a></div></div>
+      <div class="r r-ex"><span>Nota</span><div><a href="#rodillo">Rodillo 5'</a></div></div>
     </div></div>
     <div class="d d-fin"><div class="d-n">Domingo 22</div><div class="d-l">
-      <div class="r r-ej"><span>Sesión</span><div><b>SPRINT OPCIONAL</b> — 750 m / 20 km / 5 km<br>o carrera de <b>8 km</b></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cl">Carrera larga</a> — <b>6 km</b></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ex"><span>Nota</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
     </div></div>
-    <p class="sem-n">Semana de descarga. El sprint del domingo 22 es opcional pero muy recomendable: ahí aprendes la salida en masa, las transiciones, y cómo responde tu glucosa en competencia.</p>
+    <p class="sem-n">Entra la corrida corta del lunes.</p>
   </div>
 
-  <h3 style="border-bottom-color:var(--pisada)">Bloque 3 · Umbral</h3>
+  <h3 style="border-bottom-color:var(--rueda)">Bloque B · Construcción <span class="sm">23 nov – 20 dic</span></h3>
 
   <div class="sem" id="w16" data-ini="2026-11-23" data-n="16">
     <div class="sem-h"><b>Semana 16</b><span>23 nov – 29 nov</span><a class="wk-top" href="#semanas">↑ semanas</a></div>
@@ -1212,7 +1206,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-ej"><span>Sesión</span><div><b>Nado</b> — lo que indique tu maestra</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-nat">Estiramiento de nado 3'</a></div></div>
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-run">Calentamiento de carrera 8'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cc">Corrida corta</a> — <b>35 min</b> a 7:15–7:45</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cc">Corrida corta</a> — <b>4 km</b></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#fuerza">Fuerza 25'</a></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-fuerza">Estiramiento de fuerza 5'</a></div></div>
@@ -1221,7 +1215,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-ej"><span>Sesión</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#rodillo">Rodillo 5'</a></div></div>
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-bici">Calentamiento rodando</a> 15'</div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bq">Bici de calidad</a> — <b>70'</b> · 4 × 5' a umbral con 3' suaves <i>· opcional</i></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bq">Bici de calidad</a> — <b>60'</b> · 4 × 3' fuerte con 3' suaves</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a></div></div>
     </div></div>
     <div class="d"><div class="d-n">Miércoles 25</div><div class="d-l">
@@ -1231,7 +1225,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><b>Fútbol</b>, si hay partido</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
-      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> pide el nado <b>con patada y aletas</b>, y carrera con 6 × 2 min a ritmo y 2 min de trote</div></div>
+      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> pide el nado <b>con patada y aletas</b>, y añade bici 45' suave</div></div>
     </div></div>
     <div class="d"><div class="d-n">Jueves 26</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
@@ -1248,27 +1242,25 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     </div></div>
     <div class="d d-fin"><div class="d-n">Sábado 28</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-bici">Calentamiento rodando</a> 12'</div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bl">Bici larga</a> — <b>2:15</b> con <b>3 × 10' fuerte</b></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-tr">Trote de transición</a> — <b>20 min</b></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bl">Bici larga</a> — <b>2:00</b></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-tr">Trote de transición</a> — <b>10 min</b></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a> + <a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ex"><span>Nota</span><div><a href="#rodillo">Rodillo 5'</a></div></div>
     </div></div>
     <div class="d d-fin"><div class="d-n">Domingo 29</div><div class="d-l">
-      <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-run">Calentamiento de carrera 8'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cl">Carrera larga</a> — <b>12 km</b> a 7:15–8:00</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cl">Carrera larga</a> — <b>7 km</b></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ex"><span>Nota</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
     </div></div>
-    <p class="sem-n">Entra la intensidad de verdad. La bici larga deja de ser solo cómoda y lleva tramos fuertes dentro.</p>
   </div>
-  <div class="sem" id="w17" data-ini="2026-11-30" data-n="17">
-    <div class="sem-h"><b>Semana 17</b><span>30 nov – 6 dic</span><a class="wk-top" href="#semanas">↑ semanas</a></div>
+  <div class="sem s-descarga" id="w17" data-ini="2026-11-30" data-n="17">
+    <div class="sem-h"><b>Semana 17</b><span>30 nov – 6 dic</span><em class="tag-d">descarga</em><a class="wk-top" href="#semanas">↑ semanas</a></div>
     <div class="d"><div class="d-n">Lunes 30</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-nat">Calentamiento en seco 4'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><b>Nado</b> — lo que indique tu maestra</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-nat">Estiramiento de nado 3'</a></div></div>
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-run">Calentamiento de carrera 8'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cc">Corrida corta</a> — <b>35 min</b>, con <b>20 a umbral</b> (6:15–6:40)</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cc">Corrida corta</a> — <b>3 km</b></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#fuerza">Fuerza 25'</a></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-fuerza">Estiramiento de fuerza 5'</a></div></div>
@@ -1277,7 +1269,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-ej"><span>Sesión</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#rodillo">Rodillo 5'</a></div></div>
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-bici">Calentamiento rodando</a> 15'</div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bq">Bici de calidad</a> — <b>75'</b> · 5 × 5' a umbral con 3' suaves <i>· opcional</i></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bq">Bici de calidad</a> — <b>45'</b> suave</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a></div></div>
     </div></div>
     <div class="d"><div class="d-n">Miércoles 2</div><div class="d-l">
@@ -1287,7 +1279,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><b>Fútbol</b>, si hay partido</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
-      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> pide el nado <b>con patada y aletas</b>, y carrera con 6 × 2 min a ritmo y 2 min de trote</div></div>
+      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> pide el nado <b>con patada y aletas</b>, y añade bici 45' suave</div></div>
     </div></div>
     <div class="d"><div class="d-n">Jueves 3</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
@@ -1299,22 +1291,22 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-nat">Calentamiento en seco 4'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><b>Nado</b> — lo que indique tu maestra — <b>tu día fuerte de agua</b></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-nat">Estiramiento de nado 3'</a></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-test">Test 1.500 continuos</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#fuerza">Fuerza 25'</a></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-fuerza">Estiramiento de fuerza 5'</a></div></div>
     </div></div>
     <div class="d d-fin"><div class="d-n">Sábado 5</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-bici">Calentamiento rodando</a> 12'</div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bl">Bici larga</a> — <b>2:30</b> con <b>3 × 12' fuerte</b></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-tr">Trote de transición</a> — <b>20 min</b></div></div>
-      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a> + <a href="#est-run">Estiramiento de carrera 8'</a></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bl">Bici larga</a> — <b>1:30</b></div></div>
+      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a></div></div>
       <div class="r r-ex"><span>Nota</span><div><a href="#rodillo">Rodillo 5'</a></div></div>
     </div></div>
     <div class="d d-fin"><div class="d-n">Domingo 6</div><div class="d-l">
-      <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-run">Calentamiento de carrera 8'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cl">Carrera larga</a> — <b>13 km</b> a 7:15–8:00</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cl">Carrera larga</a> — <b>5 km</b></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ex"><span>Nota</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
     </div></div>
+    <p class="sem-n">SALE EL CALENDARIO DE LA FEDERACIÓN esta semana. Inscríbete el día que salga y declara tu bomba de insulina al organizador.</p>
   </div>
   <div class="sem s-hito" id="w18" data-ini="2026-12-07" data-n="18">
     <div class="sem-h"><b>Semana 18</b><span>7 dic – 13 dic</span><a class="wk-top" href="#semanas">↑ semanas</a></div>
@@ -1323,7 +1315,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-ej"><span>Sesión</span><div><b>Nado</b> — lo que indique tu maestra</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-nat">Estiramiento de nado 3'</a></div></div>
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-run">Calentamiento de carrera 8'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cc">Corrida corta</a> — <b>40 min</b>, con <b>20 a umbral</b> (6:15–6:40)</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cc">Corrida corta</a> — <b>5 km</b></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#fuerza">Fuerza 25'</a></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-fuerza">Estiramiento de fuerza 5'</a></div></div>
@@ -1332,7 +1324,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-ej"><span>Sesión</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#rodillo">Rodillo 5'</a></div></div>
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-bici">Calentamiento rodando</a> 15'</div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bq">Bici de calidad</a> — <b>75'</b> · 5 × 5' a umbral con 3' suaves <i>· opcional</i></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bq">Bici de calidad</a> — <b>60'</b> · 5 × 3' fuerte con 3' suaves</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a></div></div>
     </div></div>
     <div class="d"><div class="d-n">Miércoles 9</div><div class="d-l">
@@ -1342,7 +1334,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><b>Fútbol</b>, si hay partido</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
-      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> pide el nado <b>con patada y aletas</b>, y carrera con 6 × 2 min a ritmo y 2 min de trote</div></div>
+      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> pide el nado <b>con patada y aletas</b>, y añade bici 45' suave</div></div>
     </div></div>
     <div class="d"><div class="d-n">Jueves 10</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
@@ -1352,34 +1344,34 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     </div></div>
     <div class="d"><div class="d-n">Viernes 11</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-nat">Calentamiento en seco 4'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-test">Test 1.500 continuos</a></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><b>Nado</b> — lo que indique tu maestra — <b>tu día fuerte de agua</b></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-nat">Estiramiento de nado 3'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#fuerza">Fuerza 25'</a></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-fuerza">Estiramiento de fuerza 5'</a></div></div>
     </div></div>
     <div class="d d-fin"><div class="d-n">Sábado 12</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-bici">Calentamiento rodando</a> 12'</div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bl">Bici larga</a> — <b>2:30</b> con <b>2 × 20' fuerte</b></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-tr">Trote de transición</a> — <b>25 min</b></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bl">Bici larga</a> — <b>2:15</b></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-tr">Trote de transición</a> — <b>15 min</b></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a> + <a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ex"><span>Nota</span><div><a href="#rodillo">Rodillo 5'</a></div></div>
     </div></div>
     <div class="d d-fin"><div class="d-n">Domingo 13</div><div class="d-l">
-      <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-run">Calentamiento de carrera 8'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cl">Carrera larga</a> — <b>14 km</b> a 7:15–8:00</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-aa">Agua abierta</a> — <b>400 a 600 m</b></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cl">Carrera larga</a> — <b>8 km</b></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ex"><span>Nota</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
     </div></div>
-    <p class="sem-n">SALE EL CALENDARIO FMTRI 2027 esta semana. Inscríbete el día que salga — las sedes buenas se llenan. Y declara tu dispositivo médico al organizador.</p>
+    <p class="sem-n">PRIMERA VEZ EN AGUAS ABIERTAS. Objetivo único: perder el miedo, no medir nada. Nunca solo, boya naranja, y avisa al grupo que eres diabético tipo 1 antes de entrar. Este mes: traje de triatlón, cinturón portanúmero y cordones elásticos.</p>
   </div>
-  <div class="sem s-descarga" id="w19" data-ini="2026-12-14" data-n="19">
-    <div class="sem-h"><b>Semana 19</b><span>14 dic – 20 dic</span><em class="tag-d">descarga</em><a class="wk-top" href="#semanas">↑ semanas</a></div>
+  <div class="sem" id="w19" data-ini="2026-12-14" data-n="19">
+    <div class="sem-h"><b>Semana 19</b><span>14 dic – 20 dic</span><a class="wk-top" href="#semanas">↑ semanas</a></div>
     <div class="d"><div class="d-n">Lunes 14</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-nat">Calentamiento en seco 4'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><b>Nado</b> — lo que indique tu maestra</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-nat">Estiramiento de nado 3'</a></div></div>
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-run">Calentamiento de carrera 8'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cc">Corrida corta</a> — <b>25 min</b> a 7:15–7:45</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cc">Corrida corta</a> — <b>5 km</b></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#fuerza">Fuerza 25'</a></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-fuerza">Estiramiento de fuerza 5'</a></div></div>
@@ -1387,6 +1379,9 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     <div class="d"><div class="d-n">Martes 15</div><div class="d-l">
       <div class="r r-ej"><span>Sesión</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#rodillo">Rodillo 5'</a></div></div>
+      <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-bici">Calentamiento rodando</a> 15'</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bq">Bici de calidad</a> — <b>65'</b> · 4 × 4' fuerte con 4' suaves</div></div>
+      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a></div></div>
     </div></div>
     <div class="d"><div class="d-n">Miércoles 16</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-nat">Calentamiento en seco 4'</a></div></div>
@@ -1395,7 +1390,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><b>Fútbol</b>, si hay partido</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
-      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> pide el nado <b>con patada y aletas</b>, y carrera con 6 × 2 min a ritmo y 2 min de trote</div></div>
+      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> pide el nado <b>con patada y aletas</b>, y añade bici 45' suave</div></div>
     </div></div>
     <div class="d"><div class="d-n">Jueves 17</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
@@ -1411,30 +1406,39 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-fuerza">Estiramiento de fuerza 5'</a></div></div>
     </div></div>
     <div class="d d-fin"><div class="d-n">Sábado 19</div><div class="d-l">
-      <div class="r r-ej"><span>Sesión</span><div>Bici <b>90' suave</b></div></div>
-      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a></div></div>
+      <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-bici">Calentamiento rodando</a> 12'</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bl">Bici larga</a> — <b>2:30</b></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-tr">Trote de transición</a> — <b>15 min</b></div></div>
+      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a> + <a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ex"><span>Nota</span><div><a href="#rodillo">Rodillo 5'</a></div></div>
     </div></div>
     <div class="d d-fin"><div class="d-n">Domingo 20</div><div class="d-l">
-      <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-run">Calentamiento de carrera 8'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cl">Carrera larga</a> — <b>9 km</b> a 7:15–8:00</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-aa">Agua abierta</a> — <b>800 m</b></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cl">Carrera larga</a> — <b>9 km</b></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ex"><span>Nota</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
     </div></div>
-    <p class="sem-n">Semana de descarga.</p>
+    <p class="sem-n">Segunda de aguas abiertas. Practica levantar la vista cada 6 brazadas sin cortar el ritmo.</p>
   </div>
-  <div class="sem s-descarga" id="w20" data-ini="2026-12-21" data-n="20">
-    <div class="sem-h"><b>Semana 20</b><span>21 dic – 27 dic</span><em class="tag-d">descarga</em><a class="wk-top" href="#semanas">↑ semanas</a></div>
+
+  <h3 style="border-bottom-color:var(--balon)">Bloque C · Fiestas <span class="sm">21 dic – 3 ene</span></h3>
+
+  <div class="sem" id="w20" data-ini="2026-12-21" data-n="20">
+    <div class="sem-h"><b>Semana 20</b><span>21 dic – 27 dic</span><a class="wk-top" href="#semanas">↑ semanas</a></div>
     <div class="d"><div class="d-n">Lunes 21</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-nat">Calentamiento en seco 4'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div>Nado si abre la alberca</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><b>Nado</b> — lo que indique tu maestra</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-nat">Estiramiento de nado 3'</a></div></div>
+      <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-run">Calentamiento de carrera 8'</a></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cc">Corrida corta</a> — <b>4 km</b></div></div>
+      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#fuerza">Fuerza 25'</a></div></div>
+      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-fuerza">Estiramiento de fuerza 5'</a></div></div>
     </div></div>
     <div class="d"><div class="d-n">Martes 22</div><div class="d-l">
       <div class="r r-ej"><span>Sesión</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#rodillo">Rodillo 5'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div>Bici <i>lo que se pueda</i></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><b>Bici libre</b> — si la agenda lo permite</div></div>
     </div></div>
     <div class="d"><div class="d-n">Miércoles 23</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-nat">Calentamiento en seco 4'</a></div></div>
@@ -1443,7 +1447,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><b>Fútbol</b>, si hay partido</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
-      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> pide el nado <b>con patada y aletas</b>, y carrera con 6 × 2 min a ritmo y 2 min de trote</div></div>
+      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> pide el nado <b>con patada y aletas</b>, y añade bici 45' suave</div></div>
     </div></div>
     <div class="d"><div class="d-n">Jueves 24</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
@@ -1459,29 +1463,31 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-fuerza">Estiramiento de fuerza 5'</a></div></div>
     </div></div>
     <div class="d d-fin"><div class="d-n">Sábado 26</div><div class="d-l">
-      <div class="r r-ej"><span>Sesión</span><div>Bici <b>2:00</b> si aparece el hueco</div></div>
+      <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-bici">Calentamiento rodando</a> 12'</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bl">Bici larga</a> — <b>2:00</b></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a></div></div>
+      <div class="r r-ex"><span>Nota</span><div><a href="#rodillo">Rodillo 5'</a></div></div>
     </div></div>
     <div class="d d-fin"><div class="d-n">Domingo 27</div><div class="d-l">
-      <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-run">Calentamiento de carrera 8'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cl">Carrera larga</a> — <b>9 km</b> a 7:15–8:00</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cl">Carrera larga</a> — <b>8 km</b></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ex"><span>Nota</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
     </div></div>
-    <p class="sem-n">Fiestas. Semana de mantener, no de construir. Si solo puedes hacer una cosa, que sea la del domingo.</p>
+    <p class="sem-n">Fiestas. Mueve los días a tu agenda; lo que no se negocia es la bici larga.</p>
   </div>
   <div class="sem s-descarga" id="w21" data-ini="2026-12-28" data-n="21">
     <div class="sem-h"><b>Semana 21</b><span>28 dic – 3 ene</span><em class="tag-d">descarga</em><a class="wk-top" href="#semanas">↑ semanas</a></div>
     <div class="d"><div class="d-n">Lunes 28</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-nat">Calentamiento en seco 4'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div>Nado si abre la alberca</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><b>Nado</b> — lo que indique tu maestra</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-nat">Estiramiento de nado 3'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#fuerza">Fuerza 25'</a></div></div>
+      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-fuerza">Estiramiento de fuerza 5'</a></div></div>
     </div></div>
     <div class="d"><div class="d-n">Martes 29</div><div class="d-l">
       <div class="r r-ej"><span>Sesión</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#rodillo">Rodillo 5'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div>Bici <i>lo que se pueda</i></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><b>Bici libre</b> — si la agenda lo permite</div></div>
     </div></div>
     <div class="d"><div class="d-n">Miércoles 30</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-nat">Calentamiento en seco 4'</a></div></div>
@@ -1490,7 +1496,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><b>Fútbol</b>, si hay partido</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
-      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> pide el nado <b>con patada y aletas</b>, y carrera con 6 × 2 min a ritmo y 2 min de trote</div></div>
+      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> pide el nado <b>con patada y aletas</b>, y añade bici 45' suave</div></div>
     </div></div>
     <div class="d"><div class="d-n">Jueves 31</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
@@ -1507,21 +1513,19 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     </div></div>
     <div class="d d-fin"><div class="d-n">Sábado 2</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-bici">Calentamiento rodando</a> 12'</div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bl">Bici larga</a> — <b>2:00</b></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-tr">Trote de transición</a> — <b>15 min</b></div></div>
-      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a> + <a href="#est-run">Estiramiento de carrera 8'</a></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bl">Bici larga</a> — <b>1:30</b></div></div>
+      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a></div></div>
       <div class="r r-ex"><span>Nota</span><div><a href="#rodillo">Rodillo 5'</a></div></div>
     </div></div>
     <div class="d d-fin"><div class="d-n">Domingo 3</div><div class="d-l">
-      <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-run">Calentamiento de carrera 8'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cl">Carrera larga</a> — <b>11 km</b> a 7:15–8:00</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cl">Carrera larga</a> — <b>7 km</b></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ex"><span>Nota</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
     </div></div>
-    <p class="sem-n">Fiestas.</p>
+    <p class="sem-n">Fiestas. Semana de descarga.</p>
   </div>
 
-  <h3 style="border-bottom-color:var(--balon)">Bloque 4 · Específico</h3>
+  <h3 style="border-bottom-color:var(--pisada)">Bloque D · Específico <span class="sm">4 – 31 ene</span></h3>
 
   <div class="sem s-hito" id="w22" data-ini="2027-01-04" data-n="22">
     <div class="sem-h"><b>Semana 22</b><span>4 ene – 10 ene</span><a class="wk-top" href="#semanas">↑ semanas</a></div>
@@ -1530,7 +1534,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-ej"><span>Sesión</span><div><b>Nado</b> — lo que indique tu maestra</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-nat">Estiramiento de nado 3'</a></div></div>
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-run">Calentamiento de carrera 8'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cc">Corrida corta</a> — <b>30 min</b> a 7:15–7:45</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cc">Corrida corta</a> — <b>5 km</b></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#fuerza">Fuerza 25'</a></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-fuerza">Estiramiento de fuerza 5'</a></div></div>
@@ -1539,7 +1543,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-ej"><span>Sesión</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#rodillo">Rodillo 5'</a></div></div>
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-bici">Calentamiento rodando</a> 15'</div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bq">Bici de calidad</a> — <b>70'</b> · 5 × 5' a umbral <i>· opcional</i></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bq">Bici de calidad</a> — <b>70'</b> · 3 × 6' fuerte con 6' suaves</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a></div></div>
     </div></div>
     <div class="d"><div class="d-n">Miércoles 6</div><div class="d-l">
@@ -1549,7 +1553,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><b>Fútbol</b>, si hay partido</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
-      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> pide el nado <b>con patada y aletas</b>, y carrera con 6 × 2 min a ritmo y 2 min de trote</div></div>
+      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> pide el nado <b>con patada y aletas</b>, y añade bici 45' suave</div></div>
     </div></div>
     <div class="d"><div class="d-n">Jueves 7</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
@@ -1565,23 +1569,24 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-fuerza">Estiramiento de fuerza 5'</a></div></div>
     </div></div>
     <div class="d d-fin"><div class="d-n">Sábado 9</div><div class="d-l">
-      <div class="r r-ej"><span>Sesión</span><div><b><a href="#s-sim1">SIMULACIÓN 1</a></b> — 1.5 km nado + 40 km bici + 5 km corriendo</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><b><a href="#s-sim1">SIMULACIÓN 1</a></b> — 750 m nado + 1:15 bici + 5 km corriendo</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a> + <a href="#est-run">Estiramiento de carrera 8'</a></div></div>
     </div></div>
     <div class="d d-fin"><div class="d-n">Domingo 10</div><div class="d-l">
-      <div class="r r-ej"><span>Sesión</span><div>Descanso o <b>7 km</b> suaves</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cl">Carrera</a> — <b>suave</b>, o descanso</div></div>
+      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ex"><span>Nota</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
     </div></div>
-    <p class="sem-n">SIMULACIÓN 1. Sin ritmo objetivo, sin cronómetro. Objetivo: conocer el encadenado y practicar las transiciones. Casco puesto ANTES de tocar la bici; casco fuera DESPUÉS de colgarla.</p>
+    <p class="sem-n">SIMULACIÓN 1 el sábado. Sin ritmo objetivo, sin cronómetro: encadenar los tres deportes. Casco puesto ANTES de tocar la bici; casco fuera DESPUÉS de colgarla.</p>
   </div>
-  <div class="sem s-hito" id="w23" data-ini="2027-01-11" data-n="23">
+  <div class="sem" id="w23" data-ini="2027-01-11" data-n="23">
     <div class="sem-h"><b>Semana 23</b><span>11 ene – 17 ene</span><a class="wk-top" href="#semanas">↑ semanas</a></div>
     <div class="d"><div class="d-n">Lunes 11</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-nat">Calentamiento en seco 4'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><b>Nado</b> — lo que indique tu maestra</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-nat">Estiramiento de nado 3'</a></div></div>
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-run">Calentamiento de carrera 8'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cc">Corrida corta</a> — <b>30 min</b> a 7:15–7:45</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cc">Corrida corta</a> — <b>5 km</b> · 3 × 1 km a ritmo</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#fuerza">Fuerza 25'</a></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-fuerza">Estiramiento de fuerza 5'</a></div></div>
@@ -1590,7 +1595,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-ej"><span>Sesión</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#rodillo">Rodillo 5'</a></div></div>
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-bici">Calentamiento rodando</a> 15'</div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bq">Bici de calidad</a> — <b>70'</b> · 5 × 5' a umbral <i>· opcional</i></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bq">Bici de calidad</a> — <b>70'</b> · 4 × 5' fuerte con 5' suaves</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a></div></div>
     </div></div>
     <div class="d"><div class="d-n">Miércoles 13</div><div class="d-l">
@@ -1600,7 +1605,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><b>Fútbol</b>, si hay partido</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
-      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> pide el nado <b>con patada y aletas</b>, y carrera con 6 × 2 min a ritmo y 2 min de trote</div></div>
+      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> pide el nado <b>con patada y aletas</b>, y añade bici 45' suave</div></div>
     </div></div>
     <div class="d"><div class="d-n">Jueves 14</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
@@ -1618,17 +1623,17 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     <div class="d d-fin"><div class="d-n">Sábado 16</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-bici">Calentamiento rodando</a> 12'</div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#s-bl">Bici larga</a> — <b>2:30</b></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-tr">Trote de transición</a> — <b>30 min</b></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-tr">Trote de transición</a> — <b>20 min</b></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a> + <a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ex"><span>Nota</span><div><a href="#rodillo">Rodillo 5'</a></div></div>
     </div></div>
     <div class="d d-fin"><div class="d-n">Domingo 17</div><div class="d-l">
-      <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-run">Calentamiento de carrera 8'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cl">Carrera larga</a> — <b>15 km</b> a 7:15–8:00</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-aa">Agua abierta</a> — <b>1.200 m</b></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cl">Carrera larga</a> — <b>11 a 12 km</b></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ex"><span>Nota</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
     </div></div>
-    <p class="sem-n">Tu carrera más larga de todo el plan. No hace falta más que esto.</p>
+    <p class="sem-n">Tercera de aguas abiertas: 1.200 m.</p>
   </div>
   <div class="sem s-hito" id="w24" data-ini="2027-01-18" data-n="24">
     <div class="sem-h"><b>Semana 24</b><span>18 ene – 24 ene</span><a class="wk-top" href="#semanas">↑ semanas</a></div>
@@ -1637,7 +1642,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-ej"><span>Sesión</span><div><b>Nado</b> — lo que indique tu maestra</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-nat">Estiramiento de nado 3'</a></div></div>
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-run">Calentamiento de carrera 8'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cc">Corrida corta</a> — <b>25 min</b> a 7:15–7:45</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cc">Corrida corta</a> — <b>4 km</b></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#fuerza">Fuerza 25'</a></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-fuerza">Estiramiento de fuerza 5'</a></div></div>
@@ -1646,7 +1651,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-ej"><span>Sesión</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#rodillo">Rodillo 5'</a></div></div>
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-bici">Calentamiento rodando</a> 15'</div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bq">Bici de calidad</a> — <b>60'</b> · 4 × 3' fuerte <i>· opcional</i></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bq">Bici de calidad</a> — <b>60'</b> · 3 × 6' fuerte con 6' suaves</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a></div></div>
     </div></div>
     <div class="d"><div class="d-n">Miércoles 20</div><div class="d-l">
@@ -1656,7 +1661,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><b>Fútbol</b>, si hay partido</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
-      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> pide el nado <b>con patada y aletas</b>, y carrera con 6 × 2 min a ritmo y 2 min de trote</div></div>
+      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> pide el nado <b>con patada y aletas</b>, y añade bici 45' suave</div></div>
     </div></div>
     <div class="d"><div class="d-n">Jueves 21</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
@@ -1672,22 +1677,24 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-fuerza">Estiramiento de fuerza 5'</a></div></div>
     </div></div>
     <div class="d d-fin"><div class="d-n">Sábado 23</div><div class="d-l">
-      <div class="r r-ej"><span>Sesión</span><div><b><a href="#s-sim2">SIMULACIÓN 2 COMPLETA</a></b> — 1.5 + 40 + 10 km, <b>de mañana</b></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><b><a href="#s-sim2">SIMULACIÓN 2</a></b> — 1.500 m nado + 40 km bici + 8 km corriendo, de mañana</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a> + <a href="#est-run">Estiramiento de carrera 8'</a></div></div>
     </div></div>
     <div class="d d-fin"><div class="d-n">Domingo 24</div><div class="d-l">
-      <div class="r r-ej"><span>Sesión</span><div><b>Descanso total</b></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cl">Carrera</a> — <b>suave</b>, o descanso</div></div>
+      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
+      <div class="r r-ex"><span>Nota</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
     </div></div>
-    <p class="sem-n">ENSAYO GENERAL. A ritmo objetivo y a la hora de la carrera. Ensaya todo: desayuno tres horas antes, ropa completa, nutrición de la bici, calcetines con los pies mojados.</p>
+    <p class="sem-n">ENSAYO GENERAL el sábado, completo y de mañana, a la hora de la carrera. Ensaya transiciones, comida, bidones y glucosa.</p>
   </div>
-  <div class="sem s-descarga" id="w25" data-ini="2027-01-25" data-n="25">
-    <div class="sem-h"><b>Semana 25</b><span>25 ene – 31 ene</span><em class="tag-d">descarga</em><a class="wk-top" href="#semanas">↑ semanas</a></div>
+  <div class="sem" id="w25" data-ini="2027-01-25" data-n="25">
+    <div class="sem-h"><b>Semana 25</b><span>25 ene – 31 ene</span><a class="wk-top" href="#semanas">↑ semanas</a></div>
     <div class="d"><div class="d-n">Lunes 25</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-nat">Calentamiento en seco 4'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><b>Nado</b> — lo que indique tu maestra</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-nat">Estiramiento de nado 3'</a></div></div>
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-run">Calentamiento de carrera 8'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cc">Corrida corta</a> — <b>20 min</b> a 7:15–7:45</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cc">Corrida corta</a> — <b>5 km</b> · 3 × 1 km a ritmo</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#fuerza">Fuerza 25'</a></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-fuerza">Estiramiento de fuerza 5'</a></div></div>
@@ -1695,6 +1702,9 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     <div class="d"><div class="d-n">Martes 26</div><div class="d-l">
       <div class="r r-ej"><span>Sesión</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#rodillo">Rodillo 5'</a></div></div>
+      <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-bici">Calentamiento rodando</a> 15'</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bq">Bici de calidad</a> — <b>60'</b> · 4 × 5' fuerte con 5' suaves</div></div>
+      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a></div></div>
     </div></div>
     <div class="d"><div class="d-n">Miércoles 27</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-nat">Calentamiento en seco 4'</a></div></div>
@@ -1703,7 +1713,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><b>Fútbol</b>, si hay partido</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
-      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> pide el nado <b>con patada y aletas</b>, y carrera con 6 × 2 min a ritmo y 2 min de trote</div></div>
+      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> pide el nado <b>con patada y aletas</b>, y añade bici 45' suave</div></div>
     </div></div>
     <div class="d"><div class="d-n">Jueves 28</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
@@ -1719,20 +1729,22 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-fuerza">Estiramiento de fuerza 5'</a></div></div>
     </div></div>
     <div class="d d-fin"><div class="d-n">Sábado 30</div><div class="d-l">
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-aa">Agua abierta</a> — <b>1.500 m continuos</b></div></div>
-      <div class="r r-ej"><span>Sesión</span><div>Bici <b>90'</b></div></div>
-      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a></div></div>
+      <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-bici">Calentamiento rodando</a> 12'</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bl">Bici larga</a> — <b>2:00</b></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-tr">Trote de transición</a> — <b>20 min</b></div></div>
+      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a> + <a href="#est-run">Estiramiento de carrera 8'</a></div></div>
+      <div class="r r-ex"><span>Nota</span><div><a href="#rodillo">Rodillo 5'</a></div></div>
     </div></div>
     <div class="d d-fin"><div class="d-n">Domingo 31</div><div class="d-l">
-      <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-run">Calentamiento de carrera 8'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cl">Carrera larga</a> — <b>9 km</b> a 7:15–8:00</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-aa">Agua abierta</a> — <b>1.500 m</b></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cl">Carrera larga</a> — <b>10 km</b></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ex"><span>Nota</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
     </div></div>
-    <p class="sem-n">Cuarta y última de agua abierta, distancia completa. Semana de descarga.</p>
+    <p class="sem-n">Cuarta y última de aguas abiertas, distancia completa.</p>
   </div>
 
-  <h3 style="border-bottom-color:var(--verde)">Bloque 5 · Afinar</h3>
+  <h3 style="border-bottom-color:var(--verde)">Bloque E · Afinar <span class="sm">1 – 21 feb</span></h3>
 
   <div class="sem s-hito" id="w26" data-ini="2027-02-01" data-n="26">
     <div class="sem-h"><b>Semana 26</b><span>1 feb – 7 feb</span><a class="wk-top" href="#semanas">↑ semanas</a></div>
@@ -1741,7 +1753,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-ej"><span>Sesión</span><div><b>Nado</b> — lo que indique tu maestra</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-nat">Estiramiento de nado 3'</a></div></div>
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-run">Calentamiento de carrera 8'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cc">Corrida corta</a> — <b>25 min</b> a 7:15–7:45</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cc">Corrida corta</a> — <b>4 km</b></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#fuerza">Fuerza 25'</a></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-fuerza">Estiramiento de fuerza 5'</a></div></div>
@@ -1750,7 +1762,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-ej"><span>Sesión</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#rodillo">Rodillo 5'</a></div></div>
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-bici">Calentamiento rodando</a> 15'</div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bq">Bici de calidad</a> — <b>45'</b> · 4 × 3' fuerte con 3' suaves <i>· opcional</i></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bq">Bici de calidad</a> — <b>50'</b> · 3 × 4' fuerte con 4' suaves</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a></div></div>
     </div></div>
     <div class="d"><div class="d-n">Miércoles 3</div><div class="d-l">
@@ -1760,12 +1772,13 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><b>Fútbol</b>, si hay partido</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
-      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> pide el nado <b>con patada y aletas</b>, y carrera con 6 × 2 min a ritmo y 2 min de trote</div></div>
+      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> pide el nado <b>con patada y aletas</b>, y añade bici 45' suave</div></div>
     </div></div>
     <div class="d"><div class="d-n">Jueves 4</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-fut">Calentamiento de fútbol 8'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><b>Fútbol · ÚLTIMOS PARTIDOS</b></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><b>Fútbol</b>, si hay partido</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
+      <div class="r r-ex"><span>Nota</span><div><i>Si no hubo fútbol:</i> bici 60' suave o descanso total</div></div>
     </div></div>
     <div class="d"><div class="d-n">Viernes 5</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-nat">Calentamiento en seco 4'</a></div></div>
@@ -1777,26 +1790,25 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     <div class="d d-fin"><div class="d-n">Sábado 6</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-bici">Calentamiento rodando</a> 12'</div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#s-bl">Bici larga</a> — <b>1:45</b></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-tr">Trote de transición</a> — <b>20 min</b></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-tr">Trote de transición</a> — <b>15 min</b></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a> + <a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ex"><span>Nota</span><div><a href="#rodillo">Rodillo 5'</a></div></div>
     </div></div>
     <div class="d d-fin"><div class="d-n">Domingo 7</div><div class="d-l">
-      <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-run">Calentamiento de carrera 8'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cl">Carrera larga</a> — <b>10 km</b> a 7:15–8:00</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cl">Carrera larga</a> — <b>8 km</b></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ex"><span>Nota</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
     </div></div>
-    <p class="sem-n">ÚLTIMOS PARTIDOS DE FÚTBOL. A partir de aquí sale del plan: un tirón a diez días de la carrera te tira siete meses de trabajo.</p>
+    <p class="sem-n">ÚLTIMOS PARTIDOS DE FÚTBOL. A partir de aquí sale del plan: un tirón a diez días de la carrera te tira meses de trabajo.</p>
   </div>
-  <div class="sem s-descarga" id="w27" data-ini="2027-02-08" data-n="27">
-    <div class="sem-h"><b>Semana 27</b><span>8 feb – 14 feb</span><em class="tag-d">descarga</em><a class="wk-top" href="#semanas">↑ semanas</a></div>
+  <div class="sem" id="w27" data-ini="2027-02-08" data-n="27">
+    <div class="sem-h"><b>Semana 27</b><span>8 feb – 14 feb</span><a class="wk-top" href="#semanas">↑ semanas</a></div>
     <div class="d"><div class="d-n">Lunes 8</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-nat">Calentamiento en seco 4'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><b>Nado</b> — lo que indique tu maestra</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-nat">Estiramiento de nado 3'</a></div></div>
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-run">Calentamiento de carrera 8'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cc">Corrida corta</a> — <b>20 min</b> a 7:15–7:45</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cc">Corrida corta</a> — <b>3 km</b></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#fuerza">Fuerza 25'</a></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-fuerza">Estiramiento de fuerza 5'</a></div></div>
@@ -1805,7 +1817,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-ej"><span>Sesión</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#rodillo">Rodillo 5'</a></div></div>
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-bici">Calentamiento rodando</a> 15'</div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bq">Bici de calidad</a> — <b>40'</b> · 4 × 2' fuerte con 3' suaves <i>· opcional</i></div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-bq">Bici de calidad</a> — <b>45'</b> · 3 × 3' fuerte con 3' suaves</div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a></div></div>
     </div></div>
     <div class="d"><div class="d-n">Miércoles 10</div><div class="d-l">
@@ -1814,7 +1826,8 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-nat">Estiramiento de nado 3'</a></div></div>
     </div></div>
     <div class="d"><div class="d-n">Jueves 11</div><div class="d-l">
-      <div class="r r-ej"><span>Sesión</span><div><b>Descanso</b> o nado suave</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><b>Sin fútbol</b></div></div>
+      <div class="r r-ex"><span>Nota</span><div>Bici 60' suave o descanso total</div></div>
     </div></div>
     <div class="d"><div class="d-n">Viernes 12</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-nat">Calentamiento en seco 4'</a></div></div>
@@ -1826,13 +1839,11 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     <div class="d d-fin"><div class="d-n">Sábado 13</div><div class="d-l">
       <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-bici">Calentamiento rodando</a> 12'</div></div>
       <div class="r r-ej"><span>Sesión</span><div><a href="#s-bl">Bici larga</a> — <b>1:15</b></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-tr">Trote de transición</a> — <b>15 min</b></div></div>
-      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a> + <a href="#est-run">Estiramiento de carrera 8'</a></div></div>
+      <div class="r r-est"><span>Estiramiento</span><div><a href="#est-bici">Estiramiento de bici 5'</a></div></div>
       <div class="r r-ex"><span>Nota</span><div><a href="#rodillo">Rodillo 5'</a></div></div>
     </div></div>
     <div class="d d-fin"><div class="d-n">Domingo 14</div><div class="d-l">
-      <div class="r r-cal"><span>Calentamiento</span><div><a href="#cal-run">Calentamiento de carrera 8'</a></div></div>
-      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cl">Carrera larga</a> — <b>8 km</b> a 7:15–8:00</div></div>
+      <div class="r r-ej"><span>Sesión</span><div><a href="#s-cl">Carrera larga</a> — <b>6 km</b></div></div>
       <div class="r r-est"><span>Estiramiento</span><div><a href="#est-run">Estiramiento de carrera 8'</a></div></div>
       <div class="r r-ex"><span>Nota</span><div><a href="#movilidad">Movilidad 20'</a></div></div>
     </div></div>
@@ -1844,7 +1855,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
       <div class="r r-ej"><span>Sesión</span><div>Nado <b>30' suave</b> · <i>nada de series</i></div></div>
     </div></div>
     <div class="d"><div class="d-n">Martes 16</div><div class="d-l">
-      <div class="r r-ej"><span>Sesión</span><div>Bici <b>40'</b> con 3 × 1' a ritmo de carrera</div></div>
+      <div class="r r-ej"><span>Sesión</span><div>Bici <b>30' suave</b></div></div>
       <div class="r r-ex"><span>Nota</span><div><b>Revisión mecánica de la bici</b></div></div>
     </div></div>
     <div class="d"><div class="d-n">Miércoles 17</div><div class="d-l">
@@ -2742,7 +2753,7 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     <p>En agua abierta no hay paredes. Esos 60 microdescansos que te regala la alberca son medio segundo de reinicio cada uno — quitarlos convierte el test en algo parecido al esfuerzo real de la carrera.</p>
   </div></div>
 
-  <div class="fx c-agua"><div class="fx-h"><span class="fx-n" id="s-aa">AA</span><b>Agua abierta</b><span class="fx-d">desde la semana 12 · mínimo 4 sesiones</span></div><div class="fx-b">
+  <div class="fx c-agua"><div class="fx-h"><span class="fx-n" id="s-aa">AA</span><b>Agua abierta</b><span class="fx-d">desde la semana 18 · mínimo 4 sesiones</span></div><div class="fx-b">
     <lab class="ok">Objetivo</lab><p><strong>No es entrenar condición, es quitarle la novedad.</strong> El riesgo real del segmento de nado no es la distancia — es el pánico de los primeros 200 metros. Esas cuatro sesiones existen para que el día de la carrera el agua abierta no sea una experiencia nueva.</p>
     <lab class="err">Reglas que no se negocian</lab>
     <ul>
@@ -2883,10 +2894,10 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
   <!-- SIMULACIONES -->
   <h3 id="s-sim" style="border-bottom-color:var(--agua)">Las simulaciones <span class="sm">enero</span></h3>
 
-  <div class="fx c-agua"><div class="fx-h"><span class="fx-n" id="s-sim1">S22</span><b>Simulación 1 · reconocimiento</b><span class="fx-d">sábado 4 de enero</span></div><div class="fx-b">
+  <div class="fx c-agua"><div class="fx-h"><span class="fx-n" id="s-sim1">S22</span><b>Simulación 1 · reconocimiento</b><span class="fx-d">sábado 9 de enero</span></div><div class="fx-b">
     <lab class="ok">Objetivo</lab><p>Conocer el encadenado completo y montar las transiciones por primera vez. <strong>Sin ritmo objetivo, sin cronómetro, sin competir contigo mismo.</strong></p>
     <lab>Qué haces</lab>
-    <p><strong>1.5 km nadando + 40 km en bici + 5 km corriendo</strong>, encadenados.</p>
+    <p><strong>750 m nadando + 1:15 en bici + 5 km corriendo</strong>, encadenados.</p>
     <lab>Practica las transiciones</lab>
     <ol>
       <li><strong>Del agua a la bici:</strong> goggles y gorra en la mano, <strong>casco puesto ANTES de tocar la bici</strong> — es regla de competencia y descalifican por eso. Después calzado, y sales caminando hasta la línea de montada.</li>
@@ -2895,10 +2906,10 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     </ol>
   </div></div>
 
-  <div class="fx c-agua"><div class="fx-h"><span class="fx-n" id="s-sim2">S24</span><b>Simulación 2 · ensayo general</b><span class="fx-d">sábado 18 de enero, de mañana</span></div><div class="fx-b">
+  <div class="fx c-agua"><div class="fx-h"><span class="fx-n" id="s-sim2">S24</span><b>Simulación 2 · ensayo general</b><span class="fx-d">sábado 23 de enero, de mañana</span></div><div class="fx-b">
     <lab class="ok">Objetivo</lab><p><strong>Lo que falle aquí es lo que arreglas a tiempo.</strong> Es tu único ensayo real, y para ti además es donde ves cómo responde tu glucosa a la distancia completa en las condiciones exactas de la carrera.</p>
     <lab>Qué haces</lab>
-    <p><strong>Distancia completa: 1.5 + 40 + 10</strong>, a ritmo objetivo.</p>
+    <p><strong>1.500 m + 40 km + 8 km</strong>, a ritmo objetivo. Ensayas transiciones, comida, bidones y glucosa.</p>
     <lab>Qué ensayas</lab>
     <ul>
       <li><strong>De mañana</strong>, a la hora de la carrera. No en la tarde.</li>
@@ -2947,25 +2958,27 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
   </div></div>
 
   <div class="fx c-agua"><div class="fx-h"><span class="fx-n">04</span><b>La progresión la marca el cuerpo, no la tabla</b></div><div class="fx-b">
-    <p>Los números de la Parte 4 son un plan, no un contrato. <strong>El semáforo del Whoop cada mañana</strong> y la sensación durante la sesión mandan sobre cualquier casilla.</p>
+    <p>Los números de la Parte 4 son un plan, no un contrato. <strong>Las tres preguntas de cada mañana</strong> y la sensación durante la sesión mandan sobre cualquier casilla.</p>
     <p>Un día en rojo se descansa. Una semana que se sintió dura se repite. <strong>Perder dos semanas por precaución no cuesta nada; perder seis por lesión sí.</strong></p>
   </div></div>
 
   <div class="fx c-agua"><div class="fx-h"><span class="fx-n">05</span><b>Todo se ensaya antes</b></div><div class="fx-b">
     <p>Comida, bebida, ropa, transiciones, agua abierta, manejo de glucosa. <strong>Nada se estrena el día de la carrera.</strong></p>
-    <p>Por eso existen las dos simulaciones de enero y el sprint opcional de noviembre.</p>
+    <p>Por eso existen las dos simulaciones de enero.</p>
   </div></div>
 
   <h3>Los bloques · en cuál estás</h3>
-  <p class="sub">El plan se divide en cinco periodos con objetivos distintos. Varias sesiones cambian según el bloque, así que <strong>lo primero siempre es saber en cuál vas.</strong></p>
+  <p class="sub">El plan se divide en periodos con objetivos distintos; desde el 26 de octubre corre el reinicio, bloques A a E. Varias sesiones cambian según el bloque, así que <strong>lo primero siempre es saber en cuál vas.</strong></p>
   <div class="scroll"><table class="tbl">
     <thead><tr><th>Bloque</th><th>Semanas</th><th>Fechas</th><th>Qué se busca</th></tr></thead>
     <tbody>
-      <tr class="hi"><td>1 · Base</td><td class="num">S1 – S7</td><td class="num">10 ago – 27 sep</td><td>Acumular horas de bici y volver a correr sin romperte</td></tr>
-      <tr><td>2 · Volumen</td><td class="num">S8 – S15</td><td class="num">28 sep – 22 nov</td><td>Subir el rango largo. Entra el agua abierta</td></tr>
-      <tr><td>3 · Umbral</td><td class="num">S16 – S21</td><td class="num">23 nov – 3 ene</td><td>Meter intensidad de verdad</td></tr>
-      <tr><td>4 · Específico</td><td class="num">S22 – S25</td><td class="num">4 – 31 ene</td><td>Simulaciones y transiciones</td></tr>
-      <tr><td>5 · Afinar</td><td class="num">S26 – S28</td><td class="num">1 – 21 feb</td><td>Bajar volumen y llegar fresco</td></tr>
+      <tr><td>1 · Base</td><td class="num">S1 – S7</td><td class="num">10 ago – 27 sep</td><td>Acumular horas de bici y volver a correr sin romperte</td></tr>
+      <tr><td>2 · Volumen</td><td class="num">S8 – S11</td><td class="num">28 sep – 25 oct</td><td>Subir el rango largo</td></tr>
+      <tr class="hi"><td>A · Reinicio</td><td class="num">S12 – S15</td><td class="num">26 oct – 22 nov</td><td>Volver tras la pierna: bici primero, carrera solo en domingo y creciendo poco a poco</td></tr>
+      <tr><td>B · Construcción</td><td class="num">S16 – S19</td><td class="num">23 nov – 20 dic</td><td>Subir bici larga y carrera. Entra el agua abierta</td></tr>
+      <tr><td>C · Fiestas</td><td class="num">S20 – S21</td><td class="num">21 dic – 3 ene</td><td>Mantener: lo que no se negocia es la bici larga</td></tr>
+      <tr><td>D · Específico</td><td class="num">S22 – S25</td><td class="num">4 – 31 ene</td><td>Simulaciones y transiciones</td></tr>
+      <tr><td>E · Afinar</td><td class="num">S26 – S28</td><td class="num">1 – 21 feb</td><td>Bajar volumen y llegar fresco</td></tr>
     </tbody>
   </table></div>
   <p class="why">Cuando una sesión cambie según el bloque, verás las opciones en recuadros separados. El tuyo está marcado. <strong>Lee solo ese.</strong></p>
@@ -3162,12 +3175,16 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
   </table></div>
   <p>En bici, sin medidor de potencia: <strong>suave</strong> = frases completas. <strong>Umbral</strong> = tres o cuatro palabras. <strong>Fuerte</strong> = una o dos palabras. <strong>Cadencia 85–95 siempre</strong>, incluidos los intervalos.</p>
 
-  <h3>El semáforo · tu Whoop en la mañana</h3>
-  <p class="sub">Diez segundos al despertar. Esto es lo que hace que el plan sobreviva siete meses en lugar de tres.</p>
-  <div class="flag verde"><b>Verde · entrena lo planeado</b>Recovery arriba de 66 %, pulso en reposo en tu línea base, dormiste bien, sin dolor localizado.</div>
-  <div class="flag"><b>Ámbar · versión suave</b>Recovery entre 34 y 66 %, pulso en reposo 2–4 latidos arriba de lo normal, una noche mala. Haz la sesión pero fácil: <strong>quita las series y baja el tiempo un 30 %.</strong> Moverse suave recupera mejor que el sofá.</div>
-  <div class="flag rojo"><b>Rojo · descanso</b>Recovery bajo 34 %, pulso en reposo 5 latidos o más arriba, dos noches malas seguidas, cuerpo cortado, o dolor localizado. <strong>Descansa completo.</strong> Un día perdido no es nada; tres semanas lesionado sí.</div>
-  <p class="why">El dato es confirmación, no la guía. Si el Whoop dice verde y tú te sientes destruido, tienes razón tú. Y si el reloj marca ritmo cómodo pero no puedes hablar en frases completas, hazle caso a la respiración.</p>
+  <h3>Antes de entrenar <span class="sm">diez segundos, cada mañana</span></h3>
+  <div class="scroll"><table class="tbl t2">
+    <thead><tr><th>Pregunta</th><th>Si la respuesta es mala</th></tr></thead>
+    <tbody>
+      <tr><td>¿Dormiste bien?</td><td>Haz la versión suave: la misma sesión con un tercio menos de tiempo y sin intervalos</td></tr>
+      <tr><td>¿Las piernas se sienten normales?</td><td>Igual: versión suave</td></tr>
+      <tr><td>¿Hay dolor en un punto concreto?</td><td>Hoy no hay impacto: cambia correr o fútbol por nado o bici suave</td></tr>
+    </tbody>
+  </table></div>
+  <p>El Garmin es segunda opinión, no juez. En semanas de fútbol subestima tu carga porque los partidos se registran a mano: si el reloj dice que estás fresco y tus piernas no, tienen razón tus piernas.</p>
 
   <h3>Combustible e hidratación</h3>
   <p><strong>Un sobre de Gatorade en polvo por bidón.</strong> Siempre la misma receta: si no varía, cualquier cambio que veas en el Libre viene de la duración o la intensidad, no de la mezcla.</p>
@@ -3443,6 +3460,10 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
     </tbody>
   </table></div>
 
+  <h3 id="pierna">Tu pierna y el fútbol</h3>
+  <p>El dolor por fuera de la espinilla salió por sobrecarga: partidos seguidos después de días parado. Por eso la carrera arranca solo en domingo y crece poco a poco. Si aparece corriendo, caminas y paras ese día. Cinco minutos de rodillo de espuma diario en pantorrilla y en la parte de fuera de la pierna, y en la fuerza no te saltes talones, flexión del tobillo y el giro del pie hacia afuera con banda. Si empieza a salir antes en el partido, fuera del deporte o con la pierna tensa o dormida, ve con un fisio.</p>
+  <p>En semanas de dos partidos, el jueves es el primero que se sacrifica. Cuatro partidos en un fin de semana valen por una semana completa de entrenamiento: no le sumes nada.</p>
+
   <h3>Si aparece una molestia</h3>
   <div class="scroll"><table class="tbl">
     <thead><tr><th>Zona</th><th>Fuera</th><th>Sigue</th></tr></thead>
@@ -3473,28 +3494,28 @@ footer{margin-top:54px;padding:28px 0 0;border-top:2px solid var(--tinta);font-s
   </div>
 
   <h3>Hitos con fecha</h3>
-  <div class="scroll"><table class="tbl">
+  <div class="scroll"><table class="tbl t2">
+    <thead><tr><th>Fecha</th><th>Qué pasa</th></tr></thead>
     <tbody>
-      <tr><td>Agosto</td><td>Zapatas de freno nuevas. Definir dos rutas planas de dos horas. Segundo culotte, de tirantes.</td></tr>
-      <tr><td>Primera bici larga</td><td>Prueba de desarrollos en una subida moderada: si mantienes 80 pedaladas sentado, no toques nada. Y prueba la mezcla de Gatorade concentrada.</td></tr>
-      <tr><td>Último viernes de cada mes</td><td>Test de 1.500 m continuos.</td></tr>
-      <tr><td>Antes de octubre</td><td>Multiherramienta. Boya de arrastre naranja y goggles oscuros. Buscar grupo de agua abierta.</td></tr>
-      <tr><td>26 oct · S12</td><td><strong>Primera sesión de agua abierta.</strong></td></tr>
-      <tr><td>22 nov · S15</td><td>Sprint opcional de ensayo: 750 m / 20 km / 5 km.</td></tr>
-      <tr><td>Primera semana de dic · S18</td><td><strong>Sale el calendario FMTRI 2027. Inscríbete ese día</strong> y declara tu dispositivo médico.</td></tr>
-      <tr><td>Diciembre</td><td>Traje o shorts de triatlón, cinturón portanúmero, cordones elásticos.</td></tr>
-      <tr><td>4 y 18 ene</td><td>Las dos simulaciones. La segunda, de mañana.</td></tr>
-      <tr><td>~7 feb</td><td><strong>Último partido de fútbol.</strong></td></tr>
-      <tr><td>21 feb</td><td><strong>Carrera.</strong></td></tr>
+      <tr><td>Miércoles 28 oct</td><td>Semifinal; el jueves 29 no hay fútbol</td></tr>
+      <tr><td>Domingo 1 nov</td><td>Primera carrera: 3 a 4 km suaves, solo si la pierna estuvo bien toda la semana</td></tr>
+      <tr><td>Sábado 7 y domingo 8 nov</td><td>Torneo de fútbol, dos partidos por día</td></tr>
+      <tr><td>Primera semana de dic</td><td>Sale el calendario de la federación: inscríbete ese día y declara tu bomba de insulina</td></tr>
+      <tr><td>Diciembre</td><td>Traje de triatlón, cinturón portanúmero y cordones elásticos</td></tr>
+      <tr><td>Semana del 7 dic</td><td>Primera vez en aguas abiertas, acompañado y con boya</td></tr>
+      <tr><td>Sábado 9 ene</td><td>Simulación 1</td></tr>
+      <tr><td>Sábado 23 ene</td><td>Simulación 2, completa y de mañana</td></tr>
+      <tr><td>Semana del 1 feb</td><td>Últimos partidos de fútbol</td></tr>
+      <tr class="hi"><td>Domingo 21 feb</td><td>Carrera</td></tr>
     </tbody>
   </table></div>
   <div class="flag azul"><b>Pendiente de confirmar</b>La fecha y sede exactas del triatlón, hasta que salga el calendario en diciembre. Este manual está escrito sobre el 21 de febrero; cuando se confirme, se corren las fechas y la estructura no cambia.</div>
 </div>
 
 <footer>
-  <p>Manual orientativo de entrenamiento, personalizado: natación con maestra lunes, miércoles y viernes de 7:15 a 8:00 pm; fútbol 7 de liga miércoles y jueves; Trek de ruta con freno de aro, 7 velocidades, 42×26; fuerza, movilidad y rodillo en casa; Whoop para recuperación y ciclocomputador con sensor de cadencia para la bici.</p>
+  <p>Manual orientativo de entrenamiento, personalizado: natación con maestra lunes, miércoles y viernes de 7:15 a 8:00 pm; fútbol 7 de liga miércoles y jueves; Trek de ruta con freno de aro, 7 velocidades, 42×26; fuerza, movilidad y rodillo en casa; Garmin como segunda opinión de recuperación y ciclocomputador con sensor de cadencia para la bici.</p>
   <p>La progresión de volumen y las cantidades de carbohidrato son referencias generales de entrenamiento; el manejo de tu diabetes tipo 1 alrededor de sesiones más largas de lo que haces hoy conviene revisarlo con tu endocrinólogo conforme suba el volumen. Si aparece dolor persistente, molestia localizada que no cede, o síntomas que no encajan con cansancio normal, eso se revisa con un profesional que te vea en persona.</p>
-  <p class="mono">10 ago 2026 → 21 feb 2027 · 28 semanas</p>
+  <p class="mono">10 ago 2026 → 21 feb 2027 · 28 semanas · reinicio 26 oct</p>
 </footer>
 
 </div>
